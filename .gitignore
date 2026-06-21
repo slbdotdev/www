@@ -1,0 +1,25 @@
+.quarto/
+
+# binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# go tooling artifacts
+*.out
+coverage.*
+*.coverprofile
+profile.cov
+go.work
+go.work.sum
+.env
+
+# editors
+.idea/
+.vscode/
+.vs/
+/.quarto/
+**/*.quarto_ipynb

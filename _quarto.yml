@@ -1,0 +1,7 @@
+format:
+  html:
+    respect-user-color-scheme: true
+    theme:
+      dark: darklyer.scss
+      light: flatlyer.scss
+jupyter: python3

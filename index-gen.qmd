@@ -1,0 +1,135 @@
+---
+pagetitle: "slb.dev"
+format:
+  html:
+    output-file: index.html
+    respect-user-color-scheme: true
+    css: fonts.css
+    include-in-header: injects.html
+    theme:
+      dark: darklyer.scss
+      light: flatlyer.scss
+    grid:
+      body-width: 510px
+---
+
+# slb.dev
+
+indie software tinkerer
+ 
+[github.com/slbdotdev](https://github.com/slbdotdev){target="_blank"}  
+[mail@slb.dev](mailto:mail@slb.dev){target="_blank"}  
+
+::: {.callout-tip collapse="true"}
+## tree of good bookmarks
+
+<nbsp>
+
+::: {.callout-tip collapse="true"}
+## Good Art of Many Kinds
+
+|   |
+| - |
+| **Technical Video Essays:** |
+| [30 Weird Chess Algorithms: Elo World](https://www.youtube.com/watch?v=DpXy041BIlA&t=969s) |
+| **Animation:** |
+| [LACKADAISY](https://www.youtube.com/watch?v=vffu6FG4YP4) |
+| [EVERYONE IS LONELY](https://www.youtube.com/watch?v=v7LBggDKEtM) |
+| **Music Videos:** |
+| [Venjent - Till Death We Do Art](https://www.youtube.com/watch?v=Dk3pumxZtVU) |
+| [Max Cooper - Repetition](https://www.youtube.com/watch?v=nO9aot9RgQc) |
+| [Lorn - Acid Rain](https://www.youtube.com/watch?v=nxg4C365LbQ) |
+
+:::
+
+::: {.callout-tip collapse="true"}
+## Windows 11 re-install tools
+
+|              |   |
+| ------------ | - |
+| create usb   | [Microsoft download direct link](https://go.microsoft.com/fwlink/?linkid=2156295) |
+| autounattend | [schneegans.de xml generator](https://schneegans.de/windows/unattend-generator/) |
+| winutil      | [ChrisTitusTech's Win 11 tweaks](https://github.com/ChrisTitusTech/winutil) |
+| wsl          | [WSL2 Official Install Docs](https://learn.microsoft.com/en-us/windows/wsl/install) |
+| powertoys    | [FancyZones, Awake, Color Picker](https://learn.microsoft.com/en-us/windows/powertoys/) |
+| restic       | [My fav modern backup tool](https://restic.net/) |
+
+:::
+
+::: {.callout-tip collapse="true"}
+## Favorite xkcds
+
+|      |   |
+| ---- | - |
+| 505  | [a bunch of rocks](https://xkcd.com/505/) |
+| 927  | [how standards proliferate](https://xkcd.com/927/) |
+| 936  | [correct horse battery staple](https://xkcd.com/936/) |
+| 1597 | [git](https://xkcd.com/1597/) |
+| 2501 | [average familiarity](https://xkcd.com/2501/) also: [generator](https://marshdeer.github.io/xkcd2501-generator/) |
+
+:::
+
+<nbsp>
+
+:::
+
+::: {.callout-note collapse="true"}
+## gpg public key
+
+```
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+=igwr
+-----END PGP PUBLIC KEY BLOCK-----
+```
+
+:::
+
+*made with [quarto](https://quarto.org/)*
