@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex, nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="dark">
-<title>At the same file size, ternary models match or beat 2-bit quantized models in 30 of 32 tests and 4-bit ones in 23 of 24</title><style>
+<title>At the same file size, ternary models match or beat 2-bit quantized models in 29 of 32 tests and 4-bit ones in 23 of 24</title><style>
 html,body{margin:0;background:#0b0b0a;color:#f0efec;font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
 :root{color-scheme:dark}
 main{max-width:1120px;margin:0 auto;padding:18px 16px 36px}
@@ -67,7 +67,7 @@ padding:8px 10px;font-size:12.5px;box-shadow:0 4px 16px rgba(0,0,0,.4);display:n
 </style></head>
 <body><main><nav class="nav" aria-label="Report pages"><a href="index.html">Holistic</a><span aria-current="page">Paired differences</span></nav><div class="card">
 <p class="kicker">Translation test · all directions · paired by item</p>
-<h1 style="font-size:clamp(20px,2.6vw,27px)"><span class="t1">At the same file&nbsp;size, ternary models match or beat</span> <span class="t1">2-bit&nbsp;quantized models in 30 of 32 tests and 4-bit&nbsp;ones in 23 of 24</span></h1>
+<h1 style="font-size:clamp(20px,2.6vw,27px)"><span class="t1">At the same file&nbsp;size, ternary models match or beat</span> <span class="t1">2-bit&nbsp;quantized models in 29 of 32 tests and 4-bit&nbsp;ones in 23 of 24</span></h1>
 <p class="sub">Bonsai 2B–27B, 0.5–7.2 GB, ternary, on one GTX 1080 Ti (11 GB) · each against the 4-bit Qwen3.5 with fewer parameters and the 2-bit Qwen with the same</p>
 <div class="legend"><span><svg width="18" height="16" viewBox="0 0 18 16" aria-hidden="true"><circle cx="9" cy="8" r="6" fill="#3987e5"/></svg><svg width="18" height="16" viewBox="0 0 18 16" aria-hidden="true"><circle cx="9" cy="8" r="6" fill="#a9a7a0"/></svg>thinking off</span><span><svg width="18" height="16" viewBox="0 0 18 16" aria-hidden="true"><circle cx="9" cy="8" r="5.5" fill="#121211" stroke="#5598e7" stroke-width="2.5"/></svg><svg width="18" height="16" viewBox="0 0 18 16" aria-hidden="true"><circle cx="9" cy="8" r="5.5" fill="#121211" stroke="#a9a7a0" stroke-width="2.5"/></svg>thinking on</span><span class="soft"><svg width="18" height="16" viewBox="0 0 18 16" aria-hidden="true"><path d="M9,1 L16,13 L2,13 Z" fill="#a9a7a0"/></svg>GLM: low-effort thinking (can’t be turned off)</span><span class="soft"><svg width="30" height="16" viewBox="0 0 30 16" aria-hidden="true"><rect x="0" y="2" width="30" height="12" rx="6" fill="#eb6834" fill-opacity=".2"/><line x1="3" x2="15" y1="8" y2="8" stroke="#5598e7" stroke-width="2"/><circle cx="9" cy="8" r="3.5" fill="#3987e5"/><text x="18" y="12" font-size="9" font-weight="800" fill="#eb6834">+</text></svg>orange band + bold value = Bonsai ahead of the Qwen it is paired with, after correcting for multiple comparisons</span><span class="soft"><svg width="18" height="16" viewBox="0 0 18 16" aria-hidden="true"><line x1="1" x2="17" y1="8" y2="8" stroke="#5598e7" stroke-width="2" stroke-dasharray="4 3" opacity=".7"/><circle cx="9" cy="8" r="5" fill="#3987e5" opacity=".45"/></svg>faded, dashed: most answers still empty at 32k thinking tokens</span><span class="soft"><b>†</b> unfinished answers (scored 0) move the value by more than half its interval; see the tooltip</span><span class="soft">blue = Bonsai − the Qwen it is paired with · gray = cloud − Qwen 9B · tok/s = decode on one GTX 1080 Ti · each vs Qwen in the same mode · whiskers = 95% confidence interval of the mean difference</span></div>
 <div class="scroll"><svg class="chart" viewBox="0 0 1080 1184" role="img" aria-labelledby="ct cd" xmlns="http://www.w3.org/2000/svg">
@@ -75,39 +75,33 @@ padding:8px 10px;font-size:12.5px;box-shadow:0 4px 16px rgba(0,0,0,.4);display:n
 <desc id="cd">Forest plot. Each mark is the mean paired chrF difference over the same items; whiskers are 95% paired bootstrap intervals. Every mark has a tooltip with its value, interval and n.</desc>
 <rect class="prio" x="214" y="22" width="196" height="1098" rx="8"/>
 <text class="ptitle" x="224" y="44">→ English</text>
-<text class="psub" x="224" y="62">talk excerpts (T1) · n = 36</text>
+<text class="psub" x="224" y="62">talk excerpts (T1) · n = 36/78</text>
 <line class="grid" x1="224.0" x2="224.0" y1="80.0" y2="239.0"/>
 <line class="grid" x1="224.0" x2="224.0" y1="255.0" y2="345.0"/>
 <line class="grid" x1="224.0" x2="224.0" y1="361.0" y2="523.0"/>
 <line class="grid" x1="224.0" x2="224.0" y1="539.0" y2="701.0"/>
 <line class="grid" x1="224.0" x2="224.0" y1="717.0" y2="879.0"/>
 <line class="grid" x1="224.0" x2="224.0" y1="895.0" y2="1120.0"/>
-<line class="grid" x1="259.2" x2="259.2" y1="80.0" y2="239.0"/>
-<line class="grid" x1="259.2" x2="259.2" y1="255.0" y2="345.0"/>
-<line class="grid" x1="259.2" x2="259.2" y1="361.0" y2="523.0"/>
-<line class="grid" x1="259.2" x2="259.2" y1="539.0" y2="701.0"/>
-<line class="grid" x1="259.2" x2="259.2" y1="717.0" y2="879.0"/>
-<line class="grid" x1="259.2" x2="259.2" y1="895.0" y2="1120.0"/>
-<text class="tick" x="259.2" y="1136" text-anchor="middle">−10</text>
-<line class="grid" x1="294.4" x2="294.4" y1="80.0" y2="239.0"/>
-<line class="grid" x1="294.4" x2="294.4" y1="255.0" y2="345.0"/>
-<line class="grid" x1="294.4" x2="294.4" y1="361.0" y2="523.0"/>
-<line class="grid" x1="294.4" x2="294.4" y1="539.0" y2="701.0"/>
-<line class="grid" x1="294.4" x2="294.4" y1="717.0" y2="879.0"/>
-<line class="grid" x1="294.4" x2="294.4" y1="895.0" y2="1120.0"/>
-<line class="zero" x1="329.6" x2="329.6" y1="80.0" y2="239.0"/>
-<line class="zero" x1="329.6" x2="329.6" y1="255.0" y2="345.0"/>
-<line class="zero" x1="329.6" x2="329.6" y1="361.0" y2="523.0"/>
-<line class="zero" x1="329.6" x2="329.6" y1="539.0" y2="701.0"/>
-<line class="zero" x1="329.6" x2="329.6" y1="717.0" y2="879.0"/>
-<line class="zero" x1="329.6" x2="329.6" y1="895.0" y2="1120.0"/>
-<text class="tick" x="329.6" y="1136" text-anchor="middle">0</text>
-<line class="grid" x1="364.8" x2="364.8" y1="80.0" y2="239.0"/>
-<line class="grid" x1="364.8" x2="364.8" y1="255.0" y2="345.0"/>
-<line class="grid" x1="364.8" x2="364.8" y1="361.0" y2="523.0"/>
-<line class="grid" x1="364.8" x2="364.8" y1="539.0" y2="701.0"/>
-<line class="grid" x1="364.8" x2="364.8" y1="717.0" y2="879.0"/>
-<line class="grid" x1="364.8" x2="364.8" y1="895.0" y2="1120.0"/>
+<text class="tick" x="224.0" y="1136" text-anchor="middle">−10</text>
+<line class="grid" x1="268.0" x2="268.0" y1="80.0" y2="239.0"/>
+<line class="grid" x1="268.0" x2="268.0" y1="255.0" y2="345.0"/>
+<line class="grid" x1="268.0" x2="268.0" y1="361.0" y2="523.0"/>
+<line class="grid" x1="268.0" x2="268.0" y1="539.0" y2="701.0"/>
+<line class="grid" x1="268.0" x2="268.0" y1="717.0" y2="879.0"/>
+<line class="grid" x1="268.0" x2="268.0" y1="895.0" y2="1120.0"/>
+<line class="zero" x1="312.0" x2="312.0" y1="80.0" y2="239.0"/>
+<line class="zero" x1="312.0" x2="312.0" y1="255.0" y2="345.0"/>
+<line class="zero" x1="312.0" x2="312.0" y1="361.0" y2="523.0"/>
+<line class="zero" x1="312.0" x2="312.0" y1="539.0" y2="701.0"/>
+<line class="zero" x1="312.0" x2="312.0" y1="717.0" y2="879.0"/>
+<line class="zero" x1="312.0" x2="312.0" y1="895.0" y2="1120.0"/>
+<text class="tick" x="312.0" y="1136" text-anchor="middle">0</text>
+<line class="grid" x1="356.0" x2="356.0" y1="80.0" y2="239.0"/>
+<line class="grid" x1="356.0" x2="356.0" y1="255.0" y2="345.0"/>
+<line class="grid" x1="356.0" x2="356.0" y1="361.0" y2="523.0"/>
+<line class="grid" x1="356.0" x2="356.0" y1="539.0" y2="701.0"/>
+<line class="grid" x1="356.0" x2="356.0" y1="717.0" y2="879.0"/>
+<line class="grid" x1="356.0" x2="356.0" y1="895.0" y2="1120.0"/>
 <line class="grid" x1="400.0" x2="400.0" y1="80.0" y2="239.0"/>
 <line class="grid" x1="400.0" x2="400.0" y1="255.0" y2="345.0"/>
 <line class="grid" x1="400.0" x2="400.0" y1="361.0" y2="523.0"/>
@@ -120,193 +114,195 @@ padding:8px 10px;font-size:12.5px;box-shadow:0 4px 16px rgba(0,0,0,.4);display:n
 <line class="gsep" x1="220" x2="404" y1="531.0" y2="531.0"/>
 <line class="gsep" x1="220" x2="404" y1="709.0" y2="709.0"/>
 <line class="gsep" x1="220" x2="404" y1="887.0" y2="887.0"/>
-<g class="pt cloud off" tabindex="0" data-tip="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · → English talk excerpts (T1) · thinking off|+4.2 chrF [+3.0, +5.5]|DeepSeek V4.1 Flash 1017 71.1 vs Qwen3.5 9B 66.9 · n = 36" aria-label="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · → English talk excerpts (T1) · thinking off, +4.2 chrF [+3.0, +5.5], DeepSeek V4.1 Flash 1017 71.1 vs Qwen3.5 9B 66.9 · n = 36">
-<rect class="hit" x="343.2" y="101.0" width="32.0" height="24"/>
-<line class="ci" x1="350.4" x2="368.7" y1="113.0" y2="113.0"/>
-<line class="ci" x1="350.4" x2="350.4" y1="109.0" y2="117.0"/>
-<line class="ci" x1="368.7" x2="368.7" y1="109.0" y2="117.0"/>
-<circle class="mk" cx="359.2" cy="113.0" r="6"/>
+<g class="pt cloud off" tabindex="0" data-tip="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · → English talk excerpts (T1) · thinking off|+4.3 chrF [+3.4, +5.3]|DeepSeek V4.1 Flash 1017 72.6 vs Qwen3.5 9B 68.2 · n = 78" aria-label="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · → English talk excerpts (T1) · thinking off, +4.3 chrF [+3.4, +5.3], DeepSeek V4.1 Flash 1017 72.6 vs Qwen3.5 9B 68.2 · n = 78">
+<rect class="hit" x="334.3" y="101.0" width="32.0" height="24"/>
+<line class="ci" x1="341.8" x2="358.6" y1="113.0" y2="113.0"/>
+<line class="ci" x1="341.8" x2="341.8" y1="109.0" y2="117.0"/>
+<line class="ci" x1="358.6" x2="358.6" y1="109.0" y2="117.0"/>
+<circle class="mk" cx="350.3" cy="113.0" r="6"/>
 </g>
-<g class="pt cloud on" tabindex="0" data-tip="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · → English talk excerpts (T1) · thinking on|+3.9 chrF [+2.5, +5.3]|DeepSeek V4.1 Flash 1017 71.2 vs Qwen3.5 9B 67.3 · n = 36" aria-label="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · → English talk excerpts (T1) · thinking on, +3.9 chrF [+2.5, +5.3], DeepSeek V4.1 Flash 1017 71.2 vs Qwen3.5 9B 67.3 · n = 36">
-<rect class="hit" x="341.1" y="119.0" width="32.0" height="24"/>
-<line class="ci" x1="347.1" x2="367.0" y1="131.0" y2="131.0"/>
-<line class="ci" x1="347.1" x2="347.1" y1="127.0" y2="135.0"/>
-<line class="ci" x1="367.0" x2="367.0" y1="127.0" y2="135.0"/>
-<circle class="mk" cx="357.1" cy="131.0" r="5.5"/>
+<g class="pt cloud on" tabindex="0" data-tip="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · → English talk excerpts (T1) · thinking on|+4.0 chrF [+3.0, +5.0]|DeepSeek V4.1 Flash 1017 72.4 vs Qwen3.5 9B 68.4 · n = 78" aria-label="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · → English talk excerpts (T1) · thinking on, +4.0 chrF [+3.0, +5.0], DeepSeek V4.1 Flash 1017 72.4 vs Qwen3.5 9B 68.4 · n = 78">
+<rect class="hit" x="331.6" y="119.0" width="32.0" height="24"/>
+<line class="ci" x1="338.7" x2="355.9" y1="131.0" y2="131.0"/>
+<line class="ci" x1="338.7" x2="338.7" y1="127.0" y2="135.0"/>
+<line class="ci" x1="355.9" x2="355.9" y1="127.0" y2="135.0"/>
+<circle class="mk" cx="347.6" cy="131.0" r="5.5"/>
 </g>
 <line class="sep" x1="220" x2="404" y1="158" y2="158"/>
 <g class="pt cloud low" tabindex="0" data-tip="GLM 5.3 Flash − Qwen3.5 9B · → English talk excerpts (T1) · low-effort thinking (vs Qwen thinking off)|+3.9 chrF [+2.9, +4.9]|GLM 5.3 Flash 70.8 vs Qwen3.5 9B 66.9 · n = 36" aria-label="GLM 5.3 Flash − Qwen3.5 9B · → English talk excerpts (T1) · low-effort thinking (vs Qwen thinking off), +3.9 chrF [+2.9, +4.9], GLM 5.3 Flash 70.8 vs Qwen3.5 9B 66.9 · n = 36">
-<rect class="hit" x="341.1" y="173.0" width="32.0" height="24"/>
-<line class="ci" x1="349.8" x2="363.9" y1="185.0" y2="185.0"/>
-<line class="ci" x1="349.8" x2="349.8" y1="181.0" y2="189.0"/>
-<line class="ci" x1="363.9" x2="363.9" y1="181.0" y2="189.0"/>
-<path class="mk" d="M357.1,178.0 L364.1,190.0 L350.1,190.0 Z"/>
+<rect class="hit" x="330.3" y="173.0" width="32.0" height="24"/>
+<line class="ci" x1="337.3" x2="354.9" y1="185.0" y2="185.0"/>
+<line class="ci" x1="337.3" x2="337.3" y1="181.0" y2="189.0"/>
+<line class="ci" x1="354.9" x2="354.9" y1="181.0" y2="189.0"/>
+<path class="mk" d="M346.3,178.0 L353.3,190.0 L339.3,190.0 Z"/>
 </g>
 <g class="pt cloud on" tabindex="0" data-tip="GLM 5.3 Flash − Qwen3.5 9B · → English talk excerpts (T1) · thinking on|+4.0 chrF [+2.9, +5.1]|GLM 5.3 Flash 71.4 vs Qwen3.5 9B 67.3 · n = 36" aria-label="GLM 5.3 Flash − Qwen3.5 9B · → English talk excerpts (T1) · thinking on, +4.0 chrF [+2.9, +5.1], GLM 5.3 Flash 71.4 vs Qwen3.5 9B 67.3 · n = 36">
-<rect class="hit" x="342.1" y="191.0" width="32.0" height="24"/>
-<line class="ci" x1="349.7" x2="365.8" y1="203.0" y2="203.0"/>
-<line class="ci" x1="349.7" x2="349.7" y1="199.0" y2="207.0"/>
-<line class="ci" x1="365.8" x2="365.8" y1="199.0" y2="207.0"/>
-<circle class="mk" cx="358.1" cy="203.0" r="5.5"/>
+<rect class="hit" x="331.6" y="191.0" width="32.0" height="24"/>
+<line class="ci" x1="337.1" x2="357.2" y1="203.0" y2="203.0"/>
+<line class="ci" x1="337.1" x2="337.1" y1="199.0" y2="207.0"/>
+<line class="ci" x1="357.2" x2="357.2" y1="199.0" y2="207.0"/>
+<circle class="mk" cx="347.6" cy="203.0" r="5.5"/>
 </g>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 27B − Qwen3.8 27B 2-bit · → English talk excerpts (T1) · thinking off|−0.7 chrF [−1.5, +0.1]|Bonsai 27B 68.7 vs Qwen3.8 27B 2-bit 69.4 · n = 36 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080" aria-label="Bonsai 27B − Qwen3.8 27B 2-bit · → English talk excerpts (T1) · thinking off, −0.7 chrF [−1.5, +0.1], Bonsai 27B 68.7 vs Qwen3.8 27B 2-bit 69.4 · n = 36 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080">
-<rect class="hit" x="308.7" y="279.0" width="32.0" height="24"/>
-<line class="ci" x1="319.0" x2="330.0" y1="291.0" y2="291.0"/>
-<line class="ci" x1="319.0" x2="319.0" y1="287.0" y2="295.0"/>
-<line class="ci" x1="330.0" x2="330.0" y1="287.0" y2="295.0"/>
-<circle class="mk" cx="324.7" cy="291.0" r="6"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 27B − Qwen3.8 27B 2-bit · → English talk excerpts (T1) · thinking off|−0.7 chrF [−1.3, −0.2]|Bonsai 27B 69.7 vs Qwen3.8 27B 2-bit 70.5 · n = 78 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080" aria-label="Bonsai 27B − Qwen3.8 27B 2-bit · → English talk excerpts (T1) · thinking off, −0.7 chrF [−1.3, −0.2], Bonsai 27B 69.7 vs Qwen3.8 27B 2-bit 70.5 · n = 78 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080">
+<rect class="hit" x="289.7" y="279.0" width="32.0" height="24"/>
+<line class="ci" x1="300.8" x2="310.5" y1="291.0" y2="291.0"/>
+<line class="ci" x1="300.8" x2="300.8" y1="287.0" y2="295.0"/>
+<line class="ci" x1="310.5" x2="310.5" y1="287.0" y2="295.0"/>
+<circle class="mk" cx="305.7" cy="291.0" r="6"/>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 27B − Qwen3.8 27B 2-bit · → English talk excerpts (T1) · thinking on|+1.1 chrF [+0.0, +2.2]|Bonsai 27B 68.1 vs Qwen3.8 27B 2-bit 67.0 · n = 36 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080" aria-label="Bonsai 27B − Qwen3.8 27B 2-bit · → English talk excerpts (T1) · thinking on, +1.1 chrF [+0.0, +2.2], Bonsai 27B 68.1 vs Qwen3.8 27B 2-bit 67.0 · n = 36 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080">
-<rect class="hit" x="321.3" y="297.0" width="32.0" height="24"/>
-<line class="ci" x1="329.7" x2="344.9" y1="309.0" y2="309.0"/>
-<line class="ci" x1="329.7" x2="329.7" y1="305.0" y2="313.0"/>
-<line class="ci" x1="344.9" x2="344.9" y1="305.0" y2="313.0"/>
-<circle class="mk" cx="337.3" cy="309.0" r="5.5"/>
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 27B − Qwen3.8 27B 2-bit · → English talk excerpts (T1) · thinking on|+0.9 chrF [−1.5, +3.4]|Bonsai 27B 68.6 vs Qwen3.8 27B 2-bit 67.7 · n = 78 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080" aria-label="Bonsai 27B − Qwen3.8 27B 2-bit · → English talk excerpts (T1) · thinking on, +0.9 chrF [−1.5, +3.4], Bonsai 27B 68.6 vs Qwen3.8 27B 2-bit 67.7 · n = 78 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080">
+<rect class="hit" x="294.4" y="297.0" width="51.6" height="24"/>
+<line class="ci" x1="298.4" x2="342.1" y1="309.0" y2="309.0"/>
+<line class="ci" x1="298.4" x2="298.4" y1="305.0" y2="313.0"/>
+<line class="ci" x1="342.1" x2="342.1" y1="305.0" y2="313.0"/>
+<circle class="mk" cx="320.0" cy="309.0" r="5.5"/>
 </g>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 4B 4-bit · → English talk excerpts (T1) · thinking off|+1.0 chrF [+0.0, +2.1]|Bonsai 9B 66.8 vs Qwen3.5 4B 4-bit 65.7 · n = 36 · files 2.4 GB vs 2.7 GB" aria-label="Bonsai 9B − Qwen3.5 4B 4-bit · → English talk excerpts (T1) · thinking off, +1.0 chrF [+0.0, +2.1], Bonsai 9B 66.8 vs Qwen3.5 4B 4-bit 65.7 · n = 36 · files 2.4 GB vs 2.7 GB">
-<rect class="hit" x="320.7" y="385.0" width="32.0" height="24"/>
-<line class="ci" x1="329.7" x2="344.2" y1="397.0" y2="397.0"/>
-<line class="ci" x1="329.7" x2="329.7" y1="393.0" y2="401.0"/>
-<line class="ci" x1="344.2" x2="344.2" y1="393.0" y2="401.0"/>
-<circle class="mk" cx="336.7" cy="397.0" r="6"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 4B 4-bit · → English talk excerpts (T1) · thinking off|+0.0 chrF [−0.7, +0.8]|Bonsai 9B 67.7 vs Qwen3.5 4B 4-bit 67.7 · n = 78 · files 2.4 GB vs 2.7 GB" aria-label="Bonsai 9B − Qwen3.5 4B 4-bit · → English talk excerpts (T1) · thinking off, +0.0 chrF [−0.7, +0.8], Bonsai 9B 67.7 vs Qwen3.5 4B 4-bit 67.7 · n = 78 · files 2.4 GB vs 2.7 GB">
+<rect class="hit" x="296.4" y="385.0" width="32.0" height="24"/>
+<line class="ci" x1="305.5" x2="319.1" y1="397.0" y2="397.0"/>
+<line class="ci" x1="305.5" x2="305.5" y1="393.0" y2="401.0"/>
+<line class="ci" x1="319.1" x2="319.1" y1="393.0" y2="401.0"/>
+<circle class="mk" cx="312.4" cy="397.0" r="6"/>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 4B 4-bit · → English talk excerpts (T1) · thinking on|−0.3 chrF [−1.7, +0.9]|Bonsai 9B 66.1 vs Qwen3.5 4B 4-bit 66.4 · n = 36 · files 2.4 GB vs 2.7 GB" aria-label="Bonsai 9B − Qwen3.5 4B 4-bit · → English talk excerpts (T1) · thinking on, −0.3 chrF [−1.7, +0.9], Bonsai 9B 66.1 vs Qwen3.5 4B 4-bit 66.4 · n = 36 · files 2.4 GB vs 2.7 GB">
-<rect class="hit" x="311.4" y="403.0" width="32.0" height="24"/>
-<line class="ci" x1="317.6" x2="335.7" y1="415.0" y2="415.0"/>
-<line class="ci" x1="317.6" x2="317.6" y1="411.0" y2="419.0"/>
-<line class="ci" x1="335.7" x2="335.7" y1="411.0" y2="419.0"/>
-<circle class="mk" cx="327.4" cy="415.0" r="5.5"/>
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 4B 4-bit · → English talk excerpts (T1) · thinking on|−0.5 chrF [−1.3, +0.2]|Bonsai 9B 67.3 vs Qwen3.5 4B 4-bit 67.8 · n = 78 · files 2.4 GB vs 2.7 GB" aria-label="Bonsai 9B − Qwen3.5 4B 4-bit · → English talk excerpts (T1) · thinking on, −0.5 chrF [−1.3, +0.2], Bonsai 9B 67.3 vs Qwen3.5 4B 4-bit 67.8 · n = 78 · files 2.4 GB vs 2.7 GB">
+<rect class="hit" x="291.4" y="403.0" width="32.0" height="24"/>
+<line class="ci" x1="300.6" x2="313.8" y1="415.0" y2="415.0"/>
+<line class="ci" x1="300.6" x2="300.6" y1="411.0" y2="419.0"/>
+<line class="ci" x1="313.8" x2="313.8" y1="411.0" y2="419.0"/>
+<circle class="mk" cx="307.4" cy="415.0" r="5.5"/>
 </g>
 <line class="sep" x1="220" x2="404" y1="442" y2="442"/>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 2-bit · → English talk excerpts (T1) · thinking off|+2.3 chrF [+1.2, +3.4]|Bonsai 9B 66.8 vs Qwen3.5 9B 2-bit 64.4 · n = 36 · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 9B − Qwen3.5 9B 2-bit · → English talk excerpts (T1) · thinking off, +2.3 chrF [+1.2, +3.4], Bonsai 9B 66.8 vs Qwen3.5 9B 2-bit 64.4 · n = 36 · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)">
-<rect class="hit" x="329.9" y="457.0" width="32.0" height="24"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 2-bit · → English talk excerpts (T1) · thinking off|+1.5 chrF [+0.8, +2.2]|Bonsai 9B 67.7 vs Qwen3.5 9B 2-bit 66.2 · n = 78 · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 9B − Qwen3.5 9B 2-bit · → English talk excerpts (T1) · thinking off, +1.5 chrF [+0.8, +2.2], Bonsai 9B 67.7 vs Qwen3.5 9B 2-bit 66.2 · n = 78 · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)">
+<rect class="hit" x="309.4" y="457.0" width="32.0" height="24"/>
 <rect class="hband" x="218" y="459.0" width="188" height="20" rx="10"/>
-<line class="ci" x1="338.2" x2="353.5" y1="469.0" y2="469.0"/>
-<line class="ci" x1="338.2" x2="338.2" y1="465.0" y2="473.0"/>
-<line class="ci" x1="353.5" x2="353.5" y1="465.0" y2="473.0"/>
-<circle class="mk" cx="345.9" cy="469.0" r="6"/>
-<text class="hlab" x="360.5" y="473.5">+2.3</text>
+<line class="ci" x1="319.1" x2="331.7" y1="469.0" y2="469.0"/>
+<line class="ci" x1="319.1" x2="319.1" y1="465.0" y2="473.0"/>
+<line class="ci" x1="331.7" x2="331.7" y1="465.0" y2="473.0"/>
+<circle class="mk" cx="325.4" cy="469.0" r="6"/>
+<text class="hlab" x="338.7" y="473.5">+1.5</text>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 2-bit · → English talk excerpts (T1) · thinking on|+8.5 chrF [+3.9, +14.1]|Bonsai 9B 66.1 vs Qwen3.5 9B 2-bit 57.7 · n = 36 · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 9B − Qwen3.5 9B 2-bit · → English talk excerpts (T1) · thinking on, +8.5 chrF [+3.9, +14.1], Bonsai 9B 66.1 vs Qwen3.5 9B 2-bit 57.7 · n = 36 · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)">
-<rect class="hit" x="352.8" y="475.0" width="52.4" height="24"/>
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 2-bit · → English talk excerpts (T1) · thinking on|+13.0 chrF [+8.4, +18.2]|Bonsai 9B 67.3 vs Qwen3.5 9B 2-bit 54.3 · n = 78 · † 9 of 78 answers unfinished at 32k (scored 0); without them +6.3 (Bonsai 9B 0, Qwen3.5 9B 2-bit 9) · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 9B − Qwen3.5 9B 2-bit · → English talk excerpts (T1) · thinking on, +13.0 chrF [+8.4, +18.2], Bonsai 9B 67.3 vs Qwen3.5 9B 2-bit 54.3 · n = 78 · † 9 of 78 answers unfinished at 32k (scored 0); without them +6.3 (Bonsai 9B 0, Qwen3.5 9B 2-bit 9) · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)">
+<rect class="hit" x="381.7" y="475.0" width="34.3" height="24"/>
 <rect class="hband" x="218" y="477.0" width="188" height="20" rx="10"/>
-<line class="ci" x1="356.8" x2="400.0" y1="487.0" y2="487.0"/>
-<line class="ci" x1="356.8" x2="356.8" y1="483.0" y2="491.0"/>
+<line class="ci" x1="385.7" x2="400.0" y1="487.0" y2="487.0"/>
+<line class="ci" x1="385.7" x2="385.7" y1="483.0" y2="491.0"/>
 <line class="ci" x1="400.0" x2="400.0" y1="483.0" y2="491.0"/>
-<circle class="mk" cx="389.2" cy="487.0" r="5.5"/>
-<text class="hlab" x="349.8" y="491.5" text-anchor="end">+8.5</text>
+<path class="mk" d="M406.0,487.0 L396.0,481.0 L396.0,493.0 Z"/>
+<text class="hlab" x="390.0" y="491.5" text-anchor="end">+13.0†</text>
 </g>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 2B 4-bit · → English talk excerpts (T1) · thinking off|+0.6 chrF [−0.6, +1.7]|Bonsai 4B 64.7 vs Qwen3.5 2B 4-bit 64.1 · n = 36 · files 1.1 GB vs 1.3 GB" aria-label="Bonsai 4B − Qwen3.5 2B 4-bit · → English talk excerpts (T1) · thinking off, +0.6 chrF [−0.6, +1.7], Bonsai 4B 64.7 vs Qwen3.5 2B 4-bit 64.1 · n = 36 · files 1.1 GB vs 1.3 GB">
-<rect class="hit" x="317.6" y="563.0" width="32.0" height="24"/>
-<line class="ci" x1="325.7" x2="341.3" y1="575.0" y2="575.0"/>
-<line class="ci" x1="325.7" x2="325.7" y1="571.0" y2="579.0"/>
-<line class="ci" x1="341.3" x2="341.3" y1="571.0" y2="579.0"/>
-<circle class="mk" cx="333.6" cy="575.0" r="6"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 2B 4-bit · → English talk excerpts (T1) · thinking off|+0.2 chrF [−1.3, +1.5]|Bonsai 4B 65.3 vs Qwen3.5 2B 4-bit 65.0 · n = 78 · files 1.1 GB vs 1.3 GB" aria-label="Bonsai 4B − Qwen3.5 2B 4-bit · → English talk excerpts (T1) · thinking off, +0.2 chrF [−1.3, +1.5], Bonsai 4B 65.3 vs Qwen3.5 2B 4-bit 65.0 · n = 78 · files 1.1 GB vs 1.3 GB">
+<rect class="hit" x="296.7" y="563.0" width="33.3" height="24"/>
+<line class="ci" x1="300.7" x2="325.0" y1="575.0" y2="575.0"/>
+<line class="ci" x1="300.7" x2="300.7" y1="571.0" y2="579.0"/>
+<line class="ci" x1="325.0" x2="325.0" y1="571.0" y2="579.0"/>
+<circle class="mk" cx="314.0" cy="575.0" r="6"/>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 2B 4-bit · → English talk excerpts (T1) · thinking on|+1.3 chrF [+0.5, +2.1]|Bonsai 4B 64.0 vs Qwen3.5 2B 4-bit 62.7 · n = 36 · files 1.1 GB vs 1.3 GB · notable: Bonsai ahead of Qwen3.5 2B 4-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 4B − Qwen3.5 2B 4-bit · → English talk excerpts (T1) · thinking on, +1.3 chrF [+0.5, +2.1], Bonsai 4B 64.0 vs Qwen3.5 2B 4-bit 62.7 · n = 36 · files 1.1 GB vs 1.3 GB · notable: Bonsai ahead of Qwen3.5 2B 4-bit after correction for multiple comparisons (orange)">
-<rect class="hit" x="322.8" y="581.0" width="32.0" height="24"/>
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 2B 4-bit · → English talk excerpts (T1) · thinking on|+1.7 chrF [+0.7, +3.0]|Bonsai 4B 65.5 vs Qwen3.5 2B 4-bit 63.7 · n = 78 · files 1.1 GB vs 1.3 GB · notable: Bonsai ahead of Qwen3.5 2B 4-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 4B − Qwen3.5 2B 4-bit · → English talk excerpts (T1) · thinking on, +1.7 chrF [+0.7, +3.0], Bonsai 4B 65.5 vs Qwen3.5 2B 4-bit 63.7 · n = 78 · files 1.1 GB vs 1.3 GB · notable: Bonsai ahead of Qwen3.5 2B 4-bit after correction for multiple comparisons (orange)">
+<rect class="hit" x="311.2" y="581.0" width="32.0" height="24"/>
 <rect class="hband" x="218" y="583.0" width="188" height="20" rx="10"/>
-<line class="ci" x1="333.0" x2="344.4" y1="593.0" y2="593.0"/>
-<line class="ci" x1="333.0" x2="333.0" y1="589.0" y2="597.0"/>
-<line class="ci" x1="344.4" x2="344.4" y1="589.0" y2="597.0"/>
-<circle class="mk" cx="338.8" cy="593.0" r="5.5"/>
-<text class="hlab" x="351.4" y="597.5">+1.3</text>
+<line class="ci" x1="317.7" x2="338.7" y1="593.0" y2="593.0"/>
+<line class="ci" x1="317.7" x2="317.7" y1="589.0" y2="597.0"/>
+<line class="ci" x1="338.7" x2="338.7" y1="589.0" y2="597.0"/>
+<circle class="mk" cx="327.2" cy="593.0" r="5.5"/>
+<text class="hlab" x="345.7" y="597.5">+1.7</text>
 </g>
 <line class="sep" x1="220" x2="404" y1="620" y2="620"/>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 2-bit · → English talk excerpts (T1) · thinking off|+5.0 chrF [+0.9, +9.8]|Bonsai 4B 64.7 vs Qwen3.5 4B 2-bit 59.7 · n = 36 · files 1.1 GB vs 1.5 GB" aria-label="Bonsai 4B − Qwen3.5 4B 2-bit · → English talk excerpts (T1) · thinking off, +5.0 chrF [+0.9, +9.8], Bonsai 4B 64.7 vs Qwen3.5 4B 2-bit 59.7 · n = 36 · files 1.1 GB vs 1.5 GB">
-<rect class="hit" x="332.1" y="635.0" width="70.6" height="24"/>
-<line class="ci" x1="336.1" x2="398.7" y1="647.0" y2="647.0"/>
-<line class="ci" x1="336.1" x2="336.1" y1="643.0" y2="651.0"/>
-<line class="ci" x1="398.7" x2="398.7" y1="643.0" y2="651.0"/>
-<circle class="mk" cx="364.4" cy="647.0" r="6"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 2-bit · → English talk excerpts (T1) · thinking off|+5.0 chrF [+2.4, +8.0]|Bonsai 4B 65.3 vs Qwen3.5 4B 2-bit 60.2 · n = 78 · files 1.1 GB vs 1.5 GB · notable: Bonsai ahead of Qwen3.5 4B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 4B − Qwen3.5 4B 2-bit · → English talk excerpts (T1) · thinking off, +5.0 chrF [+2.4, +8.0], Bonsai 4B 65.3 vs Qwen3.5 4B 2-bit 60.2 · n = 78 · files 1.1 GB vs 1.5 GB · notable: Bonsai ahead of Qwen3.5 4B 2-bit after correction for multiple comparisons (orange)">
+<rect class="hit" x="329.1" y="635.0" width="57.5" height="24"/>
+<rect class="hband" x="218" y="637.0" width="188" height="20" rx="10"/>
+<line class="ci" x1="333.1" x2="382.7" y1="647.0" y2="647.0"/>
+<line class="ci" x1="333.1" x2="333.1" y1="643.0" y2="651.0"/>
+<line class="ci" x1="382.7" x2="382.7" y1="643.0" y2="651.0"/>
+<circle class="mk" cx="356.4" cy="647.0" r="6"/>
+<text class="hlab" x="326.1" y="651.5" text-anchor="end">+5.0</text>
 </g>
-<g class="pt bonsai on capped" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 2-bit · → English talk excerpts (T1) · thinking on|+49.4 chrF [+42.3, +56.4]|Bonsai 4B 64.0 vs Qwen3.5 4B 2-bit 14.6 · n = 36 · most answers still empty at 32k: Bonsai 4B 0, Qwen3.5 4B 2-bit 25 · files 1.1 GB vs 1.5 GB" aria-label="Bonsai 4B − Qwen3.5 4B 2-bit · → English talk excerpts (T1) · thinking on, +49.4 chrF [+42.3, +56.4], Bonsai 4B 64.0 vs Qwen3.5 4B 2-bit 14.6 · n = 36 · most answers still empty at 32k: Bonsai 4B 0, Qwen3.5 4B 2-bit 25 · files 1.1 GB vs 1.5 GB">
+<g class="pt bonsai on capped" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 2-bit · → English talk excerpts (T1) · thinking on|+53.4 chrF [+48.3, +58.5]|Bonsai 4B 65.5 vs Qwen3.5 4B 2-bit 12.0 · n = 78 · most answers still empty at 32k: Bonsai 4B 0, Qwen3.5 4B 2-bit 56 · files 1.1 GB vs 1.5 GB" aria-label="Bonsai 4B − Qwen3.5 4B 2-bit · → English talk excerpts (T1) · thinking on, +53.4 chrF [+48.3, +58.5], Bonsai 4B 65.5 vs Qwen3.5 4B 2-bit 12.0 · n = 78 · most answers still empty at 32k: Bonsai 4B 0, Qwen3.5 4B 2-bit 56 · files 1.1 GB vs 1.5 GB">
 <rect class="hit" x="384.0" y="653.0" width="32.0" height="24"/>
 <line class="ci" x1="400.0" x2="400.0" y1="665.0" y2="665.0"/>
 <line class="ci" x1="400.0" x2="400.0" y1="661.0" y2="669.0"/>
 <line class="ci" x1="400.0" x2="400.0" y1="661.0" y2="669.0"/>
 <path class="mk" d="M406.0,665.0 L396.0,659.0 L396.0,671.0 Z"/>
-<text class="plab" x="390.0" y="669.5" text-anchor="end">+49.4</text>
+<text class="plab" x="390.0" y="669.5" text-anchor="end">+53.4</text>
 </g>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 0.8B 4-bit · → English talk excerpts (T1) · thinking off|+4.3 chrF [+1.8, +7.3]|Bonsai 2B 61.2 vs Qwen3.5 0.8B 4-bit 56.9 · n = 36 · files 0.5 GB vs 0.5 GB · notable: Bonsai ahead of Qwen3.5 0.8B 4-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 2B − Qwen3.5 0.8B 4-bit · → English talk excerpts (T1) · thinking off, +4.3 chrF [+1.8, +7.3], Bonsai 2B 61.2 vs Qwen3.5 0.8B 4-bit 56.9 · n = 36 · files 0.5 GB vs 0.5 GB · notable: Bonsai ahead of Qwen3.5 0.8B 4-bit after correction for multiple comparisons (orange)">
-<rect class="hit" x="338.5" y="741.0" width="46.9" height="24"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 0.8B 4-bit · → English talk excerpts (T1) · thinking off|+5.0 chrF [+2.7, +7.6]|Bonsai 2B 62.0 vs Qwen3.5 0.8B 4-bit 57.0 · n = 78 · files 0.5 GB vs 0.5 GB · notable: Bonsai ahead of Qwen3.5 0.8B 4-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 2B − Qwen3.5 0.8B 4-bit · → English talk excerpts (T1) · thinking off, +5.0 chrF [+2.7, +7.6], Bonsai 2B 62.0 vs Qwen3.5 0.8B 4-bit 57.0 · n = 78 · files 0.5 GB vs 0.5 GB · notable: Bonsai ahead of Qwen3.5 0.8B 4-bit after correction for multiple comparisons (orange)">
+<rect class="hit" x="331.4" y="741.0" width="51.2" height="24"/>
 <rect class="hband" x="218" y="743.0" width="188" height="20" rx="10"/>
-<line class="ci" x1="342.5" x2="381.3" y1="753.0" y2="753.0"/>
-<line class="ci" x1="342.5" x2="342.5" y1="749.0" y2="757.0"/>
-<line class="ci" x1="381.3" x2="381.3" y1="749.0" y2="757.0"/>
-<circle class="mk" cx="359.7" cy="753.0" r="6"/>
-<text class="hlab" x="335.5" y="757.5" text-anchor="end">+4.3</text>
+<line class="ci" x1="335.4" x2="378.6" y1="753.0" y2="753.0"/>
+<line class="ci" x1="335.4" x2="335.4" y1="749.0" y2="757.0"/>
+<line class="ci" x1="378.6" x2="378.6" y1="749.0" y2="757.0"/>
+<circle class="mk" cx="356.4" cy="753.0" r="6"/>
+<text class="hlab" x="328.4" y="757.5" text-anchor="end">+5.0</text>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 0.8B 4-bit · → English talk excerpts (T1) · thinking on|+13.5 chrF [+8.6, +18.6]|Bonsai 2B 62.2 vs Qwen3.5 0.8B 4-bit 48.7 · n = 36 · files 0.5 GB vs 0.5 GB · notable: Bonsai ahead of Qwen3.5 0.8B 4-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 2B − Qwen3.5 0.8B 4-bit · → English talk excerpts (T1) · thinking on, +13.5 chrF [+8.6, +18.6], Bonsai 2B 62.2 vs Qwen3.5 0.8B 4-bit 48.7 · n = 36 · files 0.5 GB vs 0.5 GB · notable: Bonsai ahead of Qwen3.5 0.8B 4-bit after correction for multiple comparisons (orange)">
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 0.8B 4-bit · → English talk excerpts (T1) · thinking on|+14.6 chrF [+10.6, +18.8]|Bonsai 2B 62.7 vs Qwen3.5 0.8B 4-bit 48.0 · n = 78 · files 0.5 GB vs 0.5 GB · notable: Bonsai ahead of Qwen3.5 0.8B 4-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 2B − Qwen3.5 0.8B 4-bit · → English talk excerpts (T1) · thinking on, +14.6 chrF [+10.6, +18.8], Bonsai 2B 62.7 vs Qwen3.5 0.8B 4-bit 48.0 · n = 78 · files 0.5 GB vs 0.5 GB · notable: Bonsai ahead of Qwen3.5 0.8B 4-bit after correction for multiple comparisons (orange)">
 <rect class="hit" x="384.0" y="759.0" width="32.0" height="24"/>
 <rect class="hband" x="218" y="761.0" width="188" height="20" rx="10"/>
-<line class="ci" x1="389.9" x2="400.0" y1="771.0" y2="771.0"/>
-<line class="ci" x1="389.9" x2="389.9" y1="767.0" y2="775.0"/>
+<line class="ci" x1="400.0" x2="400.0" y1="771.0" y2="771.0"/>
+<line class="ci" x1="400.0" x2="400.0" y1="767.0" y2="775.0"/>
 <line class="ci" x1="400.0" x2="400.0" y1="767.0" y2="775.0"/>
 <path class="mk" d="M406.0,771.0 L396.0,765.0 L396.0,777.0 Z"/>
-<text class="hlab" x="390.0" y="775.5" text-anchor="end">+13.5</text>
+<text class="hlab" x="390.0" y="775.5" text-anchor="end">+14.6</text>
 </g>
 <line class="sep" x1="220" x2="404" y1="798" y2="798"/>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 2-bit · → English talk excerpts (T1) · thinking off|+31.5 chrF [+23.9, +39.2]|Bonsai 2B 61.2 vs Qwen3.5 2B 2-bit 29.7 · n = 36 · files 0.5 GB vs 0.8 GB · notable: Bonsai ahead of Qwen3.5 2B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 2B − Qwen3.5 2B 2-bit · → English talk excerpts (T1) · thinking off, +31.5 chrF [+23.9, +39.2], Bonsai 2B 61.2 vs Qwen3.5 2B 2-bit 29.7 · n = 36 · files 0.5 GB vs 0.8 GB · notable: Bonsai ahead of Qwen3.5 2B 2-bit after correction for multiple comparisons (orange)">
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 2-bit · → English talk excerpts (T1) · thinking off|+30.4 chrF [+25.3, +35.4]|Bonsai 2B 62.0 vs Qwen3.5 2B 2-bit 31.7 · n = 78 · files 0.5 GB vs 0.8 GB · notable: Bonsai ahead of Qwen3.5 2B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 2B − Qwen3.5 2B 2-bit · → English talk excerpts (T1) · thinking off, +30.4 chrF [+25.3, +35.4], Bonsai 2B 62.0 vs Qwen3.5 2B 2-bit 31.7 · n = 78 · files 0.5 GB vs 0.8 GB · notable: Bonsai ahead of Qwen3.5 2B 2-bit after correction for multiple comparisons (orange)">
 <rect class="hit" x="384.0" y="813.0" width="32.0" height="24"/>
 <rect class="hband" x="218" y="815.0" width="188" height="20" rx="10"/>
 <line class="ci" x1="400.0" x2="400.0" y1="825.0" y2="825.0"/>
 <line class="ci" x1="400.0" x2="400.0" y1="821.0" y2="829.0"/>
 <line class="ci" x1="400.0" x2="400.0" y1="821.0" y2="829.0"/>
 <path class="mk" d="M406.0,825.0 L396.0,819.0 L396.0,831.0 Z"/>
-<text class="hlab" x="390.0" y="829.5" text-anchor="end">+31.5</text>
+<text class="hlab" x="390.0" y="829.5" text-anchor="end">+30.4</text>
 </g>
-<g class="pt bonsai on capped" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 2-bit · → English talk excerpts (T1) · thinking on|+59.6 chrF [+56.1, +62.9]|Bonsai 2B 62.2 vs Qwen3.5 2B 2-bit 2.6 · n = 36 · most answers still empty at 32k: Bonsai 2B 0, Qwen3.5 2B 2-bit 33 · files 0.5 GB vs 0.8 GB" aria-label="Bonsai 2B − Qwen3.5 2B 2-bit · → English talk excerpts (T1) · thinking on, +59.6 chrF [+56.1, +62.9], Bonsai 2B 62.2 vs Qwen3.5 2B 2-bit 2.6 · n = 36 · most answers still empty at 32k: Bonsai 2B 0, Qwen3.5 2B 2-bit 33 · files 0.5 GB vs 0.8 GB">
+<g class="pt bonsai on capped" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 2-bit · → English talk excerpts (T1) · thinking on|+60.3 chrF [+57.6, +62.8]|Bonsai 2B 62.7 vs Qwen3.5 2B 2-bit 2.4 · n = 78 · most answers still empty at 32k: Bonsai 2B 0, Qwen3.5 2B 2-bit 72 · files 0.5 GB vs 0.8 GB" aria-label="Bonsai 2B − Qwen3.5 2B 2-bit · → English talk excerpts (T1) · thinking on, +60.3 chrF [+57.6, +62.8], Bonsai 2B 62.7 vs Qwen3.5 2B 2-bit 2.4 · n = 78 · most answers still empty at 32k: Bonsai 2B 0, Qwen3.5 2B 2-bit 72 · files 0.5 GB vs 0.8 GB">
 <rect class="hit" x="384.0" y="831.0" width="32.0" height="24"/>
 <line class="ci" x1="400.0" x2="400.0" y1="843.0" y2="843.0"/>
 <line class="ci" x1="400.0" x2="400.0" y1="839.0" y2="847.0"/>
 <line class="ci" x1="400.0" x2="400.0" y1="839.0" y2="847.0"/>
 <path class="mk" d="M406.0,843.0 L396.0,837.0 L396.0,849.0 Z"/>
-<text class="plab" x="390.0" y="847.5" text-anchor="end">+59.6</text>
+<text class="plab" x="390.0" y="847.5" text-anchor="end">+60.3</text>
 </g>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 4-bit · → English talk excerpts (T1) · thinking off|−0.2 chrF [−1.1, +0.7]|Bonsai 9B 66.8 vs Qwen3.5 9B 4-bit 66.9 · n = 36 · files 2.4 GB vs 5.7 GB" aria-label="Bonsai 9B − Qwen3.5 9B 4-bit · → English talk excerpts (T1) · thinking off, −0.2 chrF [−1.1, +0.7], Bonsai 9B 66.8 vs Qwen3.5 9B 4-bit 66.9 · n = 36 · files 2.4 GB vs 5.7 GB">
-<rect class="hit" x="312.4" y="919.0" width="32.0" height="24"/>
-<line class="ci" x1="321.5" x2="334.7" y1="931.0" y2="931.0"/>
-<line class="ci" x1="321.5" x2="321.5" y1="927.0" y2="935.0"/>
-<line class="ci" x1="334.7" x2="334.7" y1="927.0" y2="935.0"/>
-<circle class="mk" cx="328.4" cy="931.0" r="6"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 4-bit · → English talk excerpts (T1) · thinking off|−0.5 chrF [−1.2, +0.2]|Bonsai 9B 67.7 vs Qwen3.5 9B 4-bit 68.2 · n = 78 · files 2.4 GB vs 5.7 GB" aria-label="Bonsai 9B − Qwen3.5 9B 4-bit · → English talk excerpts (T1) · thinking off, −0.5 chrF [−1.2, +0.2], Bonsai 9B 67.7 vs Qwen3.5 9B 4-bit 68.2 · n = 78 · files 2.4 GB vs 5.7 GB">
+<rect class="hit" x="291.6" y="919.0" width="32.0" height="24"/>
+<line class="ci" x1="301.2" x2="313.8" y1="931.0" y2="931.0"/>
+<line class="ci" x1="301.2" x2="301.2" y1="927.0" y2="935.0"/>
+<line class="ci" x1="313.8" x2="313.8" y1="927.0" y2="935.0"/>
+<circle class="mk" cx="307.6" cy="931.0" r="6"/>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 4-bit · → English talk excerpts (T1) · thinking on|−1.2 chrF [−2.8, +0.2]|Bonsai 9B 66.1 vs Qwen3.5 9B 4-bit 67.3 · n = 36 · files 2.4 GB vs 5.7 GB" aria-label="Bonsai 9B − Qwen3.5 9B 4-bit · → English talk excerpts (T1) · thinking on, −1.2 chrF [−2.8, +0.2], Bonsai 9B 66.1 vs Qwen3.5 9B 4-bit 67.3 · n = 36 · files 2.4 GB vs 5.7 GB">
-<rect class="hit" x="305.2" y="937.0" width="32.0" height="24"/>
-<line class="ci" x1="309.6" x2="331.2" y1="949.0" y2="949.0"/>
-<line class="ci" x1="309.6" x2="309.6" y1="945.0" y2="953.0"/>
-<line class="ci" x1="331.2" x2="331.2" y1="945.0" y2="953.0"/>
-<circle class="mk" cx="321.2" cy="949.0" r="5.5"/>
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 4-bit · → English talk excerpts (T1) · thinking on|−1.1 chrF [−2.0, −0.3]|Bonsai 9B 67.3 vs Qwen3.5 9B 4-bit 68.4 · n = 78 · files 2.4 GB vs 5.7 GB" aria-label="Bonsai 9B − Qwen3.5 9B 4-bit · → English talk excerpts (T1) · thinking on, −1.1 chrF [−2.0, −0.3], Bonsai 9B 67.3 vs Qwen3.5 9B 4-bit 68.4 · n = 78 · files 2.4 GB vs 5.7 GB">
+<rect class="hit" x="286.2" y="937.0" width="32.0" height="24"/>
+<line class="ci" x1="294.5" x2="309.7" y1="949.0" y2="949.0"/>
+<line class="ci" x1="294.5" x2="294.5" y1="945.0" y2="953.0"/>
+<line class="ci" x1="309.7" x2="309.7" y1="945.0" y2="953.0"/>
+<circle class="mk" cx="302.2" cy="949.0" r="5.5"/>
 </g>
 <line class="sep" x1="220" x2="404" y1="976" y2="976"/>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 4-bit · → English talk excerpts (T1) · thinking off|−1.1 chrF [−2.1, −0.0]|Bonsai 4B 64.7 vs Qwen3.5 4B 4-bit 65.7 · n = 36 · files 1.1 GB vs 2.7 GB" aria-label="Bonsai 4B − Qwen3.5 4B 4-bit · → English talk excerpts (T1) · thinking off, −1.1 chrF [−2.1, −0.0], Bonsai 4B 64.7 vs Qwen3.5 4B 4-bit 65.7 · n = 36 · files 1.1 GB vs 2.7 GB">
-<rect class="hit" x="306.0" y="991.0" width="32.0" height="24"/>
-<line class="ci" x1="314.8" x2="329.5" y1="1003.0" y2="1003.0"/>
-<line class="ci" x1="314.8" x2="314.8" y1="999.0" y2="1007.0"/>
-<line class="ci" x1="329.5" x2="329.5" y1="999.0" y2="1007.0"/>
-<circle class="mk" cx="322.0" cy="1003.0" r="6"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 4-bit · → English talk excerpts (T1) · thinking off|−2.4 chrF [−3.5, −1.4]|Bonsai 4B 65.3 vs Qwen3.5 4B 4-bit 67.7 · n = 78 · files 1.1 GB vs 2.7 GB" aria-label="Bonsai 4B − Qwen3.5 4B 4-bit · → English talk excerpts (T1) · thinking off, −2.4 chrF [−3.5, −1.4], Bonsai 4B 65.3 vs Qwen3.5 4B 4-bit 67.7 · n = 78 · files 1.1 GB vs 2.7 GB">
+<rect class="hit" x="274.8" y="991.0" width="32.0" height="24"/>
+<line class="ci" x1="281.0" x2="299.7" y1="1003.0" y2="1003.0"/>
+<line class="ci" x1="281.0" x2="281.0" y1="999.0" y2="1007.0"/>
+<line class="ci" x1="299.7" x2="299.7" y1="999.0" y2="1007.0"/>
+<circle class="mk" cx="290.8" cy="1003.0" r="6"/>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 4-bit · → English talk excerpts (T1) · thinking on|−2.4 chrF [−4.2, −1.0]|Bonsai 4B 64.0 vs Qwen3.5 4B 4-bit 66.4 · n = 36 · files 1.1 GB vs 2.7 GB" aria-label="Bonsai 4B − Qwen3.5 4B 4-bit · → English talk excerpts (T1) · thinking on, −2.4 chrF [−4.2, −1.0], Bonsai 4B 64.0 vs Qwen3.5 4B 4-bit 66.4 · n = 36 · files 1.1 GB vs 2.7 GB">
-<rect class="hit" x="296.3" y="1009.0" width="32.5" height="24"/>
-<line class="ci" x1="300.3" x2="322.8" y1="1021.0" y2="1021.0"/>
-<line class="ci" x1="300.3" x2="300.3" y1="1017.0" y2="1025.0"/>
-<line class="ci" x1="322.8" x2="322.8" y1="1017.0" y2="1025.0"/>
-<circle class="mk" cx="312.8" cy="1021.0" r="5.5"/>
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 4-bit · → English talk excerpts (T1) · thinking on|−2.3 chrF [−3.3, −1.5]|Bonsai 4B 65.5 vs Qwen3.5 4B 4-bit 67.8 · n = 78 · files 1.1 GB vs 2.7 GB" aria-label="Bonsai 4B − Qwen3.5 4B 4-bit · → English talk excerpts (T1) · thinking on, −2.3 chrF [−3.3, −1.5], Bonsai 4B 65.5 vs Qwen3.5 4B 4-bit 67.8 · n = 78 · files 1.1 GB vs 2.7 GB">
+<rect class="hit" x="275.5" y="1009.0" width="32.0" height="24"/>
+<line class="ci" x1="283.3" x2="298.6" y1="1021.0" y2="1021.0"/>
+<line class="ci" x1="283.3" x2="283.3" y1="1017.0" y2="1025.0"/>
+<line class="ci" x1="298.6" x2="298.6" y1="1017.0" y2="1025.0"/>
+<circle class="mk" cx="291.5" cy="1021.0" r="5.5"/>
 </g>
 <line class="sep" x1="220" x2="404" y1="1048" y2="1048"/>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 4-bit · → English talk excerpts (T1) · thinking off|−2.9 chrF [−5.2, −1.1]|Bonsai 2B 61.2 vs Qwen3.5 2B 4-bit 64.1 · n = 36 · files 0.5 GB vs 1.3 GB" aria-label="Bonsai 2B − Qwen3.5 2B 4-bit · → English talk excerpts (T1) · thinking off, −2.9 chrF [−5.2, −1.1], Bonsai 2B 61.2 vs Qwen3.5 2B 4-bit 64.1 · n = 36 · files 0.5 GB vs 1.3 GB">
-<rect class="hit" x="289.0" y="1063.0" width="36.9" height="24"/>
-<line class="ci" x1="293.0" x2="321.9" y1="1075.0" y2="1075.0"/>
-<line class="ci" x1="293.0" x2="293.0" y1="1071.0" y2="1079.0"/>
-<line class="ci" x1="321.9" x2="321.9" y1="1071.0" y2="1079.0"/>
-<circle class="mk" cx="309.3" cy="1075.0" r="6"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 4-bit · → English talk excerpts (T1) · thinking off|−3.0 chrF [−4.7, −1.6]|Bonsai 2B 62.0 vs Qwen3.5 2B 4-bit 65.0 · n = 78 · files 0.5 GB vs 1.3 GB" aria-label="Bonsai 2B − Qwen3.5 2B 4-bit · → English talk excerpts (T1) · thinking off, −3.0 chrF [−4.7, −1.6], Bonsai 2B 62.0 vs Qwen3.5 2B 4-bit 65.0 · n = 78 · files 0.5 GB vs 1.3 GB">
+<rect class="hit" x="266.8" y="1063.0" width="35.1" height="24"/>
+<line class="ci" x1="270.8" x2="297.9" y1="1075.0" y2="1075.0"/>
+<line class="ci" x1="270.8" x2="270.8" y1="1071.0" y2="1079.0"/>
+<line class="ci" x1="297.9" x2="297.9" y1="1071.0" y2="1079.0"/>
+<circle class="mk" cx="285.7" cy="1075.0" r="6"/>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 4-bit · → English talk excerpts (T1) · thinking on|−0.5 chrF [−1.6, +0.5]|Bonsai 2B 62.2 vs Qwen3.5 2B 4-bit 62.7 · n = 36 · files 0.5 GB vs 1.3 GB" aria-label="Bonsai 2B − Qwen3.5 2B 4-bit · → English talk excerpts (T1) · thinking on, −0.5 chrF [−1.6, +0.5], Bonsai 2B 62.2 vs Qwen3.5 2B 4-bit 62.7 · n = 36 · files 0.5 GB vs 1.3 GB">
-<rect class="hit" x="309.9" y="1081.0" width="32.0" height="24"/>
-<line class="ci" x1="318.7" x2="332.8" y1="1093.0" y2="1093.0"/>
-<line class="ci" x1="318.7" x2="318.7" y1="1089.0" y2="1097.0"/>
-<line class="ci" x1="332.8" x2="332.8" y1="1089.0" y2="1097.0"/>
-<circle class="mk" cx="325.9" cy="1093.0" r="5.5"/>
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 4-bit · → English talk excerpts (T1) · thinking on|−1.0 chrF [−2.0, −0.0]|Bonsai 2B 62.7 vs Qwen3.5 2B 4-bit 63.7 · n = 78 · files 0.5 GB vs 1.3 GB" aria-label="Bonsai 2B − Qwen3.5 2B 4-bit · → English talk excerpts (T1) · thinking on, −1.0 chrF [−2.0, −0.0], Bonsai 2B 62.7 vs Qwen3.5 2B 4-bit 63.7 · n = 78 · files 0.5 GB vs 1.3 GB">
+<rect class="hit" x="286.8" y="1081.0" width="32.0" height="24"/>
+<line class="ci" x1="294.6" x2="311.8" y1="1093.0" y2="1093.0"/>
+<line class="ci" x1="294.6" x2="294.6" y1="1089.0" y2="1097.0"/>
+<line class="ci" x1="311.8" x2="311.8" y1="1089.0" y2="1097.0"/>
+<circle class="mk" cx="302.8" cy="1093.0" r="5.5"/>
 </g>
 <rect class="prio" x="432" y="22" width="196" height="1098" rx="8"/>
 <text class="ptitle" x="442" y="44">→ English</text>
@@ -317,32 +313,26 @@ padding:8px 10px;font-size:12.5px;box-shadow:0 4px 16px rgba(0,0,0,.4);display:n
 <line class="grid" x1="442.0" x2="442.0" y1="539.0" y2="701.0"/>
 <line class="grid" x1="442.0" x2="442.0" y1="717.0" y2="879.0"/>
 <line class="grid" x1="442.0" x2="442.0" y1="895.0" y2="1120.0"/>
-<line class="grid" x1="477.2" x2="477.2" y1="80.0" y2="239.0"/>
-<line class="grid" x1="477.2" x2="477.2" y1="255.0" y2="345.0"/>
-<line class="grid" x1="477.2" x2="477.2" y1="361.0" y2="523.0"/>
-<line class="grid" x1="477.2" x2="477.2" y1="539.0" y2="701.0"/>
-<line class="grid" x1="477.2" x2="477.2" y1="717.0" y2="879.0"/>
-<line class="grid" x1="477.2" x2="477.2" y1="895.0" y2="1120.0"/>
-<text class="tick" x="477.2" y="1136" text-anchor="middle">−10</text>
-<line class="grid" x1="512.4" x2="512.4" y1="80.0" y2="239.0"/>
-<line class="grid" x1="512.4" x2="512.4" y1="255.0" y2="345.0"/>
-<line class="grid" x1="512.4" x2="512.4" y1="361.0" y2="523.0"/>
-<line class="grid" x1="512.4" x2="512.4" y1="539.0" y2="701.0"/>
-<line class="grid" x1="512.4" x2="512.4" y1="717.0" y2="879.0"/>
-<line class="grid" x1="512.4" x2="512.4" y1="895.0" y2="1120.0"/>
-<line class="zero" x1="547.6" x2="547.6" y1="80.0" y2="239.0"/>
-<line class="zero" x1="547.6" x2="547.6" y1="255.0" y2="345.0"/>
-<line class="zero" x1="547.6" x2="547.6" y1="361.0" y2="523.0"/>
-<line class="zero" x1="547.6" x2="547.6" y1="539.0" y2="701.0"/>
-<line class="zero" x1="547.6" x2="547.6" y1="717.0" y2="879.0"/>
-<line class="zero" x1="547.6" x2="547.6" y1="895.0" y2="1120.0"/>
-<text class="tick" x="547.6" y="1136" text-anchor="middle">0</text>
-<line class="grid" x1="582.8" x2="582.8" y1="80.0" y2="239.0"/>
-<line class="grid" x1="582.8" x2="582.8" y1="255.0" y2="345.0"/>
-<line class="grid" x1="582.8" x2="582.8" y1="361.0" y2="523.0"/>
-<line class="grid" x1="582.8" x2="582.8" y1="539.0" y2="701.0"/>
-<line class="grid" x1="582.8" x2="582.8" y1="717.0" y2="879.0"/>
-<line class="grid" x1="582.8" x2="582.8" y1="895.0" y2="1120.0"/>
+<text class="tick" x="442.0" y="1136" text-anchor="middle">−10</text>
+<line class="grid" x1="486.0" x2="486.0" y1="80.0" y2="239.0"/>
+<line class="grid" x1="486.0" x2="486.0" y1="255.0" y2="345.0"/>
+<line class="grid" x1="486.0" x2="486.0" y1="361.0" y2="523.0"/>
+<line class="grid" x1="486.0" x2="486.0" y1="539.0" y2="701.0"/>
+<line class="grid" x1="486.0" x2="486.0" y1="717.0" y2="879.0"/>
+<line class="grid" x1="486.0" x2="486.0" y1="895.0" y2="1120.0"/>
+<line class="zero" x1="530.0" x2="530.0" y1="80.0" y2="239.0"/>
+<line class="zero" x1="530.0" x2="530.0" y1="255.0" y2="345.0"/>
+<line class="zero" x1="530.0" x2="530.0" y1="361.0" y2="523.0"/>
+<line class="zero" x1="530.0" x2="530.0" y1="539.0" y2="701.0"/>
+<line class="zero" x1="530.0" x2="530.0" y1="717.0" y2="879.0"/>
+<line class="zero" x1="530.0" x2="530.0" y1="895.0" y2="1120.0"/>
+<text class="tick" x="530.0" y="1136" text-anchor="middle">0</text>
+<line class="grid" x1="574.0" x2="574.0" y1="80.0" y2="239.0"/>
+<line class="grid" x1="574.0" x2="574.0" y1="255.0" y2="345.0"/>
+<line class="grid" x1="574.0" x2="574.0" y1="361.0" y2="523.0"/>
+<line class="grid" x1="574.0" x2="574.0" y1="539.0" y2="701.0"/>
+<line class="grid" x1="574.0" x2="574.0" y1="717.0" y2="879.0"/>
+<line class="grid" x1="574.0" x2="574.0" y1="895.0" y2="1120.0"/>
 <line class="grid" x1="618.0" x2="618.0" y1="80.0" y2="239.0"/>
 <line class="grid" x1="618.0" x2="618.0" y1="255.0" y2="345.0"/>
 <line class="grid" x1="618.0" x2="618.0" y1="361.0" y2="523.0"/>
@@ -356,107 +346,107 @@ padding:8px 10px;font-size:12.5px;box-shadow:0 4px 16px rgba(0,0,0,.4);display:n
 <line class="gsep" x1="438" x2="622" y1="709.0" y2="709.0"/>
 <line class="gsep" x1="438" x2="622" y1="887.0" y2="887.0"/>
 <g class="pt cloud off" tabindex="0" data-tip="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · → English abstracts (T4abs) · thinking off|+5.1 chrF [+2.8, +7.5]|DeepSeek V4.1 Flash 1017 70.7 vs Qwen3.5 9B 65.5 · n = 14" aria-label="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · → English abstracts (T4abs) · thinking off, +5.1 chrF [+2.8, +7.5], DeepSeek V4.1 Flash 1017 70.7 vs Qwen3.5 9B 65.5 · n = 14">
-<rect class="hit" x="563.0" y="101.0" width="41.4" height="24"/>
-<line class="ci" x1="567.0" x2="600.4" y1="113.0" y2="113.0"/>
-<line class="ci" x1="567.0" x2="567.0" y1="109.0" y2="117.0"/>
-<line class="ci" x1="600.4" x2="600.4" y1="109.0" y2="117.0"/>
-<circle class="mk" cx="583.8" cy="113.0" r="6"/>
+<rect class="hit" x="550.2" y="101.0" width="49.8" height="24"/>
+<line class="ci" x1="554.2" x2="596.0" y1="113.0" y2="113.0"/>
+<line class="ci" x1="554.2" x2="554.2" y1="109.0" y2="117.0"/>
+<line class="ci" x1="596.0" x2="596.0" y1="109.0" y2="117.0"/>
+<circle class="mk" cx="575.2" cy="113.0" r="6"/>
 </g>
 <g class="pt cloud on" tabindex="0" data-tip="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · → English abstracts (T4abs) · thinking on|+3.0 chrF [+0.7, +5.2]|DeepSeek V4.1 Flash 1017 70.8 vs Qwen3.5 9B 67.8 · n = 14" aria-label="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · → English abstracts (T4abs) · thinking on, +3.0 chrF [+0.7, +5.2], DeepSeek V4.1 Flash 1017 70.8 vs Qwen3.5 9B 67.8 · n = 14">
-<rect class="hit" x="548.3" y="119.0" width="40.2" height="24"/>
-<line class="ci" x1="552.3" x2="584.6" y1="131.0" y2="131.0"/>
-<line class="ci" x1="552.3" x2="552.3" y1="127.0" y2="135.0"/>
-<line class="ci" x1="584.6" x2="584.6" y1="127.0" y2="135.0"/>
-<circle class="mk" cx="568.9" cy="131.0" r="5.5"/>
+<rect class="hit" x="531.9" y="119.0" width="48.3" height="24"/>
+<line class="ci" x1="535.9" x2="576.2" y1="131.0" y2="131.0"/>
+<line class="ci" x1="535.9" x2="535.9" y1="127.0" y2="135.0"/>
+<line class="ci" x1="576.2" x2="576.2" y1="127.0" y2="135.0"/>
+<circle class="mk" cx="556.6" cy="131.0" r="5.5"/>
 </g>
 <line class="sep" x1="438" x2="622" y1="158" y2="158"/>
 <g class="pt cloud low" tabindex="0" data-tip="GLM 5.3 Flash − Qwen3.5 9B · → English abstracts (T4abs) · low-effort thinking (vs Qwen thinking off)|+4.8 chrF [+3.1, +6.5]|GLM 5.3 Flash 70.4 vs Qwen3.5 9B 65.5 · n = 14" aria-label="GLM 5.3 Flash − Qwen3.5 9B · → English abstracts (T4abs) · low-effort thinking (vs Qwen thinking off), +4.8 chrF [+3.1, +6.5], GLM 5.3 Flash 70.4 vs Qwen3.5 9B 65.5 · n = 14">
-<rect class="hit" x="565.2" y="173.0" width="32.4" height="24"/>
-<line class="ci" x1="569.2" x2="593.6" y1="185.0" y2="185.0"/>
-<line class="ci" x1="569.2" x2="569.2" y1="181.0" y2="189.0"/>
-<line class="ci" x1="593.6" x2="593.6" y1="181.0" y2="189.0"/>
-<path class="mk" d="M581.5,178.0 L588.5,190.0 L574.5,190.0 Z"/>
+<rect class="hit" x="553.0" y="173.0" width="38.4" height="24"/>
+<line class="ci" x1="557.0" x2="587.5" y1="185.0" y2="185.0"/>
+<line class="ci" x1="557.0" x2="557.0" y1="181.0" y2="189.0"/>
+<line class="ci" x1="587.5" x2="587.5" y1="181.0" y2="189.0"/>
+<path class="mk" d="M572.3,178.0 L579.3,190.0 L565.3,190.0 Z"/>
 </g>
 <g class="pt cloud on" tabindex="0" data-tip="GLM 5.3 Flash − Qwen3.5 9B · → English abstracts (T4abs) · thinking on|+2.3 chrF [+0.7, +3.9]|GLM 5.3 Flash 70.1 vs Qwen3.5 9B 67.8 · n = 14" aria-label="GLM 5.3 Flash − Qwen3.5 9B · → English abstracts (T4abs) · thinking on, +2.3 chrF [+0.7, +3.9], GLM 5.3 Flash 70.1 vs Qwen3.5 9B 67.8 · n = 14">
-<rect class="hit" x="547.5" y="191.0" width="32.0" height="24"/>
-<line class="ci" x1="552.7" x2="574.7" y1="203.0" y2="203.0"/>
-<line class="ci" x1="552.7" x2="552.7" y1="199.0" y2="207.0"/>
-<line class="ci" x1="574.7" x2="574.7" y1="199.0" y2="207.0"/>
-<circle class="mk" cx="563.5" cy="203.0" r="5.5"/>
+<rect class="hit" x="532.3" y="191.0" width="35.5" height="24"/>
+<line class="ci" x1="536.3" x2="563.9" y1="203.0" y2="203.0"/>
+<line class="ci" x1="536.3" x2="536.3" y1="199.0" y2="207.0"/>
+<line class="ci" x1="563.9" x2="563.9" y1="199.0" y2="207.0"/>
+<circle class="mk" cx="549.9" cy="203.0" r="5.5"/>
 </g>
 <g class="pt bonsai off" tabindex="0" data-tip="Bonsai 27B − Qwen3.8 27B 2-bit · → English abstracts (T4abs) · thinking off|+1.3 chrF [−0.5, +3.1]|Bonsai 27B 69.4 vs Qwen3.8 27B 2-bit 68.1 · n = 14 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080" aria-label="Bonsai 27B − Qwen3.8 27B 2-bit · → English abstracts (T4abs) · thinking off, +1.3 chrF [−0.5, +3.1], Bonsai 27B 69.4 vs Qwen3.8 27B 2-bit 68.1 · n = 14 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080">
-<rect class="hit" x="540.4" y="279.0" width="32.9" height="24"/>
-<line class="ci" x1="544.4" x2="569.4" y1="291.0" y2="291.0"/>
-<line class="ci" x1="544.4" x2="544.4" y1="287.0" y2="295.0"/>
-<line class="ci" x1="569.4" x2="569.4" y1="287.0" y2="295.0"/>
-<circle class="mk" cx="556.7" cy="291.0" r="6"/>
+<rect class="hit" x="522.0" y="279.0" width="39.2" height="24"/>
+<line class="ci" x1="526.0" x2="557.2" y1="291.0" y2="291.0"/>
+<line class="ci" x1="526.0" x2="526.0" y1="287.0" y2="295.0"/>
+<line class="ci" x1="557.2" x2="557.2" y1="287.0" y2="295.0"/>
+<circle class="mk" cx="541.4" cy="291.0" r="6"/>
 </g>
 <g class="pt bonsai on" tabindex="0" data-tip="Bonsai 27B − Qwen3.8 27B 2-bit · → English abstracts (T4abs) · thinking on|+1.4 chrF [+0.5, +2.3]|Bonsai 27B 68.8 vs Qwen3.8 27B 2-bit 67.4 · n = 14 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080 · notable: Bonsai ahead of Qwen3.8 27B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 27B − Qwen3.8 27B 2-bit · → English abstracts (T4abs) · thinking on, +1.4 chrF [+0.5, +2.3], Bonsai 27B 68.8 vs Qwen3.8 27B 2-bit 67.4 · n = 14 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080 · notable: Bonsai ahead of Qwen3.8 27B 2-bit after correction for multiple comparisons (orange)">
-<rect class="hit" x="541.2" y="297.0" width="32.0" height="24"/>
+<rect class="hit" x="526.1" y="297.0" width="32.0" height="24"/>
 <rect class="hband" x="436" y="299.0" width="188" height="20" rx="10"/>
-<line class="ci" x1="551.2" x2="563.5" y1="309.0" y2="309.0"/>
-<line class="ci" x1="551.2" x2="551.2" y1="305.0" y2="313.0"/>
-<line class="ci" x1="563.5" x2="563.5" y1="305.0" y2="313.0"/>
-<circle class="mk" cx="557.2" cy="309.0" r="5.5"/>
-<text class="hlab" x="570.5" y="313.5">+1.4</text>
+<line class="ci" x1="534.5" x2="549.9" y1="309.0" y2="309.0"/>
+<line class="ci" x1="534.5" x2="534.5" y1="305.0" y2="313.0"/>
+<line class="ci" x1="549.9" x2="549.9" y1="305.0" y2="313.0"/>
+<circle class="mk" cx="542.1" cy="309.0" r="5.5"/>
+<text class="hlab" x="556.9" y="313.5">+1.4</text>
 </g>
 <g class="pt bonsai off" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 4B 4-bit · → English abstracts (T4abs) · thinking off|+2.4 chrF [+0.8, +3.9]|Bonsai 9B 68.0 vs Qwen3.5 4B 4-bit 65.7 · n = 14 · files 2.4 GB vs 2.7 GB · notable: Bonsai ahead of Qwen3.5 4B 4-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 9B − Qwen3.5 4B 4-bit · → English abstracts (T4abs) · thinking off, +2.4 chrF [+0.8, +3.9], Bonsai 9B 68.0 vs Qwen3.5 4B 4-bit 65.7 · n = 14 · files 2.4 GB vs 2.7 GB · notable: Bonsai ahead of Qwen3.5 4B 4-bit after correction for multiple comparisons (orange)">
-<rect class="hit" x="548.2" y="385.0" width="32.0" height="24"/>
+<rect class="hit" x="532.7" y="385.0" width="35.8" height="24"/>
 <rect class="hband" x="436" y="387.0" width="188" height="20" rx="10"/>
-<line class="ci" x1="553.0" x2="575.2" y1="397.0" y2="397.0"/>
-<line class="ci" x1="553.0" x2="553.0" y1="393.0" y2="401.0"/>
-<line class="ci" x1="575.2" x2="575.2" y1="393.0" y2="401.0"/>
-<circle class="mk" cx="564.2" cy="397.0" r="6"/>
-<text class="hlab" x="582.2" y="401.5">+2.4</text>
+<line class="ci" x1="536.7" x2="564.5" y1="397.0" y2="397.0"/>
+<line class="ci" x1="536.7" x2="536.7" y1="393.0" y2="401.0"/>
+<line class="ci" x1="564.5" x2="564.5" y1="393.0" y2="401.0"/>
+<circle class="mk" cx="550.8" cy="397.0" r="6"/>
+<text class="hlab" x="571.5" y="401.5">+2.4</text>
 </g>
 <g class="pt bonsai on" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 4B 4-bit · → English abstracts (T4abs) · thinking on|+0.9 chrF [−1.2, +3.2]|Bonsai 9B 68.0 vs Qwen3.5 4B 4-bit 67.1 · n = 14 · files 2.4 GB vs 2.7 GB" aria-label="Bonsai 9B − Qwen3.5 4B 4-bit · → English abstracts (T4abs) · thinking on, +0.9 chrF [−1.2, +3.2], Bonsai 9B 68.0 vs Qwen3.5 4B 4-bit 67.1 · n = 14 · files 2.4 GB vs 2.7 GB">
-<rect class="hit" x="534.8" y="403.0" width="39.4" height="24"/>
-<line class="ci" x1="538.8" x2="570.2" y1="415.0" y2="415.0"/>
-<line class="ci" x1="538.8" x2="538.8" y1="411.0" y2="419.0"/>
-<line class="ci" x1="570.2" x2="570.2" y1="411.0" y2="419.0"/>
-<circle class="mk" cx="554.3" cy="415.0" r="5.5"/>
+<rect class="hit" x="515.0" y="403.0" width="47.2" height="24"/>
+<line class="ci" x1="519.0" x2="558.2" y1="415.0" y2="415.0"/>
+<line class="ci" x1="519.0" x2="519.0" y1="411.0" y2="419.0"/>
+<line class="ci" x1="558.2" x2="558.2" y1="411.0" y2="419.0"/>
+<circle class="mk" cx="538.4" cy="415.0" r="5.5"/>
 </g>
 <line class="sep" x1="438" x2="622" y1="442" y2="442"/>
 <g class="pt bonsai off" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 2-bit · → English abstracts (T4abs) · thinking off|+4.6 chrF [+3.3, +5.8]|Bonsai 9B 68.0 vs Qwen3.5 9B 2-bit 63.5 · n = 14 · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 9B − Qwen3.5 9B 2-bit · → English abstracts (T4abs) · thinking off, +4.6 chrF [+3.3, +5.8], Bonsai 9B 68.0 vs Qwen3.5 9B 2-bit 63.5 · n = 14 · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)">
-<rect class="hit" x="563.7" y="457.0" width="32.0" height="24"/>
+<rect class="hit" x="554.1" y="457.0" width="32.0" height="24"/>
 <rect class="hband" x="436" y="459.0" width="188" height="20" rx="10"/>
-<line class="ci" x1="570.8" x2="588.6" y1="469.0" y2="469.0"/>
-<line class="ci" x1="570.8" x2="570.8" y1="465.0" y2="473.0"/>
-<line class="ci" x1="588.6" x2="588.6" y1="465.0" y2="473.0"/>
-<circle class="mk" cx="579.7" cy="469.0" r="6"/>
-<text class="hlab" x="563.8" y="473.5" text-anchor="end">+4.6</text>
+<line class="ci" x1="559.0" x2="581.3" y1="469.0" y2="469.0"/>
+<line class="ci" x1="559.0" x2="559.0" y1="465.0" y2="473.0"/>
+<line class="ci" x1="581.3" x2="581.3" y1="465.0" y2="473.0"/>
+<circle class="mk" cx="570.1" cy="469.0" r="6"/>
+<text class="hlab" x="588.3" y="473.5">+4.6</text>
 </g>
 <g class="pt bonsai on" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 2-bit · → English abstracts (T4abs) · thinking on|+8.0 chrF [+2.0, +18.4]|Bonsai 9B 68.0 vs Qwen3.5 9B 2-bit 60.0 · n = 14 · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 9B − Qwen3.5 9B 2-bit · → English abstracts (T4abs) · thinking on, +8.0 chrF [+2.0, +18.4], Bonsai 9B 68.0 vs Qwen3.5 9B 2-bit 60.0 · n = 14 · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)">
-<rect class="hit" x="557.7" y="475.0" width="64.3" height="24"/>
+<rect class="hit" x="543.6" y="475.0" width="78.4" height="24"/>
 <rect class="hband" x="436" y="477.0" width="188" height="20" rx="10"/>
-<line class="ci" x1="561.7" x2="618.0" y1="487.0" y2="487.0"/>
-<line class="ci" x1="561.7" x2="561.7" y1="483.0" y2="491.0"/>
+<line class="ci" x1="547.6" x2="618.0" y1="487.0" y2="487.0"/>
+<line class="ci" x1="547.6" x2="547.6" y1="483.0" y2="491.0"/>
 <line class="ci" x1="618.0" x2="618.0" y1="483.0" y2="491.0"/>
-<circle class="mk" cx="603.8" cy="487.0" r="5.5"/>
-<text class="hlab" x="554.7" y="491.5" text-anchor="end">+8.0</text>
+<circle class="mk" cx="600.2" cy="487.0" r="5.5"/>
+<text class="hlab" x="540.6" y="491.5" text-anchor="end">+8.0</text>
 </g>
 <g class="pt bonsai off" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 2B 4-bit · → English abstracts (T4abs) · thinking off|+3.9 chrF [+1.6, +6.6]|Bonsai 4B 67.6 vs Qwen3.5 2B 4-bit 63.6 · n = 14 · files 1.1 GB vs 1.3 GB · notable: Bonsai ahead of Qwen3.5 2B 4-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 4B − Qwen3.5 2B 4-bit · → English abstracts (T4abs) · thinking off, +3.9 chrF [+1.6, +6.6], Bonsai 4B 67.6 vs Qwen3.5 2B 4-bit 63.6 · n = 14 · files 1.1 GB vs 1.3 GB · notable: Bonsai ahead of Qwen3.5 2B 4-bit after correction for multiple comparisons (orange)">
-<rect class="hit" x="554.6" y="563.0" width="43.6" height="24"/>
+<rect class="hit" x="539.7" y="563.0" width="52.5" height="24"/>
 <rect class="hband" x="436" y="565.0" width="188" height="20" rx="10"/>
-<line class="ci" x1="558.6" x2="594.2" y1="575.0" y2="575.0"/>
-<line class="ci" x1="558.6" x2="558.6" y1="571.0" y2="579.0"/>
-<line class="ci" x1="594.2" x2="594.2" y1="571.0" y2="579.0"/>
-<circle class="mk" cx="575.3" cy="575.0" r="6"/>
-<text class="hlab" x="551.6" y="579.5" text-anchor="end">+3.9</text>
+<line class="ci" x1="543.7" x2="588.3" y1="575.0" y2="575.0"/>
+<line class="ci" x1="543.7" x2="543.7" y1="571.0" y2="579.0"/>
+<line class="ci" x1="588.3" x2="588.3" y1="571.0" y2="579.0"/>
+<circle class="mk" cx="564.6" cy="575.0" r="6"/>
+<text class="hlab" x="536.7" y="579.5" text-anchor="end">+3.9</text>
 </g>
 <g class="pt bonsai on" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 2B 4-bit · → English abstracts (T4abs) · thinking on|+0.6 chrF [−1.0, +2.1]|Bonsai 4B 66.4 vs Qwen3.5 2B 4-bit 65.7 · n = 14 · files 1.1 GB vs 1.3 GB" aria-label="Bonsai 4B − Qwen3.5 2B 4-bit · → English abstracts (T4abs) · thinking on, +0.6 chrF [−1.0, +2.1], Bonsai 4B 66.4 vs Qwen3.5 2B 4-bit 65.7 · n = 14 · files 1.1 GB vs 1.3 GB">
-<rect class="hit" x="536.0" y="581.0" width="32.0" height="24"/>
-<line class="ci" x1="540.6" x2="562.3" y1="593.0" y2="593.0"/>
-<line class="ci" x1="540.6" x2="540.6" y1="589.0" y2="597.0"/>
-<line class="ci" x1="562.3" x2="562.3" y1="589.0" y2="597.0"/>
-<circle class="mk" cx="552.0" cy="593.0" r="5.5"/>
+<rect class="hit" x="517.2" y="581.0" width="35.2" height="24"/>
+<line class="ci" x1="521.2" x2="548.4" y1="593.0" y2="593.0"/>
+<line class="ci" x1="521.2" x2="521.2" y1="589.0" y2="597.0"/>
+<line class="ci" x1="548.4" x2="548.4" y1="589.0" y2="597.0"/>
+<circle class="mk" cx="535.5" cy="593.0" r="5.5"/>
 </g>
 <line class="sep" x1="438" x2="622" y1="620" y2="620"/>
 <g class="pt bonsai off" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 2-bit · → English abstracts (T4abs) · thinking off|+12.5 chrF [+5.7, +20.6]|Bonsai 4B 67.6 vs Qwen3.5 4B 2-bit 55.1 · n = 14 · files 1.1 GB vs 1.5 GB · notable: Bonsai ahead of Qwen3.5 4B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 4B − Qwen3.5 4B 2-bit · → English abstracts (T4abs) · thinking off, +12.5 chrF [+5.7, +20.6], Bonsai 4B 67.6 vs Qwen3.5 4B 2-bit 55.1 · n = 14 · files 1.1 GB vs 1.5 GB · notable: Bonsai ahead of Qwen3.5 4B 2-bit after correction for multiple comparisons (orange)">
-<rect class="hit" x="583.7" y="635.0" width="50.3" height="24"/>
+<rect class="hit" x="576.1" y="635.0" width="57.9" height="24"/>
 <rect class="hband" x="436" y="637.0" width="188" height="20" rx="10"/>
-<line class="ci" x1="587.7" x2="618.0" y1="647.0" y2="647.0"/>
-<line class="ci" x1="587.7" x2="587.7" y1="643.0" y2="651.0"/>
+<line class="ci" x1="580.1" x2="618.0" y1="647.0" y2="647.0"/>
+<line class="ci" x1="580.1" x2="580.1" y1="643.0" y2="651.0"/>
 <line class="ci" x1="618.0" x2="618.0" y1="643.0" y2="651.0"/>
 <path class="mk" d="M624.0,647.0 L614.0,641.0 L614.0,653.0 Z"/>
 <text class="hlab" x="608.0" y="651.5" text-anchor="end">+12.5</text>
@@ -470,29 +460,29 @@ padding:8px 10px;font-size:12.5px;box-shadow:0 4px 16px rgba(0,0,0,.4);display:n
 <text class="plab" x="608.0" y="669.5" text-anchor="end">+52.7</text>
 </g>
 <g class="pt bonsai off" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 0.8B 4-bit · → English abstracts (T4abs) · thinking off|+3.4 chrF [+1.4, +5.7]|Bonsai 2B 63.9 vs Qwen3.5 0.8B 4-bit 60.4 · n = 14 · files 0.5 GB vs 0.5 GB · notable: Bonsai ahead of Qwen3.5 0.8B 4-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 2B − Qwen3.5 0.8B 4-bit · → English abstracts (T4abs) · thinking off, +3.4 chrF [+1.4, +5.7], Bonsai 2B 63.9 vs Qwen3.5 0.8B 4-bit 60.4 · n = 14 · files 0.5 GB vs 0.5 GB · notable: Bonsai ahead of Qwen3.5 0.8B 4-bit after correction for multiple comparisons (orange)">
-<rect class="hit" x="553.1" y="741.0" width="38.3" height="24"/>
+<rect class="hit" x="537.9" y="741.0" width="45.9" height="24"/>
 <rect class="hband" x="436" y="743.0" width="188" height="20" rx="10"/>
-<line class="ci" x1="557.1" x2="587.4" y1="753.0" y2="753.0"/>
-<line class="ci" x1="557.1" x2="557.1" y1="749.0" y2="757.0"/>
-<line class="ci" x1="587.4" x2="587.4" y1="749.0" y2="757.0"/>
-<circle class="mk" cx="571.7" cy="753.0" r="6"/>
-<text class="hlab" x="550.1" y="757.5" text-anchor="end">+3.4</text>
+<line class="ci" x1="541.9" x2="579.8" y1="753.0" y2="753.0"/>
+<line class="ci" x1="541.9" x2="541.9" y1="749.0" y2="757.0"/>
+<line class="ci" x1="579.8" x2="579.8" y1="749.0" y2="757.0"/>
+<circle class="mk" cx="560.2" cy="753.0" r="6"/>
+<text class="hlab" x="586.8" y="757.5">+3.4</text>
 </g>
 <g class="pt bonsai on" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 0.8B 4-bit · → English abstracts (T4abs) · thinking on|+3.7 chrF [+2.2, +5.1]|Bonsai 2B 63.5 vs Qwen3.5 0.8B 4-bit 59.8 · n = 14 · files 0.5 GB vs 0.5 GB · notable: Bonsai ahead of Qwen3.5 0.8B 4-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 2B − Qwen3.5 0.8B 4-bit · → English abstracts (T4abs) · thinking on, +3.7 chrF [+2.2, +5.1], Bonsai 2B 63.5 vs Qwen3.5 0.8B 4-bit 59.8 · n = 14 · files 0.5 GB vs 0.5 GB · notable: Bonsai ahead of Qwen3.5 0.8B 4-bit after correction for multiple comparisons (orange)">
-<rect class="hit" x="557.9" y="759.0" width="32.0" height="24"/>
+<rect class="hit" x="545.8" y="759.0" width="33.4" height="24"/>
 <rect class="hband" x="436" y="761.0" width="188" height="20" rx="10"/>
-<line class="ci" x1="563.4" x2="583.8" y1="771.0" y2="771.0"/>
-<line class="ci" x1="563.4" x2="563.4" y1="767.0" y2="775.0"/>
-<line class="ci" x1="583.8" x2="583.8" y1="767.0" y2="775.0"/>
-<circle class="mk" cx="573.9" cy="771.0" r="5.5"/>
-<text class="hlab" x="590.8" y="775.5">+3.7</text>
+<line class="ci" x1="549.8" x2="575.2" y1="771.0" y2="771.0"/>
+<line class="ci" x1="549.8" x2="549.8" y1="767.0" y2="775.0"/>
+<line class="ci" x1="575.2" x2="575.2" y1="767.0" y2="775.0"/>
+<circle class="mk" cx="562.8" cy="771.0" r="5.5"/>
+<text class="hlab" x="582.2" y="775.5">+3.7</text>
 </g>
 <line class="sep" x1="438" x2="622" y1="798" y2="798"/>
 <g class="pt bonsai off" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 2-bit · → English abstracts (T4abs) · thinking off|+11.0 chrF [+7.7, +14.8]|Bonsai 2B 63.9 vs Qwen3.5 2B 2-bit 52.9 · n = 14 · files 0.5 GB vs 0.8 GB · notable: Bonsai ahead of Qwen3.5 2B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 2B − Qwen3.5 2B 2-bit · → English abstracts (T4abs) · thinking off, +11.0 chrF [+7.7, +14.8], Bonsai 2B 63.9 vs Qwen3.5 2B 2-bit 52.9 · n = 14 · files 0.5 GB vs 0.8 GB · notable: Bonsai ahead of Qwen3.5 2B 2-bit after correction for multiple comparisons (orange)">
-<rect class="hit" x="597.7" y="813.0" width="36.3" height="24"/>
+<rect class="hit" x="593.6" y="813.0" width="40.4" height="24"/>
 <rect class="hband" x="436" y="815.0" width="188" height="20" rx="10"/>
-<line class="ci" x1="601.7" x2="618.0" y1="825.0" y2="825.0"/>
-<line class="ci" x1="601.7" x2="601.7" y1="821.0" y2="829.0"/>
+<line class="ci" x1="597.6" x2="618.0" y1="825.0" y2="825.0"/>
+<line class="ci" x1="597.6" x2="597.6" y1="821.0" y2="829.0"/>
 <line class="ci" x1="618.0" x2="618.0" y1="821.0" y2="829.0"/>
 <path class="mk" d="M624.0,825.0 L614.0,819.0 L614.0,831.0 Z"/>
 <text class="hlab" x="608.0" y="829.5" text-anchor="end">+11.0</text>
@@ -506,85 +496,79 @@ padding:8px 10px;font-size:12.5px;box-shadow:0 4px 16px rgba(0,0,0,.4);display:n
 <text class="plab" x="608.0" y="847.5" text-anchor="end">+63.5</text>
 </g>
 <g class="pt bonsai off" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 4-bit · → English abstracts (T4abs) · thinking off|+2.5 chrF [+1.1, +3.7]|Bonsai 9B 68.0 vs Qwen3.5 9B 4-bit 65.5 · n = 14 · files 2.4 GB vs 5.7 GB · notable: Bonsai ahead of Qwen3.5 9B 4-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 9B − Qwen3.5 9B 4-bit · → English abstracts (T4abs) · thinking off, +2.5 chrF [+1.1, +3.7], Bonsai 9B 68.0 vs Qwen3.5 9B 4-bit 65.5 · n = 14 · files 2.4 GB vs 5.7 GB · notable: Bonsai ahead of Qwen3.5 9B 4-bit after correction for multiple comparisons (orange)">
-<rect class="hit" x="549.0" y="919.0" width="32.0" height="24"/>
+<rect class="hit" x="535.7" y="919.0" width="32.0" height="24"/>
 <rect class="hband" x="436" y="921.0" width="188" height="20" rx="10"/>
-<line class="ci" x1="555.5" x2="573.8" y1="931.0" y2="931.0"/>
-<line class="ci" x1="555.5" x2="555.5" y1="927.0" y2="935.0"/>
-<line class="ci" x1="573.8" x2="573.8" y1="927.0" y2="935.0"/>
-<circle class="mk" cx="565.0" cy="931.0" r="6"/>
-<text class="hlab" x="580.8" y="935.5">+2.5</text>
+<line class="ci" x1="539.9" x2="562.7" y1="931.0" y2="931.0"/>
+<line class="ci" x1="539.9" x2="539.9" y1="927.0" y2="935.0"/>
+<line class="ci" x1="562.7" x2="562.7" y1="927.0" y2="935.0"/>
+<circle class="mk" cx="551.7" cy="931.0" r="6"/>
+<text class="hlab" x="569.7" y="935.5">+2.5</text>
 </g>
 <g class="pt bonsai on" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 4-bit · → English abstracts (T4abs) · thinking on|+0.2 chrF [−2.0, +2.4]|Bonsai 9B 68.0 vs Qwen3.5 9B 4-bit 67.8 · n = 14 · files 2.4 GB vs 5.7 GB" aria-label="Bonsai 9B − Qwen3.5 9B 4-bit · → English abstracts (T4abs) · thinking on, +0.2 chrF [−2.0, +2.4], Bonsai 9B 68.0 vs Qwen3.5 9B 4-bit 67.8 · n = 14 · files 2.4 GB vs 5.7 GB">
-<rect class="hit" x="529.4" y="937.0" width="39.2" height="24"/>
-<line class="ci" x1="533.4" x2="564.6" y1="949.0" y2="949.0"/>
-<line class="ci" x1="533.4" x2="533.4" y1="945.0" y2="953.0"/>
-<line class="ci" x1="564.6" x2="564.6" y1="945.0" y2="953.0"/>
-<circle class="mk" cx="549.2" cy="949.0" r="5.5"/>
+<rect class="hit" x="508.2" y="937.0" width="47.0" height="24"/>
+<line class="ci" x1="512.2" x2="551.2" y1="949.0" y2="949.0"/>
+<line class="ci" x1="512.2" x2="512.2" y1="945.0" y2="953.0"/>
+<line class="ci" x1="551.2" x2="551.2" y1="945.0" y2="953.0"/>
+<circle class="mk" cx="532.0" cy="949.0" r="5.5"/>
 </g>
 <line class="sep" x1="438" x2="622" y1="976" y2="976"/>
 <g class="pt bonsai off" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 4-bit · → English abstracts (T4abs) · thinking off|+1.9 chrF [+0.4, +3.6]|Bonsai 4B 67.6 vs Qwen3.5 4B 4-bit 65.7 · n = 14 · files 1.1 GB vs 2.7 GB" aria-label="Bonsai 4B − Qwen3.5 4B 4-bit · → English abstracts (T4abs) · thinking off, +1.9 chrF [+0.4, +3.6], Bonsai 4B 67.6 vs Qwen3.5 4B 4-bit 65.7 · n = 14 · files 1.1 GB vs 2.7 GB">
-<rect class="hit" x="545.0" y="991.0" width="32.0" height="24"/>
-<line class="ci" x1="550.2" x2="572.7" y1="1003.0" y2="1003.0"/>
-<line class="ci" x1="550.2" x2="550.2" y1="999.0" y2="1007.0"/>
-<line class="ci" x1="572.7" x2="572.7" y1="999.0" y2="1007.0"/>
-<circle class="mk" cx="561.0" cy="1003.0" r="6"/>
+<rect class="hit" x="529.3" y="991.0" width="36.1" height="24"/>
+<line class="ci" x1="533.3" x2="561.3" y1="1003.0" y2="1003.0"/>
+<line class="ci" x1="533.3" x2="533.3" y1="999.0" y2="1007.0"/>
+<line class="ci" x1="561.3" x2="561.3" y1="999.0" y2="1007.0"/>
+<circle class="mk" cx="546.7" cy="1003.0" r="6"/>
 </g>
 <g class="pt bonsai on" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 4-bit · → English abstracts (T4abs) · thinking on|−0.7 chrF [−1.9, +0.5]|Bonsai 4B 66.4 vs Qwen3.5 4B 4-bit 67.1 · n = 14 · files 1.1 GB vs 2.7 GB" aria-label="Bonsai 4B − Qwen3.5 4B 4-bit · → English abstracts (T4abs) · thinking on, −0.7 chrF [−1.9, +0.5], Bonsai 4B 66.4 vs Qwen3.5 4B 4-bit 67.1 · n = 14 · files 1.1 GB vs 2.7 GB">
-<rect class="hit" x="526.7" y="1009.0" width="32.0" height="24"/>
-<line class="ci" x1="534.2" x2="550.8" y1="1021.0" y2="1021.0"/>
-<line class="ci" x1="534.2" x2="534.2" y1="1017.0" y2="1025.0"/>
-<line class="ci" x1="550.8" x2="550.8" y1="1017.0" y2="1025.0"/>
-<circle class="mk" cx="542.7" cy="1021.0" r="5.5"/>
+<rect class="hit" x="507.8" y="1009.0" width="32.0" height="24"/>
+<line class="ci" x1="513.3" x2="534.0" y1="1021.0" y2="1021.0"/>
+<line class="ci" x1="513.3" x2="513.3" y1="1017.0" y2="1025.0"/>
+<line class="ci" x1="534.0" x2="534.0" y1="1017.0" y2="1025.0"/>
+<circle class="mk" cx="523.8" cy="1021.0" r="5.5"/>
 </g>
 <line class="sep" x1="438" x2="622" y1="1048" y2="1048"/>
 <g class="pt bonsai off" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 4-bit · → English abstracts (T4abs) · thinking off|+0.2 chrF [−2.0, +2.5]|Bonsai 2B 63.9 vs Qwen3.5 2B 4-bit 63.6 · n = 14 · files 0.5 GB vs 1.3 GB" aria-label="Bonsai 2B − Qwen3.5 2B 4-bit · → English abstracts (T4abs) · thinking off, +0.2 chrF [−2.0, +2.5], Bonsai 2B 63.9 vs Qwen3.5 2B 4-bit 63.6 · n = 14 · files 0.5 GB vs 1.3 GB">
-<rect class="hit" x="529.8" y="1063.0" width="39.8" height="24"/>
-<line class="ci" x1="533.8" x2="565.6" y1="1075.0" y2="1075.0"/>
-<line class="ci" x1="533.8" x2="533.8" y1="1071.0" y2="1079.0"/>
-<line class="ci" x1="565.6" x2="565.6" y1="1071.0" y2="1079.0"/>
-<circle class="mk" cx="549.4" cy="1075.0" r="6"/>
+<rect class="hit" x="508.8" y="1063.0" width="47.7" height="24"/>
+<line class="ci" x1="512.8" x2="552.4" y1="1075.0" y2="1075.0"/>
+<line class="ci" x1="512.8" x2="512.8" y1="1071.0" y2="1079.0"/>
+<line class="ci" x1="552.4" x2="552.4" y1="1071.0" y2="1079.0"/>
+<circle class="mk" cx="532.2" cy="1075.0" r="6"/>
 </g>
 <g class="pt bonsai on" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 4-bit · → English abstracts (T4abs) · thinking on|−2.2 chrF [−3.9, −0.6]|Bonsai 2B 63.5 vs Qwen3.5 2B 4-bit 65.7 · n = 14 · files 0.5 GB vs 1.3 GB" aria-label="Bonsai 2B − Qwen3.5 2B 4-bit · → English abstracts (T4abs) · thinking on, −2.2 chrF [−3.9, −0.6], Bonsai 2B 63.5 vs Qwen3.5 2B 4-bit 65.7 · n = 14 · files 0.5 GB vs 1.3 GB">
-<rect class="hit" x="515.8" y="1081.0" width="32.0" height="24"/>
-<line class="ci" x1="520.4" x2="543.7" y1="1093.0" y2="1093.0"/>
-<line class="ci" x1="520.4" x2="520.4" y1="1089.0" y2="1097.0"/>
-<line class="ci" x1="543.7" x2="543.7" y1="1089.0" y2="1097.0"/>
-<circle class="mk" cx="531.8" cy="1093.0" r="5.5"/>
+<rect class="hit" x="492.0" y="1081.0" width="37.0" height="24"/>
+<line class="ci" x1="496.0" x2="525.1" y1="1093.0" y2="1093.0"/>
+<line class="ci" x1="496.0" x2="496.0" y1="1089.0" y2="1097.0"/>
+<line class="ci" x1="525.1" x2="525.1" y1="1089.0" y2="1097.0"/>
+<circle class="mk" cx="510.2" cy="1093.0" r="5.5"/>
 </g>
 <text class="ptitle" x="660" y="44">English →</text>
-<text class="psub" x="660" y="62">talk excerpts (T1) · n = 36</text>
+<text class="psub" x="660" y="62">talk excerpts (T1) · n = 36/78</text>
 <line class="grid" x1="660.0" x2="660.0" y1="80.0" y2="239.0"/>
 <line class="grid" x1="660.0" x2="660.0" y1="255.0" y2="345.0"/>
 <line class="grid" x1="660.0" x2="660.0" y1="361.0" y2="523.0"/>
 <line class="grid" x1="660.0" x2="660.0" y1="539.0" y2="701.0"/>
 <line class="grid" x1="660.0" x2="660.0" y1="717.0" y2="879.0"/>
 <line class="grid" x1="660.0" x2="660.0" y1="895.0" y2="1120.0"/>
-<line class="grid" x1="695.2" x2="695.2" y1="80.0" y2="239.0"/>
-<line class="grid" x1="695.2" x2="695.2" y1="255.0" y2="345.0"/>
-<line class="grid" x1="695.2" x2="695.2" y1="361.0" y2="523.0"/>
-<line class="grid" x1="695.2" x2="695.2" y1="539.0" y2="701.0"/>
-<line class="grid" x1="695.2" x2="695.2" y1="717.0" y2="879.0"/>
-<line class="grid" x1="695.2" x2="695.2" y1="895.0" y2="1120.0"/>
-<text class="tick" x="695.2" y="1136" text-anchor="middle">−10</text>
-<line class="grid" x1="730.4" x2="730.4" y1="80.0" y2="239.0"/>
-<line class="grid" x1="730.4" x2="730.4" y1="255.0" y2="345.0"/>
-<line class="grid" x1="730.4" x2="730.4" y1="361.0" y2="523.0"/>
-<line class="grid" x1="730.4" x2="730.4" y1="539.0" y2="701.0"/>
-<line class="grid" x1="730.4" x2="730.4" y1="717.0" y2="879.0"/>
-<line class="grid" x1="730.4" x2="730.4" y1="895.0" y2="1120.0"/>
-<line class="zero" x1="765.6" x2="765.6" y1="80.0" y2="239.0"/>
-<line class="zero" x1="765.6" x2="765.6" y1="255.0" y2="345.0"/>
-<line class="zero" x1="765.6" x2="765.6" y1="361.0" y2="523.0"/>
-<line class="zero" x1="765.6" x2="765.6" y1="539.0" y2="701.0"/>
-<line class="zero" x1="765.6" x2="765.6" y1="717.0" y2="879.0"/>
-<line class="zero" x1="765.6" x2="765.6" y1="895.0" y2="1120.0"/>
-<text class="tick" x="765.6" y="1136" text-anchor="middle">0</text>
-<line class="grid" x1="800.8" x2="800.8" y1="80.0" y2="239.0"/>
-<line class="grid" x1="800.8" x2="800.8" y1="255.0" y2="345.0"/>
-<line class="grid" x1="800.8" x2="800.8" y1="361.0" y2="523.0"/>
-<line class="grid" x1="800.8" x2="800.8" y1="539.0" y2="701.0"/>
-<line class="grid" x1="800.8" x2="800.8" y1="717.0" y2="879.0"/>
-<line class="grid" x1="800.8" x2="800.8" y1="895.0" y2="1120.0"/>
+<text class="tick" x="660.0" y="1136" text-anchor="middle">−10</text>
+<line class="grid" x1="704.0" x2="704.0" y1="80.0" y2="239.0"/>
+<line class="grid" x1="704.0" x2="704.0" y1="255.0" y2="345.0"/>
+<line class="grid" x1="704.0" x2="704.0" y1="361.0" y2="523.0"/>
+<line class="grid" x1="704.0" x2="704.0" y1="539.0" y2="701.0"/>
+<line class="grid" x1="704.0" x2="704.0" y1="717.0" y2="879.0"/>
+<line class="grid" x1="704.0" x2="704.0" y1="895.0" y2="1120.0"/>
+<line class="zero" x1="748.0" x2="748.0" y1="80.0" y2="239.0"/>
+<line class="zero" x1="748.0" x2="748.0" y1="255.0" y2="345.0"/>
+<line class="zero" x1="748.0" x2="748.0" y1="361.0" y2="523.0"/>
+<line class="zero" x1="748.0" x2="748.0" y1="539.0" y2="701.0"/>
+<line class="zero" x1="748.0" x2="748.0" y1="717.0" y2="879.0"/>
+<line class="zero" x1="748.0" x2="748.0" y1="895.0" y2="1120.0"/>
+<text class="tick" x="748.0" y="1136" text-anchor="middle">0</text>
+<line class="grid" x1="792.0" x2="792.0" y1="80.0" y2="239.0"/>
+<line class="grid" x1="792.0" x2="792.0" y1="255.0" y2="345.0"/>
+<line class="grid" x1="792.0" x2="792.0" y1="361.0" y2="523.0"/>
+<line class="grid" x1="792.0" x2="792.0" y1="539.0" y2="701.0"/>
+<line class="grid" x1="792.0" x2="792.0" y1="717.0" y2="879.0"/>
+<line class="grid" x1="792.0" x2="792.0" y1="895.0" y2="1120.0"/>
 <line class="grid" x1="836.0" x2="836.0" y1="80.0" y2="239.0"/>
 <line class="grid" x1="836.0" x2="836.0" y1="255.0" y2="345.0"/>
 <line class="grid" x1="836.0" x2="836.0" y1="361.0" y2="523.0"/>
@@ -597,226 +581,222 @@ padding:8px 10px;font-size:12.5px;box-shadow:0 4px 16px rgba(0,0,0,.4);display:n
 <line class="gsep" x1="656" x2="840" y1="531.0" y2="531.0"/>
 <line class="gsep" x1="656" x2="840" y1="709.0" y2="709.0"/>
 <line class="gsep" x1="656" x2="840" y1="887.0" y2="887.0"/>
-<g class="pt cloud off" tabindex="0" data-tip="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · English → talk excerpts (T1) · thinking off|+4.1 chrF [+2.1, +5.9]|DeepSeek V4.1 Flash 1017 61.6 vs Qwen3.5 9B 57.5 · n = 36" aria-label="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · English → talk excerpts (T1) · thinking off, +4.1 chrF [+2.1, +5.9], DeepSeek V4.1 Flash 1017 61.6 vs Qwen3.5 9B 57.5 · n = 36">
-<rect class="hit" x="776.5" y="101.0" width="34.4" height="24"/>
-<line class="ci" x1="780.5" x2="806.9" y1="113.0" y2="113.0"/>
-<line class="ci" x1="780.5" x2="780.5" y1="109.0" y2="117.0"/>
-<line class="ci" x1="806.9" x2="806.9" y1="109.0" y2="117.0"/>
-<circle class="mk" cx="794.3" cy="113.0" r="6"/>
+<g class="pt cloud off" tabindex="0" data-tip="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · English → talk excerpts (T1) · thinking off|+4.4 chrF [+2.8, +5.9]|DeepSeek V4.1 Flash 1017 61.2 vs Qwen3.5 9B 56.8 · n = 78" aria-label="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · English → talk excerpts (T1) · thinking off, +4.4 chrF [+2.8, +5.9], DeepSeek V4.1 Flash 1017 61.2 vs Qwen3.5 9B 56.8 · n = 78">
+<rect class="hit" x="768.9" y="101.0" width="35.2" height="24"/>
+<line class="ci" x1="772.9" x2="800.1" y1="113.0" y2="113.0"/>
+<line class="ci" x1="772.9" x2="772.9" y1="109.0" y2="117.0"/>
+<line class="ci" x1="800.1" x2="800.1" y1="109.0" y2="117.0"/>
+<circle class="mk" cx="786.6" cy="113.0" r="6"/>
 </g>
-<g class="pt cloud on" tabindex="0" data-tip="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · English → talk excerpts (T1) · thinking on|+3.1 chrF [+1.1, +5.0]|DeepSeek V4.1 Flash 1017 60.3 vs Qwen3.5 9B 57.2 · n = 36" aria-label="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · English → talk excerpts (T1) · thinking on, +3.1 chrF [+1.1, +5.0], DeepSeek V4.1 Flash 1017 60.3 vs Qwen3.5 9B 57.2 · n = 36">
-<rect class="hit" x="769.0" y="119.0" width="35.7" height="24"/>
-<line class="ci" x1="773.0" x2="800.7" y1="131.0" y2="131.0"/>
-<line class="ci" x1="773.0" x2="773.0" y1="127.0" y2="135.0"/>
-<line class="ci" x1="800.7" x2="800.7" y1="127.0" y2="135.0"/>
-<circle class="mk" cx="787.3" cy="131.0" r="5.5"/>
+<g class="pt cloud on" tabindex="0" data-tip="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · English → talk excerpts (T1) · thinking on|+3.3 chrF [+2.0, +4.6]|DeepSeek V4.1 Flash 1017 60.2 vs Qwen3.5 9B 56.9 · n = 78" aria-label="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · English → talk excerpts (T1) · thinking on, +3.3 chrF [+2.0, +4.6], DeepSeek V4.1 Flash 1017 60.2 vs Qwen3.5 9B 56.9 · n = 78">
+<rect class="hit" x="761.1" y="119.0" width="32.0" height="24"/>
+<line class="ci" x1="765.2" x2="788.8" y1="131.0" y2="131.0"/>
+<line class="ci" x1="765.2" x2="765.2" y1="127.0" y2="135.0"/>
+<line class="ci" x1="788.8" x2="788.8" y1="127.0" y2="135.0"/>
+<circle class="mk" cx="777.1" cy="131.0" r="5.5"/>
 </g>
 <line class="sep" x1="656" x2="840" y1="158" y2="158"/>
 <g class="pt cloud low" tabindex="0" data-tip="GLM 5.3 Flash − Qwen3.5 9B · English → talk excerpts (T1) · low-effort thinking (vs Qwen thinking off)|−0.3 chrF [−2.5, +1.5]|GLM 5.3 Flash 57.3 vs Qwen3.5 9B 57.5 · n = 36" aria-label="GLM 5.3 Flash − Qwen3.5 9B · English → talk excerpts (T1) · low-effort thinking (vs Qwen thinking off), −0.3 chrF [−2.5, +1.5], GLM 5.3 Flash 57.3 vs Qwen3.5 9B 57.5 · n = 36">
-<rect class="hit" x="744.4" y="173.0" width="35.7" height="24"/>
-<line class="ci" x1="748.4" x2="776.0" y1="185.0" y2="185.0"/>
-<line class="ci" x1="748.4" x2="748.4" y1="181.0" y2="189.0"/>
-<line class="ci" x1="776.0" x2="776.0" y1="181.0" y2="189.0"/>
-<path class="mk" d="M763.7,178.0 L770.7,190.0 L756.7,190.0 Z"/>
+<rect class="hit" x="722.4" y="173.0" width="42.6" height="24"/>
+<line class="ci" x1="726.4" x2="761.0" y1="185.0" y2="185.0"/>
+<line class="ci" x1="726.4" x2="726.4" y1="181.0" y2="189.0"/>
+<line class="ci" x1="761.0" x2="761.0" y1="181.0" y2="189.0"/>
+<path class="mk" d="M745.6,178.0 L752.6,190.0 L738.6,190.0 Z"/>
 </g>
 <g class="pt cloud on" tabindex="0" data-tip="GLM 5.3 Flash − Qwen3.5 9B · English → talk excerpts (T1) · thinking on|+0.2 chrF [−2.0, +2.1]|GLM 5.3 Flash 57.4 vs Qwen3.5 9B 57.2 · n = 36" aria-label="GLM 5.3 Flash − Qwen3.5 9B · English → talk excerpts (T1) · thinking on, +0.2 chrF [−2.0, +2.1], GLM 5.3 Flash 57.4 vs Qwen3.5 9B 57.2 · n = 36">
-<rect class="hit" x="747.7" y="191.0" width="36.7" height="24"/>
-<line class="ci" x1="751.7" x2="780.4" y1="203.0" y2="203.0"/>
-<line class="ci" x1="751.7" x2="751.7" y1="199.0" y2="207.0"/>
-<line class="ci" x1="780.4" x2="780.4" y1="199.0" y2="207.0"/>
-<circle class="mk" cx="767.1" cy="203.0" r="5.5"/>
+<rect class="hit" x="726.7" y="191.0" width="43.8" height="24"/>
+<line class="ci" x1="730.7" x2="766.5" y1="203.0" y2="203.0"/>
+<line class="ci" x1="730.7" x2="730.7" y1="199.0" y2="207.0"/>
+<line class="ci" x1="766.5" x2="766.5" y1="199.0" y2="207.0"/>
+<circle class="mk" cx="749.8" cy="203.0" r="5.5"/>
 </g>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 27B − Qwen3.8 27B 2-bit · English → talk excerpts (T1) · thinking off|−2.4 chrF [−4.0, −0.6]|Bonsai 27B 57.6 vs Qwen3.8 27B 2-bit 59.9 · n = 36 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080" aria-label="Bonsai 27B − Qwen3.8 27B 2-bit · English → talk excerpts (T1) · thinking off, −2.4 chrF [−4.0, −0.6], Bonsai 27B 57.6 vs Qwen3.8 27B 2-bit 59.9 · n = 36 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080">
-<rect class="hit" x="733.1" y="279.0" width="32.3" height="24"/>
-<line class="ci" x1="737.1" x2="761.4" y1="291.0" y2="291.0"/>
-<line class="ci" x1="737.1" x2="737.1" y1="287.0" y2="295.0"/>
-<line class="ci" x1="761.4" x2="761.4" y1="287.0" y2="295.0"/>
-<circle class="mk" cx="749.1" cy="291.0" r="6"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 27B − Qwen3.8 27B 2-bit · English → talk excerpts (T1) · thinking off|−1.8 chrF [−3.2, −0.1]|Bonsai 27B 57.1 vs Qwen3.8 27B 2-bit 58.8 · n = 78 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080" aria-label="Bonsai 27B − Qwen3.8 27B 2-bit · English → talk excerpts (T1) · thinking off, −1.8 chrF [−3.2, −0.1], Bonsai 27B 57.1 vs Qwen3.8 27B 2-bit 58.8 · n = 78 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080">
+<rect class="hit" x="715.6" y="279.0" width="35.6" height="24"/>
+<line class="ci" x1="719.6" x2="747.2" y1="291.0" y2="291.0"/>
+<line class="ci" x1="719.6" x2="719.6" y1="287.0" y2="295.0"/>
+<line class="ci" x1="747.2" x2="747.2" y1="287.0" y2="295.0"/>
+<circle class="mk" cx="732.5" cy="291.0" r="6"/>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 27B − Qwen3.8 27B 2-bit · English → talk excerpts (T1) · thinking on|+0.8 chrF [−0.5, +2.0]|Bonsai 27B 56.8 vs Qwen3.8 27B 2-bit 56.0 · n = 36 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080" aria-label="Bonsai 27B − Qwen3.8 27B 2-bit · English → talk excerpts (T1) · thinking on, +0.8 chrF [−0.5, +2.0], Bonsai 27B 56.8 vs Qwen3.8 27B 2-bit 56.0 · n = 36 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080">
-<rect class="hit" x="755.1" y="297.0" width="32.0" height="24"/>
-<line class="ci" x1="762.2" x2="779.8" y1="309.0" y2="309.0"/>
-<line class="ci" x1="762.2" x2="762.2" y1="305.0" y2="313.0"/>
-<line class="ci" x1="779.8" x2="779.8" y1="305.0" y2="313.0"/>
-<circle class="mk" cx="771.1" cy="309.0" r="5.5"/>
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 27B − Qwen3.8 27B 2-bit · English → talk excerpts (T1) · thinking on|+1.4 chrF [−0.4, +3.3]|Bonsai 27B 56.1 vs Qwen3.8 27B 2-bit 54.7 · n = 78 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080" aria-label="Bonsai 27B − Qwen3.8 27B 2-bit · English → talk excerpts (T1) · thinking on, +1.4 chrF [−0.4, +3.3], Bonsai 27B 56.1 vs Qwen3.8 27B 2-bit 54.7 · n = 78 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080">
+<rect class="hit" x="740.8" y="297.0" width="40.4" height="24"/>
+<line class="ci" x1="744.8" x2="777.2" y1="309.0" y2="309.0"/>
+<line class="ci" x1="744.8" x2="744.8" y1="305.0" y2="313.0"/>
+<line class="ci" x1="777.2" x2="777.2" y1="305.0" y2="313.0"/>
+<circle class="mk" cx="760.1" cy="309.0" r="5.5"/>
 </g>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 4B 4-bit · English → talk excerpts (T1) · thinking off|−1.4 chrF [−3.1, +0.5]|Bonsai 9B 54.7 vs Qwen3.5 4B 4-bit 56.1 · n = 36 · files 2.4 GB vs 2.7 GB" aria-label="Bonsai 9B − Qwen3.5 4B 4-bit · English → talk excerpts (T1) · thinking off, −1.4 chrF [−3.1, +0.5], Bonsai 9B 54.7 vs Qwen3.5 4B 4-bit 56.1 · n = 36 · files 2.4 GB vs 2.7 GB">
-<rect class="hit" x="739.5" y="385.0" width="33.7" height="24"/>
-<line class="ci" x1="743.5" x2="769.2" y1="397.0" y2="397.0"/>
-<line class="ci" x1="743.5" x2="743.5" y1="393.0" y2="401.0"/>
-<line class="ci" x1="769.2" x2="769.2" y1="393.0" y2="401.0"/>
-<circle class="mk" cx="755.7" cy="397.0" r="6"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 4B 4-bit · English → talk excerpts (T1) · thinking off|−1.0 chrF [−2.1, +0.1]|Bonsai 9B 54.6 vs Qwen3.5 4B 4-bit 55.6 · n = 78 · files 2.4 GB vs 2.7 GB" aria-label="Bonsai 9B − Qwen3.5 4B 4-bit · English → talk excerpts (T1) · thinking off, −1.0 chrF [−2.1, +0.1], Bonsai 9B 54.6 vs Qwen3.5 4B 4-bit 55.6 · n = 78 · files 2.4 GB vs 2.7 GB">
+<rect class="hit" x="723.1" y="385.0" width="32.0" height="24"/>
+<line class="ci" x1="729.2" x2="749.2" y1="397.0" y2="397.0"/>
+<line class="ci" x1="729.2" x2="729.2" y1="393.0" y2="401.0"/>
+<line class="ci" x1="749.2" x2="749.2" y1="393.0" y2="401.0"/>
+<circle class="mk" cx="739.1" cy="397.0" r="6"/>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 4B 4-bit · English → talk excerpts (T1) · thinking on|+1.1 chrF [−1.8, +4.9]|Bonsai 9B 55.9 vs Qwen3.5 4B 4-bit 54.8 · n = 36 · files 2.4 GB vs 2.7 GB" aria-label="Bonsai 9B − Qwen3.5 4B 4-bit · English → talk excerpts (T1) · thinking on, +1.1 chrF [−1.8, +4.9], Bonsai 9B 55.9 vs Qwen3.5 4B 4-bit 54.8 · n = 36 · files 2.4 GB vs 2.7 GB">
-<rect class="hit" x="749.0" y="403.0" width="55.2" height="24"/>
-<line class="ci" x1="753.0" x2="800.2" y1="415.0" y2="415.0"/>
-<line class="ci" x1="753.0" x2="753.0" y1="411.0" y2="419.0"/>
-<line class="ci" x1="800.2" x2="800.2" y1="411.0" y2="419.0"/>
-<circle class="mk" cx="773.6" cy="415.0" r="5.5"/>
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 4B 4-bit · English → talk excerpts (T1) · thinking on|+0.0 chrF [−1.8, +2.0]|Bonsai 9B 55.1 vs Qwen3.5 4B 4-bit 55.1 · n = 78 · files 2.4 GB vs 2.7 GB" aria-label="Bonsai 9B − Qwen3.5 4B 4-bit · English → talk excerpts (T1) · thinking on, +0.0 chrF [−1.8, +2.0], Bonsai 9B 55.1 vs Qwen3.5 4B 4-bit 55.1 · n = 78 · files 2.4 GB vs 2.7 GB">
+<rect class="hit" x="728.6" y="403.0" width="41.4" height="24"/>
+<line class="ci" x1="732.6" x2="766.0" y1="415.0" y2="415.0"/>
+<line class="ci" x1="732.6" x2="732.6" y1="411.0" y2="419.0"/>
+<line class="ci" x1="766.0" x2="766.0" y1="411.0" y2="419.0"/>
+<circle class="mk" cx="748.2" cy="415.0" r="5.5"/>
 </g>
 <line class="sep" x1="656" x2="840" y1="442" y2="442"/>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 2-bit · English → talk excerpts (T1) · thinking off|+2.4 chrF [−0.7, +5.7]|Bonsai 9B 54.7 vs Qwen3.5 9B 2-bit 52.4 · n = 36 · files 2.4 GB vs 3.2 GB" aria-label="Bonsai 9B − Qwen3.5 9B 2-bit · English → talk excerpts (T1) · thinking off, +2.4 chrF [−0.7, +5.7], Bonsai 9B 54.7 vs Qwen3.5 9B 2-bit 52.4 · n = 36 · files 2.4 GB vs 3.2 GB">
-<rect class="hit" x="756.7" y="457.0" width="52.9" height="24"/>
-<line class="ci" x1="760.7" x2="805.7" y1="469.0" y2="469.0"/>
-<line class="ci" x1="760.7" x2="760.7" y1="465.0" y2="473.0"/>
-<line class="ci" x1="805.7" x2="805.7" y1="465.0" y2="473.0"/>
-<circle class="mk" cx="782.2" cy="469.0" r="6"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 2-bit · English → talk excerpts (T1) · thinking off|+2.3 chrF [+0.3, +4.4]|Bonsai 9B 54.6 vs Qwen3.5 9B 2-bit 52.3 · n = 78 · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 9B − Qwen3.5 9B 2-bit · English → talk excerpts (T1) · thinking off, +2.3 chrF [+0.3, +4.4], Bonsai 9B 54.6 vs Qwen3.5 9B 2-bit 52.3 · n = 78 · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)">
+<rect class="hit" x="746.9" y="457.0" width="43.6" height="24"/>
+<rect class="hband" x="654" y="459.0" width="188" height="20" rx="10"/>
+<line class="ci" x1="750.9" x2="786.5" y1="469.0" y2="469.0"/>
+<line class="ci" x1="750.9" x2="750.9" y1="465.0" y2="473.0"/>
+<line class="ci" x1="786.5" x2="786.5" y1="465.0" y2="473.0"/>
+<circle class="mk" cx="768.3" cy="469.0" r="6"/>
+<text class="hlab" x="793.5" y="473.5">+2.3</text>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 2-bit · English → talk excerpts (T1) · thinking on|+12.2 chrF [+6.1, +18.7]|Bonsai 9B 55.9 vs Qwen3.5 9B 2-bit 43.8 · n = 36 · † 5 of 36 answers unfinished at 32k (scored 0); without them +4.6 (Bonsai 9B 0, Qwen3.5 9B 2-bit 5) · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 9B − Qwen3.5 9B 2-bit · English → talk excerpts (T1) · thinking on, +12.2 chrF [+6.1, +18.7], Bonsai 9B 55.9 vs Qwen3.5 9B 2-bit 43.8 · n = 36 · † 5 of 36 answers unfinished at 32k (scored 0); without them +4.6 (Bonsai 9B 0, Qwen3.5 9B 2-bit 5) · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)">
-<rect class="hit" x="804.3" y="475.0" width="47.7" height="24"/>
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 2-bit · English → talk excerpts (T1) · thinking on|+12.8 chrF [+8.4, +17.4]|Bonsai 9B 55.1 vs Qwen3.5 9B 2-bit 42.4 · n = 78 · † 9 of 78 answers unfinished at 32k (scored 0); without them +6.3 (Bonsai 9B 0, Qwen3.5 9B 2-bit 9) · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 9B − Qwen3.5 9B 2-bit · English → talk excerpts (T1) · thinking on, +12.8 chrF [+8.4, +17.4], Bonsai 9B 55.1 vs Qwen3.5 9B 2-bit 42.4 · n = 78 · † 9 of 78 answers unfinished at 32k (scored 0); without them +6.3 (Bonsai 9B 0, Qwen3.5 9B 2-bit 9) · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)">
+<rect class="hit" x="817.8" y="475.0" width="34.2" height="24"/>
 <rect class="hband" x="654" y="477.0" width="188" height="20" rx="10"/>
-<line class="ci" x1="808.3" x2="836.0" y1="487.0" y2="487.0"/>
-<line class="ci" x1="808.3" x2="808.3" y1="483.0" y2="491.0"/>
+<line class="ci" x1="821.8" x2="836.0" y1="487.0" y2="487.0"/>
+<line class="ci" x1="821.8" x2="821.8" y1="483.0" y2="491.0"/>
 <line class="ci" x1="836.0" x2="836.0" y1="483.0" y2="491.0"/>
 <path class="mk" d="M842.0,487.0 L832.0,481.0 L832.0,493.0 Z"/>
-<text class="hlab" x="826.0" y="491.5" text-anchor="end">+12.2†</text>
+<text class="hlab" x="826.0" y="491.5" text-anchor="end">+12.8†</text>
 </g>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 2B 4-bit · English → talk excerpts (T1) · thinking off|+0.5 chrF [−0.9, +1.9]|Bonsai 4B 52.6 vs Qwen3.5 2B 4-bit 52.0 · n = 36 · files 1.1 GB vs 1.3 GB" aria-label="Bonsai 4B − Qwen3.5 2B 4-bit · English → talk excerpts (T1) · thinking off, +0.5 chrF [−0.9, +1.9], Bonsai 4B 52.6 vs Qwen3.5 2B 4-bit 52.0 · n = 36 · files 1.1 GB vs 1.3 GB">
-<rect class="hit" x="753.3" y="563.0" width="32.0" height="24"/>
-<line class="ci" x1="759.3" x2="779.3" y1="575.0" y2="575.0"/>
-<line class="ci" x1="759.3" x2="759.3" y1="571.0" y2="579.0"/>
-<line class="ci" x1="779.3" x2="779.3" y1="571.0" y2="579.0"/>
-<circle class="mk" cx="769.3" cy="575.0" r="6"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 2B 4-bit · English → talk excerpts (T1) · thinking off|+1.0 chrF [−0.2, +2.2]|Bonsai 4B 52.4 vs Qwen3.5 2B 4-bit 51.4 · n = 78 · files 1.1 GB vs 1.3 GB" aria-label="Bonsai 4B − Qwen3.5 2B 4-bit · English → talk excerpts (T1) · thinking off, +1.0 chrF [−0.2, +2.2], Bonsai 4B 52.4 vs Qwen3.5 2B 4-bit 51.4 · n = 78 · files 1.1 GB vs 1.3 GB">
+<rect class="hit" x="741.0" y="563.0" width="32.0" height="24"/>
+<line class="ci" x1="746.6" x2="767.5" y1="575.0" y2="575.0"/>
+<line class="ci" x1="746.6" x2="746.6" y1="571.0" y2="579.0"/>
+<line class="ci" x1="767.5" x2="767.5" y1="571.0" y2="579.0"/>
+<circle class="mk" cx="757.0" cy="575.0" r="6"/>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 2B 4-bit · English → talk excerpts (T1) · thinking on|+3.0 chrF [+0.7, +5.1]|Bonsai 4B 53.0 vs Qwen3.5 2B 4-bit 50.0 · n = 36 · files 1.1 GB vs 1.3 GB · notable: Bonsai ahead of Qwen3.5 2B 4-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 4B − Qwen3.5 2B 4-bit · English → talk excerpts (T1) · thinking on, +3.0 chrF [+0.7, +5.1], Bonsai 4B 53.0 vs Qwen3.5 2B 4-bit 50.0 · n = 36 · files 1.1 GB vs 1.3 GB · notable: Bonsai ahead of Qwen3.5 2B 4-bit after correction for multiple comparisons (orange)">
-<rect class="hit" x="766.3" y="581.0" width="39.5" height="24"/>
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 2B 4-bit · English → talk excerpts (T1) · thinking on|+4.6 chrF [+2.5, +6.9]|Bonsai 4B 53.1 vs Qwen3.5 2B 4-bit 48.6 · n = 78 · files 1.1 GB vs 1.3 GB · notable: Bonsai ahead of Qwen3.5 2B 4-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 4B − Qwen3.5 2B 4-bit · English → talk excerpts (T1) · thinking on, +4.6 chrF [+2.5, +6.9], Bonsai 4B 53.1 vs Qwen3.5 2B 4-bit 48.6 · n = 78 · files 1.1 GB vs 1.3 GB · notable: Bonsai ahead of Qwen3.5 2B 4-bit after correction for multiple comparisons (orange)">
+<rect class="hit" x="766.0" y="581.0" width="46.6" height="24"/>
 <rect class="hband" x="654" y="583.0" width="188" height="20" rx="10"/>
-<line class="ci" x1="770.3" x2="801.8" y1="593.0" y2="593.0"/>
-<line class="ci" x1="770.3" x2="770.3" y1="589.0" y2="597.0"/>
-<line class="ci" x1="801.8" x2="801.8" y1="589.0" y2="597.0"/>
-<circle class="mk" cx="787.1" cy="593.0" r="5.5"/>
-<text class="hlab" x="808.8" y="597.5">+3.0</text>
+<line class="ci" x1="770.0" x2="808.6" y1="593.0" y2="593.0"/>
+<line class="ci" x1="770.0" x2="770.0" y1="589.0" y2="597.0"/>
+<line class="ci" x1="808.6" x2="808.6" y1="589.0" y2="597.0"/>
+<circle class="mk" cx="788.1" cy="593.0" r="5.5"/>
+<text class="hlab" x="763.0" y="597.5" text-anchor="end">+4.6</text>
 </g>
 <line class="sep" x1="656" x2="840" y1="620" y2="620"/>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 2-bit · English → talk excerpts (T1) · thinking off|+9.6 chrF [+4.6, +15.2]|Bonsai 4B 52.6 vs Qwen3.5 4B 2-bit 43.0 · n = 36 · files 1.1 GB vs 1.5 GB · notable: Bonsai ahead of Qwen3.5 4B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 4B − Qwen3.5 4B 2-bit · English → talk excerpts (T1) · thinking off, +9.6 chrF [+4.6, +15.2], Bonsai 4B 52.6 vs Qwen3.5 4B 2-bit 43.0 · n = 36 · files 1.1 GB vs 1.5 GB · notable: Bonsai ahead of Qwen3.5 4B 2-bit after correction for multiple comparisons (orange)">
-<rect class="hit" x="794.1" y="635.0" width="55.1" height="24"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 2-bit · English → talk excerpts (T1) · thinking off|+9.3 chrF [+6.1, +12.8]|Bonsai 4B 52.4 vs Qwen3.5 4B 2-bit 43.1 · n = 78 · files 1.1 GB vs 1.5 GB · notable: Bonsai ahead of Qwen3.5 4B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 4B − Qwen3.5 4B 2-bit · English → talk excerpts (T1) · thinking off, +9.3 chrF [+6.1, +12.8], Bonsai 4B 52.4 vs Qwen3.5 4B 2-bit 43.1 · n = 78 · files 1.1 GB vs 1.5 GB · notable: Bonsai ahead of Qwen3.5 4B 2-bit after correction for multiple comparisons (orange)">
+<rect class="hit" x="797.4" y="635.0" width="48.8" height="24"/>
 <rect class="hband" x="654" y="637.0" width="188" height="20" rx="10"/>
-<line class="ci" x1="798.1" x2="836.0" y1="647.0" y2="647.0"/>
-<line class="ci" x1="798.1" x2="798.1" y1="643.0" y2="651.0"/>
+<line class="ci" x1="801.4" x2="836.0" y1="647.0" y2="647.0"/>
+<line class="ci" x1="801.4" x2="801.4" y1="643.0" y2="651.0"/>
 <line class="ci" x1="836.0" x2="836.0" y1="643.0" y2="651.0"/>
-<circle class="mk" cx="833.2" cy="647.0" r="6"/>
-<text class="hlab" x="791.1" y="651.5" text-anchor="end">+9.6</text>
+<circle class="mk" cx="830.2" cy="647.0" r="6"/>
+<text class="hlab" x="794.4" y="651.5" text-anchor="end">+9.3</text>
 </g>
-<g class="pt bonsai on capped" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 2-bit · English → talk excerpts (T1) · thinking on|+49.4 chrF [+45.3, +53.1]|Bonsai 4B 53.0 vs Qwen3.5 4B 2-bit 3.6 · n = 36 · most answers still empty at 32k: Bonsai 4B 0, Qwen3.5 4B 2-bit 31 · files 1.1 GB vs 1.5 GB" aria-label="Bonsai 4B − Qwen3.5 4B 2-bit · English → talk excerpts (T1) · thinking on, +49.4 chrF [+45.3, +53.1], Bonsai 4B 53.0 vs Qwen3.5 4B 2-bit 3.6 · n = 36 · most answers still empty at 32k: Bonsai 4B 0, Qwen3.5 4B 2-bit 31 · files 1.1 GB vs 1.5 GB">
+<g class="pt bonsai on capped" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 2-bit · English → talk excerpts (T1) · thinking on|+49.2 chrF [+46.3, +52.0]|Bonsai 4B 53.1 vs Qwen3.5 4B 2-bit 3.9 · n = 78 · most answers still empty at 32k: Bonsai 4B 0, Qwen3.5 4B 2-bit 66 · files 1.1 GB vs 1.5 GB" aria-label="Bonsai 4B − Qwen3.5 4B 2-bit · English → talk excerpts (T1) · thinking on, +49.2 chrF [+46.3, +52.0], Bonsai 4B 53.1 vs Qwen3.5 4B 2-bit 3.9 · n = 78 · most answers still empty at 32k: Bonsai 4B 0, Qwen3.5 4B 2-bit 66 · files 1.1 GB vs 1.5 GB">
 <rect class="hit" x="820.0" y="653.0" width="32.0" height="24"/>
 <line class="ci" x1="836.0" x2="836.0" y1="665.0" y2="665.0"/>
 <line class="ci" x1="836.0" x2="836.0" y1="661.0" y2="669.0"/>
 <line class="ci" x1="836.0" x2="836.0" y1="661.0" y2="669.0"/>
 <path class="mk" d="M842.0,665.0 L832.0,659.0 L832.0,671.0 Z"/>
-<text class="plab" x="826.0" y="669.5" text-anchor="end">+49.4</text>
+<text class="plab" x="826.0" y="669.5" text-anchor="end">+49.2</text>
 </g>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 0.8B 4-bit · English → talk excerpts (T1) · thinking off|−0.6 chrF [−2.6, +1.1]|Bonsai 2B 46.1 vs Qwen3.5 0.8B 4-bit 46.8 · n = 36 · files 0.5 GB vs 0.5 GB" aria-label="Bonsai 2B − Qwen3.5 0.8B 4-bit · English → talk excerpts (T1) · thinking off, −0.6 chrF [−2.6, +1.1], Bonsai 2B 46.1 vs Qwen3.5 0.8B 4-bit 46.8 · n = 36 · files 0.5 GB vs 0.5 GB">
-<rect class="hit" x="743.4" y="741.0" width="34.3" height="24"/>
-<line class="ci" x1="747.4" x2="773.6" y1="753.0" y2="753.0"/>
-<line class="ci" x1="747.4" x2="747.4" y1="749.0" y2="757.0"/>
-<line class="ci" x1="773.6" x2="773.6" y1="749.0" y2="757.0"/>
-<circle class="mk" cx="761.1" cy="753.0" r="6"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 0.8B 4-bit · English → talk excerpts (T1) · thinking off|+0.9 chrF [−0.4, +2.1]|Bonsai 2B 46.5 vs Qwen3.5 0.8B 4-bit 45.6 · n = 78 · files 0.5 GB vs 0.5 GB" aria-label="Bonsai 2B − Qwen3.5 0.8B 4-bit · English → talk excerpts (T1) · thinking off, +0.9 chrF [−0.4, +2.1], Bonsai 2B 46.5 vs Qwen3.5 0.8B 4-bit 45.6 · n = 78 · files 0.5 GB vs 0.5 GB">
+<rect class="hit" x="739.7" y="741.0" width="32.0" height="24"/>
+<line class="ci" x1="744.2" x2="766.6" y1="753.0" y2="753.0"/>
+<line class="ci" x1="744.2" x2="744.2" y1="749.0" y2="757.0"/>
+<line class="ci" x1="766.6" x2="766.6" y1="749.0" y2="757.0"/>
+<circle class="mk" cx="755.7" cy="753.0" r="6"/>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 0.8B 4-bit · English → talk excerpts (T1) · thinking on|+16.5 chrF [+11.9, +21.4]|Bonsai 2B 46.8 vs Qwen3.5 0.8B 4-bit 30.3 · n = 36 · † 5 of 36 answers unfinished at 32k (scored 0); without them +11.2 (Bonsai 2B 0, Qwen3.5 0.8B 4-bit 5) · files 0.5 GB vs 0.5 GB · notable: Bonsai ahead of Qwen3.5 0.8B 4-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 2B − Qwen3.5 0.8B 4-bit · English → talk excerpts (T1) · thinking on, +16.5 chrF [+11.9, +21.4], Bonsai 2B 46.8 vs Qwen3.5 0.8B 4-bit 30.3 · n = 36 · † 5 of 36 answers unfinished at 32k (scored 0); without them +11.2 (Bonsai 2B 0, Qwen3.5 0.8B 4-bit 5) · files 0.5 GB vs 0.5 GB · notable: Bonsai ahead of Qwen3.5 0.8B 4-bit after correction for multiple comparisons (orange)">
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 0.8B 4-bit · English → talk excerpts (T1) · thinking on|+13.4 chrF [+10.3, +16.5]|Bonsai 2B 46.1 vs Qwen3.5 0.8B 4-bit 32.8 · n = 78 · † 8 of 78 answers unfinished at 32k (scored 0); without them +9.2 (Bonsai 2B 0, Qwen3.5 0.8B 4-bit 8) · files 0.5 GB vs 0.5 GB · notable: Bonsai ahead of Qwen3.5 0.8B 4-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 2B − Qwen3.5 0.8B 4-bit · English → talk excerpts (T1) · thinking on, +13.4 chrF [+10.3, +16.5], Bonsai 2B 46.1 vs Qwen3.5 0.8B 4-bit 32.8 · n = 78 · † 8 of 78 answers unfinished at 32k (scored 0); without them +9.2 (Bonsai 2B 0, Qwen3.5 0.8B 4-bit 8) · files 0.5 GB vs 0.5 GB · notable: Bonsai ahead of Qwen3.5 0.8B 4-bit after correction for multiple comparisons (orange)">
 <rect class="hit" x="820.0" y="759.0" width="32.0" height="24"/>
 <rect class="hband" x="654" y="761.0" width="188" height="20" rx="10"/>
 <line class="ci" x1="836.0" x2="836.0" y1="771.0" y2="771.0"/>
 <line class="ci" x1="836.0" x2="836.0" y1="767.0" y2="775.0"/>
 <line class="ci" x1="836.0" x2="836.0" y1="767.0" y2="775.0"/>
 <path class="mk" d="M842.0,771.0 L832.0,765.0 L832.0,777.0 Z"/>
-<text class="hlab" x="826.0" y="775.5" text-anchor="end">+16.5†</text>
+<text class="hlab" x="826.0" y="775.5" text-anchor="end">+13.4†</text>
 </g>
 <line class="sep" x1="656" x2="840" y1="798" y2="798"/>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 2-bit · English → talk excerpts (T1) · thinking off|+38.0 chrF [+34.2, +41.9]|Bonsai 2B 46.1 vs Qwen3.5 2B 2-bit 8.2 · n = 36 · files 0.5 GB vs 0.8 GB · notable: Bonsai ahead of Qwen3.5 2B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 2B − Qwen3.5 2B 2-bit · English → talk excerpts (T1) · thinking off, +38.0 chrF [+34.2, +41.9], Bonsai 2B 46.1 vs Qwen3.5 2B 2-bit 8.2 · n = 36 · files 0.5 GB vs 0.8 GB · notable: Bonsai ahead of Qwen3.5 2B 2-bit after correction for multiple comparisons (orange)">
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 2-bit · English → talk excerpts (T1) · thinking off|+35.0 chrF [+31.6, +38.2]|Bonsai 2B 46.5 vs Qwen3.5 2B 2-bit 11.4 · n = 78 · files 0.5 GB vs 0.8 GB · notable: Bonsai ahead of Qwen3.5 2B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 2B − Qwen3.5 2B 2-bit · English → talk excerpts (T1) · thinking off, +35.0 chrF [+31.6, +38.2], Bonsai 2B 46.5 vs Qwen3.5 2B 2-bit 11.4 · n = 78 · files 0.5 GB vs 0.8 GB · notable: Bonsai ahead of Qwen3.5 2B 2-bit after correction for multiple comparisons (orange)">
 <rect class="hit" x="820.0" y="813.0" width="32.0" height="24"/>
 <rect class="hband" x="654" y="815.0" width="188" height="20" rx="10"/>
 <line class="ci" x1="836.0" x2="836.0" y1="825.0" y2="825.0"/>
 <line class="ci" x1="836.0" x2="836.0" y1="821.0" y2="829.0"/>
 <line class="ci" x1="836.0" x2="836.0" y1="821.0" y2="829.0"/>
 <path class="mk" d="M842.0,825.0 L832.0,819.0 L832.0,831.0 Z"/>
-<text class="hlab" x="826.0" y="829.5" text-anchor="end">+38.0</text>
+<text class="hlab" x="826.0" y="829.5" text-anchor="end">+35.0</text>
 </g>
-<g class="pt bonsai on capped" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 2-bit · English → talk excerpts (T1) · thinking on|+46.3 chrF [+43.8, +48.8]|Bonsai 2B 46.8 vs Qwen3.5 2B 2-bit 0.5 · n = 36 · most answers still empty at 32k: Bonsai 2B 0, Qwen3.5 2B 2-bit 31 · files 0.5 GB vs 0.8 GB" aria-label="Bonsai 2B − Qwen3.5 2B 2-bit · English → talk excerpts (T1) · thinking on, +46.3 chrF [+43.8, +48.8], Bonsai 2B 46.8 vs Qwen3.5 2B 2-bit 0.5 · n = 36 · most answers still empty at 32k: Bonsai 2B 0, Qwen3.5 2B 2-bit 31 · files 0.5 GB vs 0.8 GB">
+<g class="pt bonsai on capped" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 2-bit · English → talk excerpts (T1) · thinking on|+45.6 chrF [+43.9, +47.4]|Bonsai 2B 46.1 vs Qwen3.5 2B 2-bit 0.5 · n = 78 · most answers still empty at 32k: Bonsai 2B 0, Qwen3.5 2B 2-bit 67 · files 0.5 GB vs 0.8 GB" aria-label="Bonsai 2B − Qwen3.5 2B 2-bit · English → talk excerpts (T1) · thinking on, +45.6 chrF [+43.9, +47.4], Bonsai 2B 46.1 vs Qwen3.5 2B 2-bit 0.5 · n = 78 · most answers still empty at 32k: Bonsai 2B 0, Qwen3.5 2B 2-bit 67 · files 0.5 GB vs 0.8 GB">
 <rect class="hit" x="820.0" y="831.0" width="32.0" height="24"/>
 <line class="ci" x1="836.0" x2="836.0" y1="843.0" y2="843.0"/>
 <line class="ci" x1="836.0" x2="836.0" y1="839.0" y2="847.0"/>
 <line class="ci" x1="836.0" x2="836.0" y1="839.0" y2="847.0"/>
 <path class="mk" d="M842.0,843.0 L832.0,837.0 L832.0,849.0 Z"/>
-<text class="plab" x="826.0" y="847.5" text-anchor="end">+46.3</text>
+<text class="plab" x="826.0" y="847.5" text-anchor="end">+45.6</text>
 </g>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 4-bit · English → talk excerpts (T1) · thinking off|−2.8 chrF [−5.2, −0.6]|Bonsai 9B 54.7 vs Qwen3.5 9B 4-bit 57.5 · n = 36 · files 2.4 GB vs 5.7 GB" aria-label="Bonsai 9B − Qwen3.5 9B 4-bit · English → talk excerpts (T1) · thinking off, −2.8 chrF [−5.2, −0.6], Bonsai 9B 54.7 vs Qwen3.5 9B 4-bit 57.5 · n = 36 · files 2.4 GB vs 5.7 GB">
-<rect class="hit" x="724.8" y="919.0" width="40.3" height="24"/>
-<line class="ci" x1="728.8" x2="761.1" y1="931.0" y2="931.0"/>
-<line class="ci" x1="728.8" x2="728.8" y1="927.0" y2="935.0"/>
-<line class="ci" x1="761.1" x2="761.1" y1="927.0" y2="935.0"/>
-<circle class="mk" cx="745.8" cy="931.0" r="6"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 4-bit · English → talk excerpts (T1) · thinking off|−2.2 chrF [−3.6, −0.8]|Bonsai 9B 54.6 vs Qwen3.5 9B 4-bit 56.8 · n = 78 · files 2.4 GB vs 5.7 GB" aria-label="Bonsai 9B − Qwen3.5 9B 4-bit · English → talk excerpts (T1) · thinking off, −2.2 chrF [−3.6, −0.8], Bonsai 9B 54.6 vs Qwen3.5 9B 4-bit 56.8 · n = 78 · files 2.4 GB vs 5.7 GB">
+<rect class="hit" x="712.1" y="919.0" width="32.9" height="24"/>
+<line class="ci" x1="716.1" x2="741.0" y1="931.0" y2="931.0"/>
+<line class="ci" x1="716.1" x2="716.1" y1="927.0" y2="935.0"/>
+<line class="ci" x1="741.0" x2="741.0" y1="927.0" y2="935.0"/>
+<circle class="mk" cx="728.9" cy="931.0" r="6"/>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 4-bit · English → talk excerpts (T1) · thinking on|−1.3 chrF [−3.1, +0.4]|Bonsai 9B 55.9 vs Qwen3.5 9B 4-bit 57.2 · n = 36 · files 2.4 GB vs 5.7 GB" aria-label="Bonsai 9B − Qwen3.5 9B 4-bit · English → talk excerpts (T1) · thinking on, −1.3 chrF [−3.1, +0.4], Bonsai 9B 55.9 vs Qwen3.5 9B 4-bit 57.2 · n = 36 · files 2.4 GB vs 5.7 GB">
-<rect class="hit" x="740.0" y="937.0" width="32.5" height="24"/>
-<line class="ci" x1="744.0" x2="768.2" y1="949.0" y2="949.0"/>
-<line class="ci" x1="744.0" x2="744.0" y1="945.0" y2="953.0"/>
-<line class="ci" x1="768.2" x2="768.2" y1="945.0" y2="953.0"/>
-<circle class="mk" cx="756.5" cy="949.0" r="5.5"/>
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 4-bit · English → talk excerpts (T1) · thinking on|−1.7 chrF [−2.8, −0.7]|Bonsai 9B 55.1 vs Qwen3.5 9B 4-bit 56.9 · n = 78 · files 2.4 GB vs 5.7 GB" aria-label="Bonsai 9B − Qwen3.5 9B 4-bit · English → talk excerpts (T1) · thinking on, −1.7 chrF [−2.8, −0.7], Bonsai 9B 55.1 vs Qwen3.5 9B 4-bit 56.9 · n = 78 · files 2.4 GB vs 5.7 GB">
+<rect class="hit" x="716.7" y="937.0" width="32.0" height="24"/>
+<line class="ci" x1="723.6" x2="741.8" y1="949.0" y2="949.0"/>
+<line class="ci" x1="723.6" x2="723.6" y1="945.0" y2="953.0"/>
+<line class="ci" x1="741.8" x2="741.8" y1="945.0" y2="953.0"/>
+<circle class="mk" cx="732.7" cy="949.0" r="5.5"/>
 </g>
 <line class="sep" x1="656" x2="840" y1="976" y2="976"/>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 4-bit · English → talk excerpts (T1) · thinking off|−3.6 chrF [−5.1, −1.9]|Bonsai 4B 52.6 vs Qwen3.5 4B 4-bit 56.1 · n = 36 · files 1.1 GB vs 2.7 GB" aria-label="Bonsai 4B − Qwen3.5 4B 4-bit · English → talk excerpts (T1) · thinking off, −3.6 chrF [−5.1, −1.9], Bonsai 4B 52.6 vs Qwen3.5 4B 4-bit 56.1 · n = 36 · files 1.1 GB vs 2.7 GB">
-<rect class="hit" x="724.5" y="991.0" width="32.0" height="24"/>
-<line class="ci" x1="729.7" x2="752.0" y1="1003.0" y2="1003.0"/>
-<line class="ci" x1="729.7" x2="729.7" y1="999.0" y2="1007.0"/>
-<line class="ci" x1="752.0" x2="752.0" y1="999.0" y2="1007.0"/>
-<circle class="mk" cx="740.5" cy="1003.0" r="6"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 4-bit · English → talk excerpts (T1) · thinking off|−3.2 chrF [−4.2, −2.2]|Bonsai 4B 52.4 vs Qwen3.5 4B 4-bit 55.6 · n = 78 · files 1.1 GB vs 2.7 GB" aria-label="Bonsai 4B − Qwen3.5 4B 4-bit · English → talk excerpts (T1) · thinking off, −3.2 chrF [−4.2, −2.2], Bonsai 4B 52.4 vs Qwen3.5 4B 4-bit 55.6 · n = 78 · files 1.1 GB vs 2.7 GB">
+<rect class="hit" x="704.1" y="991.0" width="32.0" height="24"/>
+<line class="ci" x1="711.0" x2="729.0" y1="1003.0" y2="1003.0"/>
+<line class="ci" x1="711.0" x2="711.0" y1="999.0" y2="1007.0"/>
+<line class="ci" x1="729.0" x2="729.0" y1="999.0" y2="1007.0"/>
+<circle class="mk" cx="720.1" cy="1003.0" r="6"/>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 4-bit · English → talk excerpts (T1) · thinking on|−1.8 chrF [−5.8, +2.7]|Bonsai 4B 53.0 vs Qwen3.5 4B 4-bit 54.8 · n = 36 · files 1.1 GB vs 2.7 GB" aria-label="Bonsai 4B − Qwen3.5 4B 4-bit · English → talk excerpts (T1) · thinking on, −1.8 chrF [−5.8, +2.7], Bonsai 4B 53.0 vs Qwen3.5 4B 4-bit 54.8 · n = 36 · files 1.1 GB vs 2.7 GB">
-<rect class="hit" x="720.8" y="1009.0" width="67.6" height="24"/>
-<line class="ci" x1="724.8" x2="784.3" y1="1021.0" y2="1021.0"/>
-<line class="ci" x1="724.8" x2="724.8" y1="1017.0" y2="1025.0"/>
-<line class="ci" x1="784.3" x2="784.3" y1="1017.0" y2="1025.0"/>
-<circle class="mk" cx="753.1" cy="1021.0" r="5.5"/>
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 4-bit · English → talk excerpts (T1) · thinking on|−2.0 chrF [−4.1, +0.3]|Bonsai 4B 53.1 vs Qwen3.5 4B 4-bit 55.1 · n = 78 · files 1.1 GB vs 2.7 GB" aria-label="Bonsai 4B − Qwen3.5 4B 4-bit · English → talk excerpts (T1) · thinking on, −2.0 chrF [−4.1, +0.3], Bonsai 4B 53.1 vs Qwen3.5 4B 4-bit 55.1 · n = 78 · files 1.1 GB vs 2.7 GB">
+<rect class="hit" x="708.1" y="1009.0" width="46.2" height="24"/>
+<line class="ci" x1="712.1" x2="750.3" y1="1021.0" y2="1021.0"/>
+<line class="ci" x1="712.1" x2="712.1" y1="1017.0" y2="1025.0"/>
+<line class="ci" x1="750.3" x2="750.3" y1="1017.0" y2="1025.0"/>
+<circle class="mk" cx="730.3" cy="1021.0" r="5.5"/>
 </g>
 <line class="sep" x1="656" x2="840" y1="1048" y2="1048"/>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 4-bit · English → talk excerpts (T1) · thinking off|−5.9 chrF [−7.6, −4.2]|Bonsai 2B 46.1 vs Qwen3.5 2B 4-bit 52.0 · n = 36 · files 0.5 GB vs 1.3 GB" aria-label="Bonsai 2B − Qwen3.5 2B 4-bit · English → talk excerpts (T1) · thinking off, −5.9 chrF [−7.6, −4.2], Bonsai 2B 46.1 vs Qwen3.5 2B 4-bit 52.0 · n = 36 · files 0.5 GB vs 1.3 GB">
-<rect class="hit" x="708.1" y="1063.0" width="32.0" height="24"/>
-<line class="ci" x1="712.4" x2="736.1" y1="1075.0" y2="1075.0"/>
-<line class="ci" x1="712.4" x2="712.4" y1="1071.0" y2="1079.0"/>
-<line class="ci" x1="736.1" x2="736.1" y1="1071.0" y2="1079.0"/>
-<circle class="mk" cx="724.1" cy="1075.0" r="6"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 4-bit · English → talk excerpts (T1) · thinking off|−4.9 chrF [−6.2, −3.7]|Bonsai 2B 46.5 vs Qwen3.5 2B 4-bit 51.4 · n = 78 · files 0.5 GB vs 1.3 GB" aria-label="Bonsai 2B − Qwen3.5 2B 4-bit · English → talk excerpts (T1) · thinking off, −4.9 chrF [−6.2, −3.7], Bonsai 2B 46.5 vs Qwen3.5 2B 4-bit 51.4 · n = 78 · files 0.5 GB vs 1.3 GB">
+<rect class="hit" x="688.7" y="1063.0" width="32.0" height="24"/>
+<line class="ci" x1="693.3" x2="715.8" y1="1075.0" y2="1075.0"/>
+<line class="ci" x1="693.3" x2="693.3" y1="1071.0" y2="1079.0"/>
+<line class="ci" x1="715.8" x2="715.8" y1="1071.0" y2="1079.0"/>
+<circle class="mk" cx="704.7" cy="1075.0" r="6"/>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 4-bit · English → talk excerpts (T1) · thinking on|−3.1 chrF [−5.2, −1.1]|Bonsai 2B 46.8 vs Qwen3.5 2B 4-bit 50.0 · n = 36 · files 0.5 GB vs 1.3 GB" aria-label="Bonsai 2B − Qwen3.5 2B 4-bit · English → talk excerpts (T1) · thinking on, −3.1 chrF [−5.2, −1.1], Bonsai 2B 46.8 vs Qwen3.5 2B 4-bit 50.0 · n = 36 · files 0.5 GB vs 1.3 GB">
-<rect class="hit" x="724.7" y="1081.0" width="37.3" height="24"/>
-<line class="ci" x1="728.7" x2="758.0" y1="1093.0" y2="1093.0"/>
-<line class="ci" x1="728.7" x2="728.7" y1="1089.0" y2="1097.0"/>
-<line class="ci" x1="758.0" x2="758.0" y1="1089.0" y2="1097.0"/>
-<circle class="mk" cx="743.4" cy="1093.0" r="5.5"/>
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 4-bit · English → talk excerpts (T1) · thinking on|−2.5 chrF [−4.0, −0.8]|Bonsai 2B 46.1 vs Qwen3.5 2B 4-bit 48.6 · n = 78 · files 0.5 GB vs 1.3 GB" aria-label="Bonsai 2B − Qwen3.5 2B 4-bit · English → talk excerpts (T1) · thinking on, −2.5 chrF [−4.0, −0.8], Bonsai 2B 46.1 vs Qwen3.5 2B 4-bit 48.6 · n = 78 · files 0.5 GB vs 1.3 GB">
+<rect class="hit" x="709.0" y="1081.0" width="36.1" height="24"/>
+<line class="ci" x1="713.0" x2="741.0" y1="1093.0" y2="1093.0"/>
+<line class="ci" x1="713.0" x2="713.0" y1="1089.0" y2="1097.0"/>
+<line class="ci" x1="741.0" x2="741.0" y1="1089.0" y2="1097.0"/>
+<circle class="mk" cx="726.4" cy="1093.0" r="5.5"/>
 </g>
 <text class="ptitle" x="878" y="44">German ↔ Chinese</text>
-<text class="psub" x="878" y="62">talk excerpts (T1) · n = 36</text>
+<text class="psub" x="878" y="62">talk excerpts (T1) · n = 36/78</text>
 <line class="grid" x1="878.0" x2="878.0" y1="80.0" y2="239.0"/>
 <line class="grid" x1="878.0" x2="878.0" y1="255.0" y2="345.0"/>
 <line class="grid" x1="878.0" x2="878.0" y1="361.0" y2="523.0"/>
 <line class="grid" x1="878.0" x2="878.0" y1="539.0" y2="701.0"/>
 <line class="grid" x1="878.0" x2="878.0" y1="717.0" y2="879.0"/>
 <line class="grid" x1="878.0" x2="878.0" y1="895.0" y2="1120.0"/>
-<line class="grid" x1="913.2" x2="913.2" y1="80.0" y2="239.0"/>
-<line class="grid" x1="913.2" x2="913.2" y1="255.0" y2="345.0"/>
-<line class="grid" x1="913.2" x2="913.2" y1="361.0" y2="523.0"/>
-<line class="grid" x1="913.2" x2="913.2" y1="539.0" y2="701.0"/>
-<line class="grid" x1="913.2" x2="913.2" y1="717.0" y2="879.0"/>
-<line class="grid" x1="913.2" x2="913.2" y1="895.0" y2="1120.0"/>
-<text class="tick" x="913.2" y="1136" text-anchor="middle">−10</text>
-<line class="grid" x1="948.4" x2="948.4" y1="80.0" y2="239.0"/>
-<line class="grid" x1="948.4" x2="948.4" y1="255.0" y2="345.0"/>
-<line class="grid" x1="948.4" x2="948.4" y1="361.0" y2="523.0"/>
-<line class="grid" x1="948.4" x2="948.4" y1="539.0" y2="701.0"/>
-<line class="grid" x1="948.4" x2="948.4" y1="717.0" y2="879.0"/>
-<line class="grid" x1="948.4" x2="948.4" y1="895.0" y2="1120.0"/>
-<line class="zero" x1="983.6" x2="983.6" y1="80.0" y2="239.0"/>
-<line class="zero" x1="983.6" x2="983.6" y1="255.0" y2="345.0"/>
-<line class="zero" x1="983.6" x2="983.6" y1="361.0" y2="523.0"/>
-<line class="zero" x1="983.6" x2="983.6" y1="539.0" y2="701.0"/>
-<line class="zero" x1="983.6" x2="983.6" y1="717.0" y2="879.0"/>
-<line class="zero" x1="983.6" x2="983.6" y1="895.0" y2="1120.0"/>
-<text class="tick" x="983.6" y="1136" text-anchor="middle">0</text>
-<line class="grid" x1="1018.8" x2="1018.8" y1="80.0" y2="239.0"/>
-<line class="grid" x1="1018.8" x2="1018.8" y1="255.0" y2="345.0"/>
-<line class="grid" x1="1018.8" x2="1018.8" y1="361.0" y2="523.0"/>
-<line class="grid" x1="1018.8" x2="1018.8" y1="539.0" y2="701.0"/>
-<line class="grid" x1="1018.8" x2="1018.8" y1="717.0" y2="879.0"/>
-<line class="grid" x1="1018.8" x2="1018.8" y1="895.0" y2="1120.0"/>
+<text class="tick" x="878.0" y="1136" text-anchor="middle">−10</text>
+<line class="grid" x1="922.0" x2="922.0" y1="80.0" y2="239.0"/>
+<line class="grid" x1="922.0" x2="922.0" y1="255.0" y2="345.0"/>
+<line class="grid" x1="922.0" x2="922.0" y1="361.0" y2="523.0"/>
+<line class="grid" x1="922.0" x2="922.0" y1="539.0" y2="701.0"/>
+<line class="grid" x1="922.0" x2="922.0" y1="717.0" y2="879.0"/>
+<line class="grid" x1="922.0" x2="922.0" y1="895.0" y2="1120.0"/>
+<line class="zero" x1="966.0" x2="966.0" y1="80.0" y2="239.0"/>
+<line class="zero" x1="966.0" x2="966.0" y1="255.0" y2="345.0"/>
+<line class="zero" x1="966.0" x2="966.0" y1="361.0" y2="523.0"/>
+<line class="zero" x1="966.0" x2="966.0" y1="539.0" y2="701.0"/>
+<line class="zero" x1="966.0" x2="966.0" y1="717.0" y2="879.0"/>
+<line class="zero" x1="966.0" x2="966.0" y1="895.0" y2="1120.0"/>
+<text class="tick" x="966.0" y="1136" text-anchor="middle">0</text>
+<line class="grid" x1="1010.0" x2="1010.0" y1="80.0" y2="239.0"/>
+<line class="grid" x1="1010.0" x2="1010.0" y1="255.0" y2="345.0"/>
+<line class="grid" x1="1010.0" x2="1010.0" y1="361.0" y2="523.0"/>
+<line class="grid" x1="1010.0" x2="1010.0" y1="539.0" y2="701.0"/>
+<line class="grid" x1="1010.0" x2="1010.0" y1="717.0" y2="879.0"/>
+<line class="grid" x1="1010.0" x2="1010.0" y1="895.0" y2="1120.0"/>
 <line class="grid" x1="1054.0" x2="1054.0" y1="80.0" y2="239.0"/>
 <line class="grid" x1="1054.0" x2="1054.0" y1="255.0" y2="345.0"/>
 <line class="grid" x1="1054.0" x2="1054.0" y1="361.0" y2="523.0"/>
@@ -829,193 +809,195 @@ padding:8px 10px;font-size:12.5px;box-shadow:0 4px 16px rgba(0,0,0,.4);display:n
 <line class="gsep" x1="874" x2="1058" y1="531.0" y2="531.0"/>
 <line class="gsep" x1="874" x2="1058" y1="709.0" y2="709.0"/>
 <line class="gsep" x1="874" x2="1058" y1="887.0" y2="887.0"/>
-<g class="pt cloud off" tabindex="0" data-tip="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · German ↔ Chinese talk excerpts (T1) · thinking off|+5.3 chrF [+3.2, +7.7]|DeepSeek V4.1 Flash 1017 55.1 vs Qwen3.5 9B 49.7 · n = 36" aria-label="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · German ↔ Chinese talk excerpts (T1) · thinking off, +5.3 chrF [+3.2, +7.7], DeepSeek V4.1 Flash 1017 55.1 vs Qwen3.5 9B 49.7 · n = 36">
-<rect class="hit" x="1001.8" y="101.0" width="39.6" height="24"/>
-<line class="ci" x1="1005.8" x2="1037.5" y1="113.0" y2="113.0"/>
-<line class="ci" x1="1005.8" x2="1005.8" y1="109.0" y2="117.0"/>
-<line class="ci" x1="1037.5" x2="1037.5" y1="109.0" y2="117.0"/>
-<circle class="mk" cx="1021.3" cy="113.0" r="6"/>
+<g class="pt cloud off" tabindex="0" data-tip="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · German ↔ Chinese talk excerpts (T1) · thinking off|+5.9 chrF [+4.6, +7.1]|DeepSeek V4.1 Flash 1017 54.8 vs Qwen3.5 9B 48.9 · n = 78" aria-label="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · German ↔ Chinese talk excerpts (T1) · thinking off, +5.9 chrF [+4.6, +7.1], DeepSeek V4.1 Flash 1017 54.8 vs Qwen3.5 9B 48.9 · n = 78">
+<rect class="hit" x="1001.7" y="101.0" width="32.0" height="24"/>
+<line class="ci" x1="1006.3" x2="1028.7" y1="113.0" y2="113.0"/>
+<line class="ci" x1="1006.3" x2="1006.3" y1="109.0" y2="117.0"/>
+<line class="ci" x1="1028.7" x2="1028.7" y1="109.0" y2="117.0"/>
+<circle class="mk" cx="1017.7" cy="113.0" r="6"/>
 </g>
-<g class="pt cloud on" tabindex="0" data-tip="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · German ↔ Chinese talk excerpts (T1) · thinking on|+4.6 chrF [+3.0, +6.5]|DeepSeek V4.1 Flash 1017 55.1 vs Qwen3.5 9B 50.5 · n = 36" aria-label="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · German ↔ Chinese talk excerpts (T1) · thinking on, +4.6 chrF [+3.0, +6.5], DeepSeek V4.1 Flash 1017 55.1 vs Qwen3.5 9B 50.5 · n = 36">
-<rect class="hit" x="1000.3" y="119.0" width="32.8" height="24"/>
-<line class="ci" x1="1004.8" x2="1029.1" y1="131.0" y2="131.0"/>
-<line class="ci" x1="1004.8" x2="1004.8" y1="127.0" y2="135.0"/>
-<line class="ci" x1="1029.1" x2="1029.1" y1="127.0" y2="135.0"/>
-<circle class="mk" cx="1016.3" cy="131.0" r="5.5"/>
+<g class="pt cloud on" tabindex="0" data-tip="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · German ↔ Chinese talk excerpts (T1) · thinking on|+4.2 chrF [+2.8, +5.5]|DeepSeek V4.1 Flash 1017 54.5 vs Qwen3.5 9B 50.4 · n = 78" aria-label="DeepSeek V4.1 Flash 1017 − Qwen3.5 9B · German ↔ Chinese talk excerpts (T1) · thinking on, +4.2 chrF [+2.8, +5.5], DeepSeek V4.1 Flash 1017 54.5 vs Qwen3.5 9B 50.4 · n = 78">
+<rect class="hit" x="986.5" y="119.0" width="32.0" height="24"/>
+<line class="ci" x1="991.0" x2="1014.2" y1="131.0" y2="131.0"/>
+<line class="ci" x1="991.0" x2="991.0" y1="127.0" y2="135.0"/>
+<line class="ci" x1="1014.2" x2="1014.2" y1="127.0" y2="135.0"/>
+<circle class="mk" cx="1002.5" cy="131.0" r="5.5"/>
 </g>
 <line class="sep" x1="874" x2="1058" y1="158" y2="158"/>
 <g class="pt cloud low" tabindex="0" data-tip="GLM 5.3 Flash − Qwen3.5 9B · German ↔ Chinese talk excerpts (T1) · low-effort thinking (vs Qwen thinking off)|+4.0 chrF [+1.6, +6.4]|GLM 5.3 Flash 53.7 vs Qwen3.5 9B 49.7 · n = 36" aria-label="GLM 5.3 Flash − Qwen3.5 9B · German ↔ Chinese talk excerpts (T1) · low-effort thinking (vs Qwen thinking off), +4.0 chrF [+1.6, +6.4], GLM 5.3 Flash 53.7 vs Qwen3.5 9B 49.7 · n = 36">
-<rect class="hit" x="990.6" y="173.0" width="42.4" height="24"/>
-<line class="ci" x1="994.6" x2="1028.9" y1="185.0" y2="185.0"/>
-<line class="ci" x1="994.6" x2="994.6" y1="181.0" y2="189.0"/>
-<line class="ci" x1="1028.9" x2="1028.9" y1="181.0" y2="189.0"/>
-<path class="mk" d="M1011.5,178.0 L1018.5,190.0 L1004.5,190.0 Z"/>
+<rect class="hit" x="975.7" y="173.0" width="50.9" height="24"/>
+<line class="ci" x1="979.7" x2="1022.7" y1="185.0" y2="185.0"/>
+<line class="ci" x1="979.7" x2="979.7" y1="181.0" y2="189.0"/>
+<line class="ci" x1="1022.7" x2="1022.7" y1="181.0" y2="189.0"/>
+<path class="mk" d="M1000.8,178.0 L1007.8,190.0 L993.8,190.0 Z"/>
 </g>
 <g class="pt cloud on" tabindex="0" data-tip="GLM 5.3 Flash − Qwen3.5 9B · German ↔ Chinese talk excerpts (T1) · thinking on|+3.3 chrF [+1.7, +4.8]|GLM 5.3 Flash 53.8 vs Qwen3.5 9B 50.5 · n = 36" aria-label="GLM 5.3 Flash − Qwen3.5 9B · German ↔ Chinese talk excerpts (T1) · thinking on, +3.3 chrF [+1.7, +4.8], GLM 5.3 Flash 53.8 vs Qwen3.5 9B 50.5 · n = 36">
-<rect class="hit" x="990.6" y="191.0" width="32.0" height="24"/>
-<line class="ci" x1="995.4" x2="1017.7" y1="203.0" y2="203.0"/>
-<line class="ci" x1="995.4" x2="995.4" y1="199.0" y2="207.0"/>
-<line class="ci" x1="1017.7" x2="1017.7" y1="199.0" y2="207.0"/>
-<circle class="mk" cx="1006.6" cy="203.0" r="5.5"/>
+<rect class="hit" x="976.7" y="191.0" width="35.9" height="24"/>
+<line class="ci" x1="980.7" x2="1008.6" y1="203.0" y2="203.0"/>
+<line class="ci" x1="980.7" x2="980.7" y1="199.0" y2="207.0"/>
+<line class="ci" x1="1008.6" x2="1008.6" y1="199.0" y2="207.0"/>
+<circle class="mk" cx="994.8" cy="203.0" r="5.5"/>
 </g>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 27B − Qwen3.8 27B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking off|−2.6 chrF [−4.8, −0.8]|Bonsai 27B 50.4 vs Qwen3.8 27B 2-bit 53.0 · n = 36 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080" aria-label="Bonsai 27B − Qwen3.8 27B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking off, −2.6 chrF [−4.8, −0.8], Bonsai 27B 50.4 vs Qwen3.8 27B 2-bit 53.0 · n = 36 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080">
-<rect class="hit" x="945.9" y="279.0" width="35.7" height="24"/>
-<line class="ci" x1="949.9" x2="977.7" y1="291.0" y2="291.0"/>
-<line class="ci" x1="949.9" x2="949.9" y1="287.0" y2="295.0"/>
-<line class="ci" x1="977.7" x2="977.7" y1="287.0" y2="295.0"/>
-<circle class="mk" cx="965.1" cy="291.0" r="6"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 27B − Qwen3.8 27B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking off|−1.7 chrF [−3.2, −0.3]|Bonsai 27B 50.3 vs Qwen3.8 27B 2-bit 52.0 · n = 78 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080" aria-label="Bonsai 27B − Qwen3.8 27B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking off, −1.7 chrF [−3.2, −0.3], Bonsai 27B 50.3 vs Qwen3.8 27B 2-bit 52.0 · n = 78 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080">
+<rect class="hit" x="933.9" y="279.0" width="33.5" height="24"/>
+<line class="ci" x1="937.9" x2="963.4" y1="291.0" y2="291.0"/>
+<line class="ci" x1="937.9" x2="937.9" y1="287.0" y2="295.0"/>
+<line class="ci" x1="963.4" x2="963.4" y1="287.0" y2="295.0"/>
+<circle class="mk" cx="951.0" cy="291.0" r="6"/>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 27B − Qwen3.8 27B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking on|+1.4 chrF [−0.8, +4.4]|Bonsai 27B 50.4 vs Qwen3.8 27B 2-bit 49.0 · n = 36 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080" aria-label="Bonsai 27B − Qwen3.8 27B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking on, +1.4 chrF [−0.8, +4.4], Bonsai 27B 50.4 vs Qwen3.8 27B 2-bit 49.0 · n = 36 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080">
-<rect class="hit" x="973.6" y="297.0" width="44.7" height="24"/>
-<line class="ci" x1="977.6" x2="1014.3" y1="309.0" y2="309.0"/>
-<line class="ci" x1="977.6" x2="977.6" y1="305.0" y2="313.0"/>
-<line class="ci" x1="1014.3" x2="1014.3" y1="305.0" y2="313.0"/>
-<circle class="mk" cx="993.5" cy="309.0" r="5.5"/>
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 27B − Qwen3.8 27B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking on|+3.3 chrF [+1.1, +6.0]|Bonsai 27B 50.3 vs Qwen3.8 27B 2-bit 47.0 · n = 78 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080 · notable: Bonsai ahead of Qwen3.8 27B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 27B − Qwen3.8 27B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking on, +3.3 chrF [+1.1, +6.0], Bonsai 27B 50.3 vs Qwen3.8 27B 2-bit 47.0 · n = 78 · files 7.2 GB vs 7.3 GB; Bonsai 27B derives from Qwen3.8 27B; run on an RTX 5080 · notable: Bonsai ahead of Qwen3.8 27B 2-bit after correction for multiple comparisons (orange)">
+<rect class="hit" x="971.7" y="297.0" width="50.9" height="24"/>
+<rect class="hband" x="872" y="299.0" width="188" height="20" rx="10"/>
+<line class="ci" x1="975.7" x2="1018.5" y1="309.0" y2="309.0"/>
+<line class="ci" x1="975.7" x2="975.7" y1="305.0" y2="313.0"/>
+<line class="ci" x1="1018.5" x2="1018.5" y1="305.0" y2="313.0"/>
+<circle class="mk" cx="995.4" cy="309.0" r="5.5"/>
+<text class="hlab" x="1025.5" y="313.5">+3.3</text>
 </g>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 4B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off|+1.1 chrF [−0.3, +2.6]|Bonsai 9B 48.5 vs Qwen3.5 4B 4-bit 47.4 · n = 36 · files 2.4 GB vs 2.7 GB" aria-label="Bonsai 9B − Qwen3.5 4B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off, +1.1 chrF [−0.3, +2.6], Bonsai 9B 48.5 vs Qwen3.5 4B 4-bit 47.4 · n = 36 · files 2.4 GB vs 2.7 GB">
-<rect class="hit" x="975.6" y="385.0" width="32.0" height="24"/>
-<line class="ci" x1="981.6" x2="1001.6" y1="397.0" y2="397.0"/>
-<line class="ci" x1="981.6" x2="981.6" y1="393.0" y2="401.0"/>
-<line class="ci" x1="1001.6" x2="1001.6" y1="393.0" y2="401.0"/>
-<circle class="mk" cx="991.6" cy="397.0" r="6"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 4B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off|+0.3 chrF [−0.6, +1.3]|Bonsai 9B 47.6 vs Qwen3.5 4B 4-bit 47.2 · n = 78 · files 2.4 GB vs 2.7 GB" aria-label="Bonsai 9B − Qwen3.5 4B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off, +0.3 chrF [−0.6, +1.3], Bonsai 9B 47.6 vs Qwen3.5 4B 4-bit 47.2 · n = 78 · files 2.4 GB vs 2.7 GB">
+<rect class="hit" x="952.7" y="385.0" width="32.0" height="24"/>
+<line class="ci" x1="960.5" x2="977.5" y1="397.0" y2="397.0"/>
+<line class="ci" x1="960.5" x2="960.5" y1="393.0" y2="401.0"/>
+<line class="ci" x1="977.5" x2="977.5" y1="393.0" y2="401.0"/>
+<circle class="mk" cx="968.7" cy="397.0" r="6"/>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 4B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on|−1.5 chrF [−2.7, −0.3]|Bonsai 9B 47.6 vs Qwen3.5 4B 4-bit 49.1 · n = 36 · files 2.4 GB vs 2.7 GB" aria-label="Bonsai 9B − Qwen3.5 4B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on, −1.5 chrF [−2.7, −0.3], Bonsai 9B 47.6 vs Qwen3.5 4B 4-bit 49.1 · n = 36 · files 2.4 GB vs 2.7 GB">
-<rect class="hit" x="957.0" y="403.0" width="32.0" height="24"/>
-<line class="ci" x1="964.7" x2="981.3" y1="415.0" y2="415.0"/>
-<line class="ci" x1="964.7" x2="964.7" y1="411.0" y2="419.0"/>
-<line class="ci" x1="981.3" x2="981.3" y1="411.0" y2="419.0"/>
-<circle class="mk" cx="973.0" cy="415.0" r="5.5"/>
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 4B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on|−1.4 chrF [−2.4, −0.3]|Bonsai 9B 47.5 vs Qwen3.5 4B 4-bit 48.9 · n = 78 · files 2.4 GB vs 2.7 GB" aria-label="Bonsai 9B − Qwen3.5 4B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on, −1.4 chrF [−2.4, −0.3], Bonsai 9B 47.5 vs Qwen3.5 4B 4-bit 48.9 · n = 78 · files 2.4 GB vs 2.7 GB">
+<rect class="hit" x="938.1" y="403.0" width="32.0" height="24"/>
+<line class="ci" x1="945.1" x2="963.7" y1="415.0" y2="415.0"/>
+<line class="ci" x1="945.1" x2="945.1" y1="411.0" y2="419.0"/>
+<line class="ci" x1="963.7" x2="963.7" y1="411.0" y2="419.0"/>
+<circle class="mk" cx="954.1" cy="415.0" r="5.5"/>
 </g>
 <line class="sep" x1="874" x2="1058" y1="442" y2="442"/>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking off|+12.6 chrF [+7.2, +18.6]|Bonsai 9B 48.5 vs Qwen3.5 9B 2-bit 35.9 · n = 36 · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 9B − Qwen3.5 9B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking off, +12.6 chrF [+7.2, +18.6], Bonsai 9B 48.5 vs Qwen3.5 9B 2-bit 35.9 · n = 36 · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)">
-<rect class="hit" x="1030.5" y="457.0" width="39.5" height="24"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking off|+9.8 chrF [+6.7, +13.1]|Bonsai 9B 47.6 vs Qwen3.5 9B 2-bit 37.8 · n = 78 · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 9B − Qwen3.5 9B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking off, +9.8 chrF [+6.7, +13.1], Bonsai 9B 47.6 vs Qwen3.5 9B 2-bit 37.8 · n = 78 · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)">
+<rect class="hit" x="1020.8" y="457.0" width="47.5" height="24"/>
 <rect class="hband" x="872" y="459.0" width="188" height="20" rx="10"/>
-<line class="ci" x1="1034.5" x2="1054.0" y1="469.0" y2="469.0"/>
-<line class="ci" x1="1034.5" x2="1034.5" y1="465.0" y2="473.0"/>
+<line class="ci" x1="1024.8" x2="1054.0" y1="469.0" y2="469.0"/>
+<line class="ci" x1="1024.8" x2="1024.8" y1="465.0" y2="473.0"/>
 <line class="ci" x1="1054.0" x2="1054.0" y1="465.0" y2="473.0"/>
-<path class="mk" d="M1060.0,469.0 L1050.0,463.0 L1050.0,475.0 Z"/>
-<text class="hlab" x="1044.0" y="473.5" text-anchor="end">+12.6</text>
+<circle class="mk" cx="1052.3" cy="469.0" r="6"/>
+<text class="hlab" x="1017.8" y="473.5" text-anchor="end">+9.8</text>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking on|+15.9 chrF [+9.5, +22.1]|Bonsai 9B 47.6 vs Qwen3.5 9B 2-bit 31.7 · n = 36 · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 9B − Qwen3.5 9B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking on, +15.9 chrF [+9.5, +22.1], Bonsai 9B 47.6 vs Qwen3.5 9B 2-bit 31.7 · n = 36 · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)">
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking on|+17.6 chrF [+13.2, +22.2]|Bonsai 9B 47.5 vs Qwen3.5 9B 2-bit 29.9 · n = 78 · † 13 of 78 answers unfinished at 32k (scored 0); without them +10.3 (Bonsai 9B 0, Qwen3.5 9B 2-bit 13) · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 9B − Qwen3.5 9B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking on, +17.6 chrF [+13.2, +22.2], Bonsai 9B 47.5 vs Qwen3.5 9B 2-bit 29.9 · n = 78 · † 13 of 78 answers unfinished at 32k (scored 0); without them +10.3 (Bonsai 9B 0, Qwen3.5 9B 2-bit 13) · files 2.4 GB vs 3.2 GB · notable: Bonsai ahead of Qwen3.5 9B 2-bit after correction for multiple comparisons (orange)">
 <rect class="hit" x="1038.0" y="475.0" width="32.0" height="24"/>
 <rect class="hband" x="872" y="477.0" width="188" height="20" rx="10"/>
-<line class="ci" x1="1050.8" x2="1054.0" y1="487.0" y2="487.0"/>
-<line class="ci" x1="1050.8" x2="1050.8" y1="483.0" y2="491.0"/>
+<line class="ci" x1="1054.0" x2="1054.0" y1="487.0" y2="487.0"/>
+<line class="ci" x1="1054.0" x2="1054.0" y1="483.0" y2="491.0"/>
 <line class="ci" x1="1054.0" x2="1054.0" y1="483.0" y2="491.0"/>
 <path class="mk" d="M1060.0,487.0 L1050.0,481.0 L1050.0,493.0 Z"/>
-<text class="hlab" x="1044.0" y="491.5" text-anchor="end">+15.9</text>
+<text class="hlab" x="1044.0" y="491.5" text-anchor="end">+17.6†</text>
 </g>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 2B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off|+1.0 chrF [−0.3, +2.2]|Bonsai 4B 45.7 vs Qwen3.5 2B 4-bit 44.7 · n = 36 · files 1.1 GB vs 1.3 GB" aria-label="Bonsai 4B − Qwen3.5 2B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off, +1.0 chrF [−0.3, +2.2], Bonsai 4B 45.7 vs Qwen3.5 2B 4-bit 44.7 · n = 36 · files 1.1 GB vs 1.3 GB">
-<rect class="hit" x="974.6" y="563.0" width="32.0" height="24"/>
-<line class="ci" x1="981.3" x2="999.3" y1="575.0" y2="575.0"/>
-<line class="ci" x1="981.3" x2="981.3" y1="571.0" y2="579.0"/>
-<line class="ci" x1="999.3" x2="999.3" y1="571.0" y2="579.0"/>
-<circle class="mk" cx="990.6" cy="575.0" r="6"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 2B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off|+1.6 chrF [+0.1, +3.3]|Bonsai 4B 44.3 vs Qwen3.5 2B 4-bit 42.6 · n = 78 · files 1.1 GB vs 1.3 GB" aria-label="Bonsai 4B − Qwen3.5 2B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off, +1.6 chrF [+0.1, +3.3], Bonsai 4B 44.3 vs Qwen3.5 2B 4-bit 42.6 · n = 78 · files 1.1 GB vs 1.3 GB">
+<rect class="hit" x="962.7" y="563.0" width="36.6" height="24"/>
+<line class="ci" x1="966.7" x2="995.3" y1="575.0" y2="575.0"/>
+<line class="ci" x1="966.7" x2="966.7" y1="571.0" y2="579.0"/>
+<line class="ci" x1="995.3" x2="995.3" y1="571.0" y2="579.0"/>
+<circle class="mk" cx="980.4" cy="575.0" r="6"/>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 2B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on|+3.8 chrF [+1.0, +6.6]|Bonsai 4B 46.8 vs Qwen3.5 2B 4-bit 43.0 · n = 36 · files 1.1 GB vs 1.3 GB · notable: Bonsai ahead of Qwen3.5 2B 4-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 4B − Qwen3.5 2B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on, +3.8 chrF [+1.0, +6.6], Bonsai 4B 46.8 vs Qwen3.5 2B 4-bit 43.0 · n = 36 · files 1.1 GB vs 1.3 GB · notable: Bonsai ahead of Qwen3.5 2B 4-bit after correction for multiple comparisons (orange)">
-<rect class="hit" x="986.4" y="581.0" width="47.4" height="24"/>
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 2B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on|+3.8 chrF [+2.1, +5.4]|Bonsai 4B 46.2 vs Qwen3.5 2B 4-bit 42.4 · n = 78 · files 1.1 GB vs 1.3 GB · notable: Bonsai ahead of Qwen3.5 2B 4-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 4B − Qwen3.5 2B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on, +3.8 chrF [+2.1, +5.4], Bonsai 4B 46.2 vs Qwen3.5 2B 4-bit 42.4 · n = 78 · files 1.1 GB vs 1.3 GB · notable: Bonsai ahead of Qwen3.5 2B 4-bit after correction for multiple comparisons (orange)">
+<rect class="hit" x="980.9" y="581.0" width="36.6" height="24"/>
 <rect class="hband" x="872" y="583.0" width="188" height="20" rx="10"/>
-<line class="ci" x1="990.4" x2="1029.9" y1="593.0" y2="593.0"/>
-<line class="ci" x1="990.4" x2="990.4" y1="589.0" y2="597.0"/>
-<line class="ci" x1="1029.9" x2="1029.9" y1="589.0" y2="597.0"/>
-<circle class="mk" cx="1010.1" cy="593.0" r="5.5"/>
-<text class="hlab" x="983.4" y="597.5" text-anchor="end">+3.8</text>
+<line class="ci" x1="984.9" x2="1013.5" y1="593.0" y2="593.0"/>
+<line class="ci" x1="984.9" x2="984.9" y1="589.0" y2="597.0"/>
+<line class="ci" x1="1013.5" x2="1013.5" y1="589.0" y2="597.0"/>
+<circle class="mk" cx="999.2" cy="593.0" r="5.5"/>
+<text class="hlab" x="1020.5" y="597.5">+3.8</text>
 </g>
 <line class="sep" x1="874" x2="1058" y1="620" y2="620"/>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking off|+13.8 chrF [+9.5, +17.7]|Bonsai 4B 45.7 vs Qwen3.5 4B 2-bit 31.9 · n = 36 · files 1.1 GB vs 1.5 GB · notable: Bonsai ahead of Qwen3.5 4B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 4B − Qwen3.5 4B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking off, +13.8 chrF [+9.5, +17.7], Bonsai 4B 45.7 vs Qwen3.5 4B 2-bit 31.9 · n = 36 · files 1.1 GB vs 1.5 GB · notable: Bonsai ahead of Qwen3.5 4B 2-bit after correction for multiple comparisons (orange)">
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking off|+14.2 chrF [+10.9, +17.3]|Bonsai 4B 44.3 vs Qwen3.5 4B 2-bit 30.1 · n = 78 · files 1.1 GB vs 1.5 GB · notable: Bonsai ahead of Qwen3.5 4B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 4B − Qwen3.5 4B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking off, +14.2 chrF [+10.9, +17.3], Bonsai 4B 44.3 vs Qwen3.5 4B 2-bit 30.1 · n = 78 · files 1.1 GB vs 1.5 GB · notable: Bonsai ahead of Qwen3.5 4B 2-bit after correction for multiple comparisons (orange)">
 <rect class="hit" x="1038.0" y="635.0" width="32.0" height="24"/>
 <rect class="hband" x="872" y="637.0" width="188" height="20" rx="10"/>
-<line class="ci" x1="1050.2" x2="1054.0" y1="647.0" y2="647.0"/>
-<line class="ci" x1="1050.2" x2="1050.2" y1="643.0" y2="651.0"/>
+<line class="ci" x1="1054.0" x2="1054.0" y1="647.0" y2="647.0"/>
+<line class="ci" x1="1054.0" x2="1054.0" y1="643.0" y2="651.0"/>
 <line class="ci" x1="1054.0" x2="1054.0" y1="643.0" y2="651.0"/>
 <path class="mk" d="M1060.0,647.0 L1050.0,641.0 L1050.0,653.0 Z"/>
-<text class="hlab" x="1044.0" y="651.5" text-anchor="end">+13.8</text>
+<text class="hlab" x="1044.0" y="651.5" text-anchor="end">+14.2</text>
 </g>
-<g class="pt bonsai on capped" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking on|+42.5 chrF [+38.0, +46.7]|Bonsai 4B 46.8 vs Qwen3.5 4B 2-bit 4.3 · n = 36 · most answers still empty at 32k: Bonsai 4B 0, Qwen3.5 4B 2-bit 29 · files 1.1 GB vs 1.5 GB" aria-label="Bonsai 4B − Qwen3.5 4B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking on, +42.5 chrF [+38.0, +46.7], Bonsai 4B 46.8 vs Qwen3.5 4B 2-bit 4.3 · n = 36 · most answers still empty at 32k: Bonsai 4B 0, Qwen3.5 4B 2-bit 29 · files 1.1 GB vs 1.5 GB">
+<g class="pt bonsai on capped" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking on|+42.3 chrF [+39.2, +45.3]|Bonsai 4B 46.2 vs Qwen3.5 4B 2-bit 3.9 · n = 78 · most answers still empty at 32k: Bonsai 4B 0, Qwen3.5 4B 2-bit 60 · files 1.1 GB vs 1.5 GB" aria-label="Bonsai 4B − Qwen3.5 4B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking on, +42.3 chrF [+39.2, +45.3], Bonsai 4B 46.2 vs Qwen3.5 4B 2-bit 3.9 · n = 78 · most answers still empty at 32k: Bonsai 4B 0, Qwen3.5 4B 2-bit 60 · files 1.1 GB vs 1.5 GB">
 <rect class="hit" x="1038.0" y="653.0" width="32.0" height="24"/>
 <line class="ci" x1="1054.0" x2="1054.0" y1="665.0" y2="665.0"/>
 <line class="ci" x1="1054.0" x2="1054.0" y1="661.0" y2="669.0"/>
 <line class="ci" x1="1054.0" x2="1054.0" y1="661.0" y2="669.0"/>
 <path class="mk" d="M1060.0,665.0 L1050.0,659.0 L1050.0,671.0 Z"/>
-<text class="plab" x="1044.0" y="669.5" text-anchor="end">+42.5</text>
+<text class="plab" x="1044.0" y="669.5" text-anchor="end">+42.3</text>
 </g>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 0.8B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off|−0.7 chrF [−3.2, +1.4]|Bonsai 2B 37.1 vs Qwen3.5 0.8B 4-bit 37.8 · n = 36 · files 0.5 GB vs 0.5 GB" aria-label="Bonsai 2B − Qwen3.5 0.8B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off, −0.7 chrF [−3.2, +1.4], Bonsai 2B 37.1 vs Qwen3.5 0.8B 4-bit 37.8 · n = 36 · files 0.5 GB vs 0.5 GB">
-<rect class="hit" x="956.7" y="741.0" width="40.6" height="24"/>
-<line class="ci" x1="960.7" x2="993.3" y1="753.0" y2="753.0"/>
-<line class="ci" x1="960.7" x2="960.7" y1="749.0" y2="757.0"/>
-<line class="ci" x1="993.3" x2="993.3" y1="749.0" y2="757.0"/>
-<circle class="mk" cx="978.7" cy="753.0" r="6"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 0.8B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off|+1.1 chrF [−0.8, +3.2]|Bonsai 2B 36.9 vs Qwen3.5 0.8B 4-bit 35.7 · n = 78 · files 0.5 GB vs 0.5 GB" aria-label="Bonsai 2B − Qwen3.5 0.8B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off, +1.1 chrF [−0.8, +3.2], Bonsai 2B 36.9 vs Qwen3.5 0.8B 4-bit 35.7 · n = 78 · files 0.5 GB vs 0.5 GB">
+<rect class="hit" x="954.8" y="741.0" width="43.5" height="24"/>
+<line class="ci" x1="958.8" x2="994.2" y1="753.0" y2="753.0"/>
+<line class="ci" x1="958.8" x2="958.8" y1="749.0" y2="757.0"/>
+<line class="ci" x1="994.2" x2="994.2" y1="749.0" y2="757.0"/>
+<circle class="mk" cx="976.0" cy="753.0" r="6"/>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 0.8B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on|+18.6 chrF [+13.3, +24.5]|Bonsai 2B 39.6 vs Qwen3.5 0.8B 4-bit 21.1 · n = 36 · † 8 of 36 answers unfinished at 32k (scored 0); without them +11.3 (Bonsai 2B 0, Qwen3.5 0.8B 4-bit 8) · files 0.5 GB vs 0.5 GB · notable: Bonsai ahead of Qwen3.5 0.8B 4-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 2B − Qwen3.5 0.8B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on, +18.6 chrF [+13.3, +24.5], Bonsai 2B 39.6 vs Qwen3.5 0.8B 4-bit 21.1 · n = 36 · † 8 of 36 answers unfinished at 32k (scored 0); without them +11.3 (Bonsai 2B 0, Qwen3.5 0.8B 4-bit 8) · files 0.5 GB vs 0.5 GB · notable: Bonsai ahead of Qwen3.5 0.8B 4-bit after correction for multiple comparisons (orange)">
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 0.8B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on|+15.4 chrF [+12.3, +18.7]|Bonsai 2B 38.1 vs Qwen3.5 0.8B 4-bit 22.7 · n = 78 · † 9 of 78 answers unfinished at 32k (scored 0); without them +11.6 (Bonsai 2B 0, Qwen3.5 0.8B 4-bit 9) · files 0.5 GB vs 0.5 GB · notable: Bonsai ahead of Qwen3.5 0.8B 4-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 2B − Qwen3.5 0.8B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on, +15.4 chrF [+12.3, +18.7], Bonsai 2B 38.1 vs Qwen3.5 0.8B 4-bit 22.7 · n = 78 · † 9 of 78 answers unfinished at 32k (scored 0); without them +11.6 (Bonsai 2B 0, Qwen3.5 0.8B 4-bit 9) · files 0.5 GB vs 0.5 GB · notable: Bonsai ahead of Qwen3.5 0.8B 4-bit after correction for multiple comparisons (orange)">
 <rect class="hit" x="1038.0" y="759.0" width="32.0" height="24"/>
 <rect class="hband" x="872" y="761.0" width="188" height="20" rx="10"/>
 <line class="ci" x1="1054.0" x2="1054.0" y1="771.0" y2="771.0"/>
 <line class="ci" x1="1054.0" x2="1054.0" y1="767.0" y2="775.0"/>
 <line class="ci" x1="1054.0" x2="1054.0" y1="767.0" y2="775.0"/>
 <path class="mk" d="M1060.0,771.0 L1050.0,765.0 L1050.0,777.0 Z"/>
-<text class="hlab" x="1044.0" y="775.5" text-anchor="end">+18.6†</text>
+<text class="hlab" x="1044.0" y="775.5" text-anchor="end">+15.4†</text>
 </g>
 <line class="sep" x1="874" x2="1058" y1="798" y2="798"/>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking off|+25.8 chrF [+20.6, +30.8]|Bonsai 2B 37.1 vs Qwen3.5 2B 2-bit 11.3 · n = 36 · files 0.5 GB vs 0.8 GB · notable: Bonsai ahead of Qwen3.5 2B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 2B − Qwen3.5 2B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking off, +25.8 chrF [+20.6, +30.8], Bonsai 2B 37.1 vs Qwen3.5 2B 2-bit 11.3 · n = 36 · files 0.5 GB vs 0.8 GB · notable: Bonsai ahead of Qwen3.5 2B 2-bit after correction for multiple comparisons (orange)">
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking off|+27.3 chrF [+24.1, +30.5]|Bonsai 2B 36.9 vs Qwen3.5 2B 2-bit 9.6 · n = 78 · files 0.5 GB vs 0.8 GB · notable: Bonsai ahead of Qwen3.5 2B 2-bit after correction for multiple comparisons (orange)" aria-label="Bonsai 2B − Qwen3.5 2B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking off, +27.3 chrF [+24.1, +30.5], Bonsai 2B 36.9 vs Qwen3.5 2B 2-bit 9.6 · n = 78 · files 0.5 GB vs 0.8 GB · notable: Bonsai ahead of Qwen3.5 2B 2-bit after correction for multiple comparisons (orange)">
 <rect class="hit" x="1038.0" y="813.0" width="32.0" height="24"/>
 <rect class="hband" x="872" y="815.0" width="188" height="20" rx="10"/>
 <line class="ci" x1="1054.0" x2="1054.0" y1="825.0" y2="825.0"/>
 <line class="ci" x1="1054.0" x2="1054.0" y1="821.0" y2="829.0"/>
 <line class="ci" x1="1054.0" x2="1054.0" y1="821.0" y2="829.0"/>
 <path class="mk" d="M1060.0,825.0 L1050.0,819.0 L1050.0,831.0 Z"/>
-<text class="hlab" x="1044.0" y="829.5" text-anchor="end">+25.8</text>
+<text class="hlab" x="1044.0" y="829.5" text-anchor="end">+27.3</text>
 </g>
-<g class="pt bonsai on capped" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking on|+39.6 chrF [+37.9, +41.4]|Bonsai 2B 39.6 vs Qwen3.5 2B 2-bit 0.0 · n = 36 · most answers still empty at 32k: Bonsai 2B 0, Qwen3.5 2B 2-bit 34 · files 0.5 GB vs 0.8 GB" aria-label="Bonsai 2B − Qwen3.5 2B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking on, +39.6 chrF [+37.9, +41.4], Bonsai 2B 39.6 vs Qwen3.5 2B 2-bit 0.0 · n = 36 · most answers still empty at 32k: Bonsai 2B 0, Qwen3.5 2B 2-bit 34 · files 0.5 GB vs 0.8 GB">
+<g class="pt bonsai on capped" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking on|+37.8 chrF [+36.4, +39.2]|Bonsai 2B 38.1 vs Qwen3.5 2B 2-bit 0.3 · n = 78 · most answers still empty at 32k: Bonsai 2B 0, Qwen3.5 2B 2-bit 72 · files 0.5 GB vs 0.8 GB" aria-label="Bonsai 2B − Qwen3.5 2B 2-bit · German ↔ Chinese talk excerpts (T1) · thinking on, +37.8 chrF [+36.4, +39.2], Bonsai 2B 38.1 vs Qwen3.5 2B 2-bit 0.3 · n = 78 · most answers still empty at 32k: Bonsai 2B 0, Qwen3.5 2B 2-bit 72 · files 0.5 GB vs 0.8 GB">
 <rect class="hit" x="1038.0" y="831.0" width="32.0" height="24"/>
 <line class="ci" x1="1054.0" x2="1054.0" y1="843.0" y2="843.0"/>
 <line class="ci" x1="1054.0" x2="1054.0" y1="839.0" y2="847.0"/>
 <line class="ci" x1="1054.0" x2="1054.0" y1="839.0" y2="847.0"/>
 <path class="mk" d="M1060.0,843.0 L1050.0,837.0 L1050.0,849.0 Z"/>
-<text class="plab" x="1044.0" y="847.5" text-anchor="end">+39.6</text>
+<text class="plab" x="1044.0" y="847.5" text-anchor="end">+37.8</text>
 </g>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off|−1.2 chrF [−2.3, −0.1]|Bonsai 9B 48.5 vs Qwen3.5 9B 4-bit 49.7 · n = 36 · files 2.4 GB vs 5.7 GB" aria-label="Bonsai 9B − Qwen3.5 9B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off, −1.2 chrF [−2.3, −0.1], Bonsai 9B 48.5 vs Qwen3.5 9B 4-bit 49.7 · n = 36 · files 2.4 GB vs 5.7 GB">
-<rect class="hit" x="959.3" y="919.0" width="32.0" height="24"/>
-<line class="ci" x1="967.7" x2="983.1" y1="931.0" y2="931.0"/>
-<line class="ci" x1="967.7" x2="967.7" y1="927.0" y2="935.0"/>
-<line class="ci" x1="983.1" x2="983.1" y1="927.0" y2="935.0"/>
-<circle class="mk" cx="975.3" cy="931.0" r="6"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off|−1.3 chrF [−2.2, −0.4]|Bonsai 9B 47.6 vs Qwen3.5 9B 4-bit 48.9 · n = 78 · files 2.4 GB vs 5.7 GB" aria-label="Bonsai 9B − Qwen3.5 9B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off, −1.3 chrF [−2.2, −0.4], Bonsai 9B 47.6 vs Qwen3.5 9B 4-bit 48.9 · n = 78 · files 2.4 GB vs 5.7 GB">
+<rect class="hit" x="938.2" y="919.0" width="32.0" height="24"/>
+<line class="ci" x1="946.3" x2="962.4" y1="931.0" y2="931.0"/>
+<line class="ci" x1="946.3" x2="946.3" y1="927.0" y2="935.0"/>
+<line class="ci" x1="962.4" x2="962.4" y1="927.0" y2="935.0"/>
+<circle class="mk" cx="954.2" cy="931.0" r="6"/>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on|−2.9 chrF [−4.4, −1.5]|Bonsai 9B 47.6 vs Qwen3.5 9B 4-bit 50.5 · n = 36 · files 2.4 GB vs 5.7 GB" aria-label="Bonsai 9B − Qwen3.5 9B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on, −2.9 chrF [−4.4, −1.5], Bonsai 9B 47.6 vs Qwen3.5 9B 4-bit 50.5 · n = 36 · files 2.4 GB vs 5.7 GB">
-<rect class="hit" x="947.2" y="937.0" width="32.0" height="24"/>
-<line class="ci" x1="952.7" x2="973.1" y1="949.0" y2="949.0"/>
-<line class="ci" x1="952.7" x2="952.7" y1="945.0" y2="953.0"/>
-<line class="ci" x1="973.1" x2="973.1" y1="945.0" y2="953.0"/>
-<circle class="mk" cx="963.2" cy="949.0" r="5.5"/>
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 9B − Qwen3.5 9B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on|−2.9 chrF [−3.9, −1.8]|Bonsai 9B 47.5 vs Qwen3.5 9B 4-bit 50.4 · n = 78 · files 2.4 GB vs 5.7 GB" aria-label="Bonsai 9B − Qwen3.5 9B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on, −2.9 chrF [−3.9, −1.8], Bonsai 9B 47.5 vs Qwen3.5 9B 4-bit 50.4 · n = 78 · files 2.4 GB vs 5.7 GB">
+<rect class="hit" x="924.9" y="937.0" width="32.0" height="24"/>
+<line class="ci" x1="931.7" x2="950.2" y1="949.0" y2="949.0"/>
+<line class="ci" x1="931.7" x2="931.7" y1="945.0" y2="953.0"/>
+<line class="ci" x1="950.2" x2="950.2" y1="945.0" y2="953.0"/>
+<circle class="mk" cx="940.9" cy="949.0" r="5.5"/>
 </g>
 <line class="sep" x1="874" x2="1058" y1="976" y2="976"/>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off|−1.8 chrF [−2.6, −0.9]|Bonsai 4B 45.7 vs Qwen3.5 4B 4-bit 47.4 · n = 36 · files 1.1 GB vs 2.7 GB" aria-label="Bonsai 4B − Qwen3.5 4B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off, −1.8 chrF [−2.6, −0.9], Bonsai 4B 45.7 vs Qwen3.5 4B 4-bit 47.4 · n = 36 · files 1.1 GB vs 2.7 GB">
-<rect class="hit" x="955.2" y="991.0" width="32.0" height="24"/>
-<line class="ci" x1="965.2" x2="977.3" y1="1003.0" y2="1003.0"/>
-<line class="ci" x1="965.2" x2="965.2" y1="999.0" y2="1007.0"/>
-<line class="ci" x1="977.3" x2="977.3" y1="999.0" y2="1007.0"/>
-<circle class="mk" cx="971.2" cy="1003.0" r="6"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off|−3.0 chrF [−4.4, −1.9]|Bonsai 4B 44.3 vs Qwen3.5 4B 4-bit 47.2 · n = 78 · files 1.1 GB vs 2.7 GB" aria-label="Bonsai 4B − Qwen3.5 4B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off, −3.0 chrF [−4.4, −1.9], Bonsai 4B 44.3 vs Qwen3.5 4B 4-bit 47.2 · n = 78 · files 1.1 GB vs 2.7 GB">
+<rect class="hit" x="923.3" y="991.0" width="32.5" height="24"/>
+<line class="ci" x1="927.3" x2="949.7" y1="1003.0" y2="1003.0"/>
+<line class="ci" x1="927.3" x2="927.3" y1="999.0" y2="1007.0"/>
+<line class="ci" x1="949.7" x2="949.7" y1="999.0" y2="1007.0"/>
+<circle class="mk" cx="939.8" cy="1003.0" r="6"/>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on|−2.4 chrF [−3.7, −1.1]|Bonsai 4B 46.8 vs Qwen3.5 4B 4-bit 49.1 · n = 36 · files 1.1 GB vs 2.7 GB" aria-label="Bonsai 4B − Qwen3.5 4B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on, −2.4 chrF [−3.7, −1.1], Bonsai 4B 46.8 vs Qwen3.5 4B 4-bit 49.1 · n = 36 · files 1.1 GB vs 2.7 GB">
-<rect class="hit" x="950.9" y="1009.0" width="32.0" height="24"/>
-<line class="ci" x1="957.5" x2="976.2" y1="1021.0" y2="1021.0"/>
-<line class="ci" x1="957.5" x2="957.5" y1="1017.0" y2="1025.0"/>
-<line class="ci" x1="976.2" x2="976.2" y1="1017.0" y2="1025.0"/>
-<circle class="mk" cx="966.9" cy="1021.0" r="5.5"/>
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 4B − Qwen3.5 4B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on|−2.7 chrF [−3.9, −1.4]|Bonsai 4B 46.2 vs Qwen3.5 4B 4-bit 48.9 · n = 78 · files 1.1 GB vs 2.7 GB" aria-label="Bonsai 4B − Qwen3.5 4B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on, −2.7 chrF [−3.9, −1.4], Bonsai 4B 46.2 vs Qwen3.5 4B 4-bit 48.9 · n = 78 · files 1.1 GB vs 2.7 GB">
+<rect class="hit" x="926.3" y="1009.0" width="32.0" height="24"/>
+<line class="ci" x1="932.1" x2="953.2" y1="1021.0" y2="1021.0"/>
+<line class="ci" x1="932.1" x2="932.1" y1="1017.0" y2="1025.0"/>
+<line class="ci" x1="953.2" x2="953.2" y1="1017.0" y2="1025.0"/>
+<circle class="mk" cx="942.3" cy="1021.0" r="5.5"/>
 </g>
 <line class="sep" x1="874" x2="1058" y1="1048" y2="1048"/>
-<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off|−7.6 chrF [−10.0, −5.5]|Bonsai 2B 37.1 vs Qwen3.5 2B 4-bit 44.7 · n = 36 · files 0.5 GB vs 1.3 GB" aria-label="Bonsai 2B − Qwen3.5 2B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off, −7.6 chrF [−10.0, −5.5], Bonsai 2B 37.1 vs Qwen3.5 2B 4-bit 44.7 · n = 36 · files 0.5 GB vs 1.3 GB">
-<rect class="hit" x="909.1" y="1063.0" width="39.8" height="24"/>
-<line class="ci" x1="913.1" x2="945.0" y1="1075.0" y2="1075.0"/>
-<line class="ci" x1="913.1" x2="913.1" y1="1071.0" y2="1079.0"/>
-<line class="ci" x1="945.0" x2="945.0" y1="1071.0" y2="1079.0"/>
-<circle class="mk" cx="930.1" cy="1075.0" r="6"/>
+<g class="pt bonsai off" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off|−5.8 chrF [−7.6, −3.9]|Bonsai 2B 36.9 vs Qwen3.5 2B 4-bit 42.6 · n = 78 · files 0.5 GB vs 1.3 GB" aria-label="Bonsai 2B − Qwen3.5 2B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking off, −5.8 chrF [−7.6, −3.9], Bonsai 2B 36.9 vs Qwen3.5 2B 4-bit 42.6 · n = 78 · files 0.5 GB vs 1.3 GB">
+<rect class="hit" x="895.5" y="1063.0" width="39.9" height="24"/>
+<line class="ci" x1="899.5" x2="931.3" y1="1075.0" y2="1075.0"/>
+<line class="ci" x1="899.5" x2="899.5" y1="1071.0" y2="1079.0"/>
+<line class="ci" x1="931.3" x2="931.3" y1="1071.0" y2="1079.0"/>
+<circle class="mk" cx="915.1" cy="1075.0" r="6"/>
 </g>
-<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on|−3.3 chrF [−6.0, −0.7]|Bonsai 2B 39.6 vs Qwen3.5 2B 4-bit 43.0 · n = 36 · files 0.5 GB vs 1.3 GB" aria-label="Bonsai 2B − Qwen3.5 2B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on, −3.3 chrF [−6.0, −0.7], Bonsai 2B 39.6 vs Qwen3.5 2B 4-bit 43.0 · n = 36 · files 0.5 GB vs 1.3 GB">
-<rect class="hit" x="937.1" y="1081.0" width="45.6" height="24"/>
-<line class="ci" x1="941.1" x2="978.7" y1="1093.0" y2="1093.0"/>
-<line class="ci" x1="941.1" x2="941.1" y1="1089.0" y2="1097.0"/>
-<line class="ci" x1="978.7" x2="978.7" y1="1089.0" y2="1097.0"/>
-<circle class="mk" cx="960.1" cy="1093.0" r="5.5"/>
+<g class="pt bonsai on" tabindex="0" data-tip="Bonsai 2B − Qwen3.5 2B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on|−4.4 chrF [−5.8, −2.8]|Bonsai 2B 38.1 vs Qwen3.5 2B 4-bit 42.4 · n = 78 · files 0.5 GB vs 1.3 GB" aria-label="Bonsai 2B − Qwen3.5 2B 4-bit · German ↔ Chinese talk excerpts (T1) · thinking on, −4.4 chrF [−5.8, −2.8], Bonsai 2B 38.1 vs Qwen3.5 2B 4-bit 42.4 · n = 78 · files 0.5 GB vs 1.3 GB">
+<rect class="hit" x="910.8" y="1081.0" width="34.2" height="24"/>
+<line class="ci" x1="914.8" x2="941.0" y1="1093.0" y2="1093.0"/>
+<line class="ci" x1="914.8" x2="914.8" y1="1089.0" y2="1097.0"/>
+<line class="ci" x1="941.0" x2="941.0" y1="1089.0" y2="1097.0"/>
+<circle class="mk" cx="927.6" cy="1093.0" r="5.5"/>
 </g>
 <text class="rlab2" x="202" y="114.0" text-anchor="end">DeepSeek V4.1 Flash 1017</text>
 <text class="rsub" x="202" y="130.0" text-anchor="end">− Qwen3.5 9B</text>
@@ -1060,7 +1042,7 @@ padding:8px 10px;font-size:12.5px;box-shadow:0 4px 16px rgba(0,0,0,.4);display:n
 <text class="glab" x="202" y="891.0" text-anchor="end">same parameters</text>
 <text class="axlab" x="639.0" y="1160" text-anchor="middle">← worse than Qwen chrF difference vs the paired Qwen (points) better than Qwen →</text>
 </svg></div>
-<p class="summary">Each mark is the average chrF difference (character overlap with a reference text, 0–100) on the same items, Bonsai minus a plain Qwen of about the same file size (blue: the 4-bit Qwen3.5 with fewer parameters and the 2-bit Qwen3.5 with the same; at 27B, the 2-bit Qwen3.8; last, the 4-bit Qwen3.5 Bonsai derives from) or a cloud model minus Qwen3.5 9B (gray), each against Qwen run in the same mode (GLM&#x27;s low effort against Qwen thinking off). Whiskers are 95% confidence intervals for that average, not the spread of individual items; one crossing zero means no reliable difference. A test is one panel in one thinking mode. At 2.4 GB, Bonsai 9B: against Qwen3.5 4B 4-bit (2.7 GB) it is ahead in 2, behind in 1 and level in 5 of 8 tests; against Qwen3.5 9B 2-bit (3.2 GB) it is ahead in 7 and level in 1 of 8 tests. At 1.1 GB, Bonsai 4B: against Qwen3.5 2B 4-bit (1.3 GB) it is ahead in 4 and level in 4 of 8 tests; against Qwen3.5 4B 2-bit (1.5 GB) it is ahead in all 8 tests (faded with thinking on: most of the Qwen’s answers unfinished at 32k). At 0.5 GB, Bonsai 2B: against Qwen3.5 0.8B 4-bit (0.5 GB) it is ahead in 6 and level in 2 of 8 tests; against Qwen3.5 2B 2-bit (0.8 GB) it is ahead in all 8 tests (faded with thinking on: most of the Qwen’s answers unfinished at 32k). At 27B, Bonsai (derived from Qwen3.8 27B) against Qwen3.8 27B UD-IQ2_XXS of the same size (7.2 vs 7.3 GB): into English it is ahead in 2 of 4 tests (talks −0.7 off, +1.1 on; abstracts +1.3 off, +1.4 on), out of English behind in 1 of 2 modes (−2.4 off, +0.8 on), between German and Chinese behind in 1 of 2 modes (−2.6 off, +1.4 on). Against the 4-bit Qwen3.5 of the same parameter count, the model Bonsai 2 derives from (a 2.4–2.5x larger file): into English, Bonsai 4B and 2B trail by up to 3 points; out of English and between German and Chinese, Bonsai is behind, though not always reliably. Orange marks where Bonsai is ahead of the Qwen it is paired with even after correcting for all 80 Bonsai comparisons on this page: Bonsai 27B vs Qwen3.8 27B 2-bit 1 of 8; Bonsai 9B vs Qwen3.5 4B 4-bit 1 of 8; Bonsai 9B vs Qwen3.5 9B 2-bit 7 of 8; Bonsai 4B vs Qwen3.5 2B 4-bit 4 of 8; Bonsai 4B vs Qwen3.5 4B 2-bit 3 of 8; Bonsai 2B vs Qwen3.5 0.8B 4-bit 6 of 8; Bonsai 2B vs Qwen3.5 2B 2-bit 4 of 8; Bonsai 9B vs Qwen3.5 9B 4-bit 1 of 8. Into English the cloud is about 4 points ahead of Bonsai 9B, the smallest and most precise gap to DeepSeek with thinking off; out of English it depends on the cloud model (GLM is weak there). A second, meaning-based metric, COMET (wmt22-comet-da, ×100), never points the other way where both metrics separate a difference; of the 27 orange cells it also puts Bonsai reliably ahead in 24, leaning the same way in 3 (3 long German abstracts are truncated at COMET&#x27;s 512-token limit). Faded marks are unreliable: most answers were still unfinished at 32k. Answers still unfinished at 32k thinking tokens score 0 and stay in; † marks where they move a value by more than half its interval: Bonsai 9B − Qwen3.5 9B 2-bit translation out of English with thinking on, +12.2: 5 of 36 answers unfinished at 32k (scored 0); without them +4.6; Bonsai 2B − Qwen3.5 0.8B 4-bit translation out of English with thinking on, +16.5: 5 of 36 answers unfinished at 32k (scored 0); without them +11.2; Bonsai 2B − Qwen3.5 0.8B 4-bit German↔Chinese with thinking on, +18.6: 8 of 36 answers unfinished at 32k (scored 0); without them +11.3. Method: chrF2++ per item (chrF2 for Chinese), 95% paired bootstrap; orange = sign-flip test, 5% false-discovery rate (Benjamini-Hochberg); ACL talk excerpts plus 14 abstracts. References: the talks&#x27; human transcripts and translations (German↔Chinese: both sides translated from the English); for abstracts, the authors&#x27; own English abstract, only roughly parallel. Each talk panel is 18 excerpts from 5 talks, each excerpt in two directions (36 items); the bootstrap and the sign-flip test resample whole excerpts (both directions together), and each abstract is its own unit. Local runs (S1): the same GGUFs and engine on a GTX 1080 Ti (most Bonsai records) and an RTX 5080 (most Qwen3.5 records), checked equivalent (no systematic cross-GPU shift); continuations past the 8k cap: the 27B pair on an RTX 5080 (q8_0 KV), the 2B–9B pairs on an A100 (f16 KV), the 2B–9B pairs and Qwen3.5 0.8B on an RTX 5080 (f16 KV); originals q8_0; the 27B pair ran on an RTX 5080, q8_0 KV throughout, at a 164k context (on the GTX 1080 Ti it fits only 98k–106k). DeepSeek V4.1 Flash 1017 via DeepInfra (fp8), GLM 5.3 Flash via Sail Research (fp4, low-effort thinking since it can’t be turned off); Qwen rows: Q4_K_M (4-bit) and Unsloth UD-IQ2_XXS (2-bit) GGUFs; Bonsai 2 derives from Qwen3.5 of the same size (PrismML model card); tok/s: llama-bench decode, GTX 1080 Ti, short context; local thinking on: up to 32k thinking tokens (8k-capped generations continued); cloud runs use the providers&#x27; default sampling and output limits; an empty or unfinished answer scores 0.</p>
+<p class="summary">Each mark is the average chrF difference (character overlap with a reference text, 0–100) on the same items, Bonsai minus a plain Qwen of about the same file size (blue: the 4-bit Qwen3.5 with fewer parameters and the 2-bit Qwen3.5 with the same; at 27B, the 2-bit Qwen3.8; last, the 4-bit Qwen3.5 Bonsai derives from) or a cloud model minus Qwen3.5 9B (gray), each against Qwen run in the same mode (GLM&#x27;s low effort against Qwen thinking off). Whiskers are 95% confidence intervals for that average, not the spread of individual items; one crossing zero means no reliable difference. A test is one panel in one thinking mode. At 2.4 GB, Bonsai 9B: against Qwen3.5 4B 4-bit (2.7 GB) it is ahead in 1, behind in 1 and level in 6 of 8 tests; against Qwen3.5 9B 2-bit (3.2 GB) it is ahead in all 8 tests. At 1.1 GB, Bonsai 4B: against Qwen3.5 2B 4-bit (1.3 GB) it is ahead in 5 and level in 3 of 8 tests; against Qwen3.5 4B 2-bit (1.5 GB) it is ahead in all 8 tests (faded with thinking on: most of the Qwen’s answers unfinished at 32k). At 0.5 GB, Bonsai 2B: against Qwen3.5 0.8B 4-bit (0.5 GB) it is ahead in 6 and level in 2 of 8 tests; against Qwen3.5 2B 2-bit (0.8 GB) it is ahead in all 8 tests (faded with thinking on: most of the Qwen’s answers unfinished at 32k). At 27B, Bonsai (derived from Qwen3.8 27B) against Qwen3.8 27B UD-IQ2_XXS of the same size (7.2 vs 7.3 GB): into English it is ahead in 1 and behind in 1 of 4 tests (talks −0.7 off, +0.9 on; abstracts +1.3 off, +1.4 on), out of English behind in 1 of 2 modes (−1.8 off, +1.4 on), between German and Chinese ahead in 1 and behind in 1 of 2 modes (−1.7 off, +3.3 on). Against the 4-bit Qwen3.5 of the same parameter count, the model Bonsai 2 derives from (a 2.4–2.5x larger file): into English, Bonsai 9B, 4B and 2B trail by up to 3 points; out of English and between German and Chinese, Bonsai is behind, though not always reliably. Orange marks where Bonsai is ahead of the Qwen it is paired with even after correcting for all 80 Bonsai comparisons on this page: Bonsai 27B vs Qwen3.8 27B 2-bit 2 of 8; Bonsai 9B vs Qwen3.5 4B 4-bit 1 of 8; Bonsai 9B vs Qwen3.5 9B 2-bit all of 8; Bonsai 4B vs Qwen3.5 2B 4-bit 4 of 8; Bonsai 4B vs Qwen3.5 4B 2-bit 4 of 8; Bonsai 2B vs Qwen3.5 0.8B 4-bit 6 of 8; Bonsai 2B vs Qwen3.5 2B 2-bit 4 of 8; Bonsai 9B vs Qwen3.5 9B 4-bit 1 of 8. Into English the cloud is about 4 points ahead of Bonsai 9B, the smallest and most precise gap to DeepSeek with thinking off; out of English it depends on the cloud model (GLM is weak there). A second, meaning-based metric, COMET (wmt22-comet-da, ×100), never points the other way where both metrics separate a difference; of the 30 orange cells it also puts Bonsai reliably ahead in 26, leaning the same way in 4 (3 long German abstracts are truncated at COMET&#x27;s 512-token limit). Faded marks are unreliable: most answers were still unfinished at 32k. Answers still unfinished at 32k thinking tokens score 0 and stay in; † marks where they move a value by more than half its interval: Bonsai 9B − Qwen3.5 9B 2-bit talks into English with thinking on, +13.0: 9 of 78 answers unfinished at 32k (scored 0); without them +6.3; Bonsai 9B − Qwen3.5 9B 2-bit translation out of English with thinking on, +12.8: 9 of 78 answers unfinished at 32k (scored 0); without them +6.3; Bonsai 9B − Qwen3.5 9B 2-bit German↔Chinese with thinking on, +17.6: 13 of 78 answers unfinished at 32k (scored 0); without them +10.3; Bonsai 2B − Qwen3.5 0.8B 4-bit translation out of English with thinking on, +13.4: 8 of 78 answers unfinished at 32k (scored 0); without them +9.2; Bonsai 2B − Qwen3.5 0.8B 4-bit German↔Chinese with thinking on, +15.4: 9 of 78 answers unfinished at 32k (scored 0); without them +11.6. Method: chrF2++ per item (chrF2 for Chinese), 95% paired bootstrap; orange = sign-flip test, 5% false-discovery rate (Benjamini-Hochberg); ACL talk excerpts plus 14 abstracts. References: the talks&#x27; human transcripts and translations (German↔Chinese: both sides translated from the English); for abstracts, the authors&#x27; own English abstract, only roughly parallel. Each talk panel is 39 excerpts from 10 talks, each excerpt in two directions (78 items); the bootstrap and the sign-flip test resample whole excerpts (both directions together), and each abstract is its own unit. Local runs (S1): the same GGUFs and engine on a GTX 1080 Ti (most Bonsai records) and an RTX 5080 (most Qwen3.5 records), checked equivalent (no systematic cross-GPU shift); continuations past the 8k cap: the 27B pair on an RTX 5080 (q8_0 KV), the 2B–9B pairs on an A100 (f16 KV), the 2B–9B pairs and Qwen3.5 0.8B on the GTX 1080 Ti (q8_0 KV), the 2B–9B pairs and Qwen3.5 0.8B on an RTX 5080 (f16 KV); originals q8_0; the 27B pair ran on an RTX 5080, q8_0 KV throughout, at a 164k context (on the GTX 1080 Ti it fits only 98k–106k). DeepSeek V4.1 Flash 1017 via DeepInfra (fp8), GLM 5.3 Flash via Sail Research (fp4, low-effort thinking since it can’t be turned off); Qwen rows: Q4_K_M (4-bit) and Unsloth UD-IQ2_XXS (2-bit) GGUFs; Bonsai 2 derives from Qwen3.5 of the same size (PrismML model card); tok/s: llama-bench decode, GTX 1080 Ti, short context; local thinking on: up to 32k thinking tokens (8k-capped generations continued); cloud runs use the providers&#x27; default sampling and output limits; an empty or unfinished answer scores 0.</p>
 </div></main><div id="tip" role="tooltip"></div><script>
 (function(){var t=document.getElementById('tip');
 function show(e,g){var p=g.getAttribute('data-tip').split('|');t.textContent='';
